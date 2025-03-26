@@ -1,0 +1,72 @@
+2025-03-03 00:24:55,870 - INFO - Iniciando a merge dos arquivos JSON... Total de categorias: 19
+2025-03-03 00:24:55,871 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:55,871 - INFO - Carregando 26 extensões de exploit_permissions/data/extensions_json/extensions_root.json
+2025-03-03 00:24:55,888 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:55,889 - INFO - Carregando 1517 extensões de exploit_permissions/data/extensions_json/extensions_productivity_communication.json
+2025-03-03 00:24:55,913 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:55,913 - INFO - Carregando 1507 extensões de exploit_permissions/data/extensions_json/extensions_productivity_education.json
+2025-03-03 00:24:55,914 - INFO - Extensão duplicada encontrada: amfojhdiedpdnlijjbhjnhokbnohfdfb (adicionando novo caminho)
+2025-03-03 00:24:55,943 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:55,943 - INFO - Carregando 1473 extensões de exploit_permissions/data/extensions_json/extensions_productivity_tools.json
+2025-03-03 00:24:55,943 - INFO - Extensão duplicada encontrada: cipccbpjpemcnijhjcdjmkjhmhniiick (adicionando novo caminho)
+2025-03-03 00:24:55,943 - INFO - Extensão duplicada encontrada: icpgjfneehieebagbmdbhnlpiopdcmna (adicionando novo caminho)
+2025-03-03 00:24:55,944 - INFO - Extensão duplicada encontrada: pohibamcjdinnoefmcggajbcblnodgoe (adicionando novo caminho)
+2025-03-03 00:24:55,944 - INFO - Extensão duplicada encontrada: camppjleccjaphfdbohjdohecfnoikec (adicionando novo caminho)
+2025-03-03 00:24:55,945 - INFO - Extensão duplicada encontrada: gcplhmogdjioeaenmehmapbdonklmdnc (adicionando novo caminho)
+2025-03-03 00:24:55,945 - INFO - Extensão duplicada encontrada: paodpkkacimmkacaecjmhdncjgjepcai (adicionando novo caminho)
+2025-03-03 00:24:55,971 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:55,972 - INFO - Carregando 1513 extensões de exploit_permissions/data/extensions_json/extensions_productivity_developer.json
+2025-03-03 00:24:55,999 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:55,999 - INFO - Carregando 1458 extensões de exploit_permissions/data/extensions_json/extensions_productivity_workflow.json
+2025-03-03 00:24:55,999 - INFO - Extensão duplicada encontrada: njggknpmkjapgklcfhaiigafiiebpchm (adicionando novo caminho)
+2025-03-03 00:24:56,000 - INFO - Extensão duplicada encontrada: accebjobnljiehcaocahignlanfnfkcc (adicionando novo caminho)
+2025-03-03 00:24:56,000 - INFO - Extensão duplicada encontrada: nolkleckgikphcknllccijejhfmcchkg (adicionando novo caminho)
+2025-03-03 00:24:56,001 - INFO - Extensão duplicada encontrada: kjacjjdnoddnpbbcjilcajfhhbdhkpgk (adicionando novo caminho)
+2025-03-03 00:24:56,002 - INFO - Extensão duplicada encontrada: abbpaepbpakcpipajigmlpnhlnbennna (adicionando novo caminho)
+2025-03-03 00:24:56,002 - INFO - Extensão duplicada encontrada: hddnkoipeenegfoeaoibdmnaalmgkpip (adicionando novo caminho)
+2025-03-03 00:24:56,015 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,015 - INFO - Carregando 1536 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_art.json
+2025-03-03 00:24:56,024 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,024 - INFO - Carregando 707 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_well_being.json
+2025-03-03 00:24:56,025 - INFO - Extensão duplicada encontrada: nbajbonmfjpkleamoonahcgchplllakd (adicionando novo caminho)
+2025-03-03 00:24:56,026 - INFO - Extensão duplicada encontrada: andfohanhajengikbobaoblbdkmlkicp (adicionando novo caminho)
+2025-03-03 00:24:56,078 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,079 - INFO - Carregando 1538 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_shopping.json
+2025-03-03 00:24:56,109 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,110 - INFO - Carregando 1536 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_entertainment.json
+2025-03-03 00:24:56,114 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,115 - INFO - Carregando 174 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_household.json
+2025-03-03 00:24:56,125 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,126 - INFO - Carregando 1552 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_games.json
+2025-03-03 00:24:56,126 - INFO - Extensão duplicada encontrada: aomkpefnllinimbhddlfhelelngakbbn (adicionando novo caminho)
+2025-03-03 00:24:56,127 - INFO - Extensão duplicada encontrada: iginnfkhmmfhlkagcmpgofnjhanpmklb (adicionando novo caminho)
+2025-03-03 00:24:56,127 - INFO - Extensão duplicada encontrada: oppflpnigmhkldmdmmbnopidlhahanji (adicionando novo caminho)
+2025-03-03 00:24:56,129 - INFO - Extensão duplicada encontrada: iibghlclocgeljpbimnneepjceaiepkj (adicionando novo caminho)
+2025-03-03 00:24:56,144 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,144 - INFO - Carregando 1538 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_news.json
+2025-03-03 00:24:56,166 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,166 - INFO - Carregando 1557 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_fun.json
+2025-03-03 00:24:56,167 - INFO - Extensão duplicada encontrada: mbcibgkijjmnhbbheafplbapiacgkebe (adicionando novo caminho)
+2025-03-03 00:24:56,168 - INFO - Extensão duplicada encontrada: gokcmhknbfbkchaljcbjloaebnoblcnd (adicionando novo caminho)
+2025-03-03 00:24:56,169 - INFO - Extensão duplicada encontrada: mbmoepkknemagccpieajeildcmlfepkh (adicionando novo caminho)
+2025-03-03 00:24:56,170 - INFO - Extensão duplicada encontrada: jididilbbeilbgdfoflncbphhbcklmca (adicionando novo caminho)
+2025-03-03 00:24:56,194 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,194 - INFO - Carregando 1513 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_social.json
+2025-03-03 00:24:56,196 - INFO - Extensão duplicada encontrada: cknklikacoaeledfaldmhabmldkldocj (adicionando novo caminho)
+2025-03-03 00:24:56,202 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,203 - INFO - Carregando 236 extensões de exploit_permissions/data/extensions_json/extensions_lifestyle_travel.json
+2025-03-03 00:24:56,217 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,217 - INFO - Carregando 1533 extensões de exploit_permissions/data/extensions_json/extensions_make_chrome_yours_accessibility.json
+2025-03-03 00:24:56,233 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,233 - INFO - Carregando 1504 extensões de exploit_permissions/data/extensions_json/extensions_make_chrome_yours_functionality.json
+2025-03-03 00:24:56,233 - INFO - Extensão duplicada encontrada: fnfdomooadjpfohbepiaonnbdmkdjiog (adicionando novo caminho)
+2025-03-03 00:24:56,234 - INFO - Extensão duplicada encontrada: chphlpgkkbolifaimnlloiipkdnihall (adicionando novo caminho)
+2025-03-03 00:24:56,257 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,257 - INFO - Carregando 988 extensões de exploit_permissions/data/extensions_json/extensions_make_chrome_yours_privacy.json
+2025-03-03 00:24:56,259 - INFO - ----------------------------------------------------------------------------------------------------
+2025-03-03 00:24:56,259 - INFO - Finalizando o merge dos dados e adicionando caminhos às extensões...
+2025-03-03 00:24:56,336 - INFO - Ordenando extensões por número de downloads...
+2025-03-03 00:24:57,219 - INFO - Arquivo de saída gerado com sucesso: exploit_permissions/data/merged_extensions.json
+2025-03-03 00:24:57,219 - INFO - Tempo de execução: 1.35 segundos
+2025-03-03 00:24:57,219 - INFO - Extensões únicas: 23380
+2025-03-03 00:24:57,219 - INFO - Extensões duplicadas: 26

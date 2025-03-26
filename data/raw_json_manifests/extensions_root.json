@@ -1,0 +1,1194 @@
+{
+    "path": "",
+    "extensions_count": 27,
+    "extraction_date": "2025-03-03T02:27:32.164455",
+    "extensions": [
+        {
+            "id": "icpgjfneehieebagbmdbhnlpiopdcmna",
+            "downloads": "700000",
+            "name": "New Tab Redirect",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "favicon"
+            ],
+            "host_permissions": [
+                "file:///",
+                "file://",
+                "*://*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kjacjjdnoddnpbbcjilcajfhhbdhkpgk",
+            "downloads": "900000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "storage",
+                "unlimitedStorage",
+                "notifications",
+                "activeTab",
+                "tabs",
+                "offscreen",
+                "identity",
+                "alarms"
+            ],
+            "host_permissions": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "exclude_matches": [
+                        "https://auth.staging.seekrtech.com/*",
+                        "https://auth.seekrtech.com/*",
+                        "https://auth.upwardsware.com/*"
+                    ],
+                    "js": [
+                        "src/content/index.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {
+                "ids": [
+                    "*"
+                ],
+                "matches": [
+                    "https://auth.seekrtech.com/*",
+                    "https://auth.upwardsware.com/*",
+                    "https://auth.staging.seekrtech.com/*"
+                ]
+            },
+            "storage": {}
+        },
+        {
+            "id": "ijkmjnaahlnmdjjlbhbjbhlnmadmmlgg",
+            "downloads": "400000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "amfojhdiedpdnlijjbhjnhokbnohfdfb",
+            "downloads": "700000",
+            "name": "__MSG_ext_name__",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "storage",
+                "tts",
+                "contextMenus",
+                "clipboardWrite",
+                "unlimitedStorage",
+                "notifications",
+                "scripting",
+                "offscreen"
+            ],
+            "host_permissions": [
+                "https://translate.google.com/*",
+                "http://localhost:8765/*",
+                "*://*.nflximg.com/*",
+                "*://*.nflxvideo.net/*",
+                "*://*.nflxext.com/*",
+                "*://*.netflix.com/*",
+                "*://*.nflximg.net/*",
+                "*://api.ejoy.io/*",
+                "*://translate.google.com/*",
+                "*://api.urbandictionary.com/*",
+                "*://glosbe.com/*",
+                "*://api.ejoy.io/*",
+                "*://connect.ejoy.io/*",
+                "*://youtube.com/*",
+                "*://*/*",
+                "<all_urls>",
+                "http://fonts.googleapis.com/",
+                "https://fonts.googleapis.com/",
+                "https://text-to-speech-demo.ng.bluemix.net/api/*",
+                "http://localhost:8080/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://www.youtube.com/*",
+                        "*://www.udemy.com/*",
+                        "*://www.coursera.org/*",
+                        "*://www.youtube-nocookie.com/*",
+                        "*://www.udemy.com/*",
+                        "*://*.udemy.com/*",
+                        "*://www.futurelearn.com/*",
+                        "*://www.iq.com/*",
+                        "*://wetv.vip/*",
+                        "*://w.mgtv.com/*",
+                        "*://www.viki.com/*",
+                        "*://www.netflix.com/*",
+                        "*://www.primevideo.com/*",
+                        "*://watchandlearn.scholastic.com/*",
+                        "https://smile.amazon.ca/*",
+                        "https://www.amazon.ca/*",
+                        "https://smile.amazon.com/*",
+                        "https://www.amazon.com/*",
+                        "https://smile.amazon.co.uk/*",
+                        "https://www.amazon.co.uk/*",
+                        "https://www.amazon.de/*",
+                        "https://www.amazon.es/*",
+                        "https://www.amazon.fr/*",
+                        "https://www.amazon.in/*",
+                        "https://smile.amazon.it/*",
+                        "https://www.amazon.it/*"
+                    ],
+                    "exclude_globs": [
+                        "*://www.youtube.com/embed/*controls=0&start=0&origin=*"
+                    ],
+                    "css": [
+                        "assets/css/stylesVideo.chunk.css"
+                    ],
+                    "js": [
+                        "src/pages/contentInjectVideo/index.js"
+                    ],
+                    "all_frames": true
+                },
+                {
+                    "matches": [
+                        "*://*/*"
+                    ],
+                    "all_frames": true,
+                    "run_at": "document_end",
+                    "css": [
+                        "css/inject.css"
+                    ],
+                    "js": [
+                        "src/pages/contentInject/index.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "*://*/*"
+                    ],
+                    "all_frames": false,
+                    "css": [
+                        "assets/css/stylesCapture.chunk.css",
+                        "assets/css/stylesContentAdv.chunk.css"
+                    ],
+                    "run_at": "document_end",
+                    "js": [
+                        "src/pages/contentInjectCaptureView/index.js",
+                        "captureToText/assets/js/material.min.js",
+                        "src/pages/contentInjectAiAdv/index.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {
+                "ids": [
+                    "*"
+                ],
+                "matches": [
+                    "*://ejoy-english.com/*",
+                    "http://192.168.1.23:8080/*",
+                    "http://192.168.1.23:3000/*",
+                    "http://localhost:3000/*",
+                    "*://phimlearning.com/*",
+                    "*://glotdojo.com/*",
+                    "*://*.ejoy.edu.vn/*",
+                    "*://*.ejoy.ai/*",
+                    "*://*.ejoylearning.com/*",
+                    "*://*.ejoyspace.com/*",
+                    "http://localhost:8080/*"
+                ]
+            },
+            "storage": {}
+        },
+        {
+            "id": "imbncilibdpngpkpbnhadjfcjoplkpfc",
+            "downloads": "100000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gcplhmogdjioeaenmehmapbdonklmdnc",
+            "downloads": "20000",
+            "name": "Fleeting Notes",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "tabs",
+                "contextMenus",
+                "sidePanel"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "extension/content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self' ; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "aomkpefnllinimbhddlfhelelngakbbn",
+            "downloads": "400000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mbmoepkknemagccpieajeildcmlfepkh",
+            "downloads": "70000",
+            "name": "OutRun Offline Game",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "chphlpgkkbolifaimnlloiipkdnihall",
+            "downloads": "2000000",
+            "name": "OneTab",
+            "manifest_version": 3,
+            "permissions": [
+                "favicon",
+                "unlimitedStorage",
+                "storage",
+                "activeTab",
+                "scripting",
+                "tabs",
+                "contextMenus"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' data: https://t2.gstatic.com;"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mbcibgkijjmnhbbheafplbapiacgkebe",
+            "downloads": "40000",
+            "name": "1930",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "nolkleckgikphcknllccijejhfmcchkg",
+            "downloads": "5000",
+            "name": "ReadPartner: AI Summarizer Tool for Articles, YouTube, Docs for Free",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "scripting",
+                "offscreen",
+                "contextMenus"
+            ],
+            "host_permissions": [
+                "https://*.youtube.com/*",
+                "https://*.wikipedia.org/*",
+                "https://mail.google.com/*",
+                "https://edition.cnn.com/*",
+                "https://www.bbc.com/*",
+                "https://apnews.com/*",
+                "https://www.forbes.com/*",
+                "https://www.washingtonpost.com/*",
+                "https://www.nytimes.com/*",
+                "https://www.nbcnews.com/*",
+                "https://www.cbsnews.com/*",
+                "https://www.cnbc.com/*",
+                "https://www.msn.com/*",
+                "https://www.espn.com/*",
+                "https://www.reddit.com/*",
+                "https://stackoverflow.com/*",
+                "https://www.sciencedirect.com/*",
+                "https://www.wsj.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "static/jquery-3.7.1.min.js",
+                        "static/gmail.min.js",
+                        "static/content.js"
+                    ],
+                    "css": [
+                        "static/content.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; connect-src 'self' https://apis.google.com https://www.gstatic.com https://*.googleapis.com https://securetoken.googleapis.com https://readpartner.com https://app.readpartner.com;"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gokcmhknbfbkchaljcbjloaebnoblcnd",
+            "downloads": "400000",
+            "name": "Arcade Classics",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mjjgmlmpeaikcaajghilhnioimmaibon",
+            "downloads": "700000",
+            "name": "Boxel 3D",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self' 'wasm-unsafe-eval';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jididilbbeilbgdfoflncbphhbcklmca",
+            "downloads": "40000",
+            "name": "Classic Dungeon Game",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "iibghlclocgeljpbimnneepjceaiepkj",
+            "downloads": "50000",
+            "name": "__MSG_AppName__",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hddnkoipeenegfoeaoibdmnaalmgkpip",
+            "downloads": "400000",
+            "name": "Toby: Tab Management Tool",
+            "manifest_version": 3,
+            "permissions": [
+                "contextMenus",
+                "unlimitedStorage",
+                "storage",
+                "tabs",
+                "declarativeNetRequestWithHostAccess"
+            ],
+            "host_permissions": [
+                "https://*.gettoby.com/"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.gettoby.com/*"
+                    ],
+                    "js": [
+                        "/js/contentScript.bundle.js",
+                        "/js/inject-public.bundle.js"
+                    ],
+                    "run_at": "document_idle"
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "default-src 'self'; frame-src 'self' https://gettoby.typeform.com https://www.loom.com/ https://storage.googleapis.com https://*.youtube.com https://*.youtube-nocookie.com; script-src 'self'; object-src 'none'; connect-src https://api2.gettoby.com https://api2.gettoby.com https://logs.gettoby.com https://capi.gettoby.com wss://api.gettoby.com/ws https://api.mixpanel.com http://api.mixpanel.com https://api-js.mixpanel.com https://us.i.posthog.com https://api.amplitude.com http://api.amplitude.com https://*.nr-data.net https://app.getsentry.com https://favicons.gettoby.com/v3/; style-src https://fonts.googleapis.com 'unsafe-inline' 'self' *; font-src 'self' https://fonts.gstatic.com; img-src * https://logs.gettoby.com data:;"
+            },
+            "externally_connectable": {
+                "ids": [
+                    "*"
+                ]
+            },
+            "storage": {}
+        },
+        {
+            "id": "camppjleccjaphfdbohjdohecfnoikec",
+            "downloads": "1000000",
+            "name": "__MSG_extensionName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "contextMenus"
+            ],
+            "host_permissions": [
+                "https://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "js": [
+                        "assets/doppelgainger.tsx-loader-7d726e02.js",
+                        "assets/twitterStrip.tsx-loader-526921cd.js"
+                    ],
+                    "matches": [
+                        "https://twitter.com/*",
+                        "https://x.com/*"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/gdbCodeEditor.ts-loader-fe954556.js"
+                    ],
+                    "matches": [
+                        "https://www.onlinegdb.com/*"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/rentryMarkdown.ts-loader-5c246582.js"
+                    ],
+                    "matches": [
+                        "https://rentry.co/*"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/facebookStrip.tsx-loader-dc6b1a1b.js"
+                    ],
+                    "matches": [
+                        "https://www.facebook.com/*",
+                        "https://business.facebook.com/*"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/superGMail.tsx-loader-f7aeb7c7.js"
+                    ],
+                    "matches": [
+                        "https://mail.google.com/mail/*"
+                    ],
+                    "css": [
+                        "assets/font-d36bb361.css"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/merlinIconCTA.tsx-loader-46983335.js",
+                        "assets/blogSummarizer.tsx-loader-8d9d6b96.js"
+                    ],
+                    "matches": [
+                        "https://*/*",
+                        "http://*/*",
+                        "<all_urls>"
+                    ],
+                    "exclude_matches": [
+                        "https://*.hdblog.it/*"
+                    ],
+                    "css": [
+                        "assets/font-d36bb361.css",
+                        "assets/font-d36bb361.css"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/chatIframe.tsx-loader-10698c85.js",
+                        "assets/chat.tsx-loader-e382e6a8.js",
+                        "assets/merlinUIComponentPortal.tsx-loader-0248f28a.js"
+                    ],
+                    "matches": [
+                        "https://*/*",
+                        "http://*/*",
+                        "<all_urls>"
+                    ],
+                    "exclude_matches": [
+                        "https://*.hdblog.it/*"
+                    ],
+                    "run_at": "document_start",
+                    "css": [
+                        "assets/font-d36bb361.css",
+                        "assets/font-d36bb361.css",
+                        "assets/font-d36bb361.css"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/quill.tsx-loader-3695e991.js"
+                    ],
+                    "matches": [
+                        "https://*/*",
+                        "http://*/*",
+                        "<all_urls>"
+                    ],
+                    "exclude_matches": [
+                        "https://*.hdblog.it/*"
+                    ],
+                    "run_at": "document_start",
+                    "css": [
+                        "assets/font-d36bb361.css"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/youtubeSummarizer.tsx-loader-8c0ab6af.js",
+                        "assets/youtubeSummaryBtnWithTweetify.tsx-loader-333a0632.js",
+                        "assets/youtubeCommentSectionBtn.tsx-loader-8ee07306.js"
+                    ],
+                    "matches": [
+                        "https://www.youtube.com/*"
+                    ],
+                    "css": [
+                        "assets/font-d36bb361.css"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/searchGPT.tsx-loader-7f440fc8.js"
+                    ],
+                    "run_at": "document_start",
+                    "matches": [
+                        "https://www.google.com/search?*",
+                        "https://www.bing.com/search?*",
+                        "https://search.yahoo.com/search*",
+                        "https://*.search.yahoo.com/search*",
+                        "https://yandex.com/search/?*",
+                        "https://duckduckgo.com/?*",
+                        "https://www.baidu.com/s?*"
+                    ],
+                    "css": [
+                        "assets/font-d36bb361.css"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/linkedinStrip.tsx-loader-ac86075b.js"
+                    ],
+                    "matches": [
+                        "https://www.linkedin.com/*"
+                    ]
+                },
+                {
+                    "js": [
+                        "assets/vault.tsx-loader-d65ea331.js"
+                    ],
+                    "matches": [
+                        "https://*/*",
+                        "http://*/*",
+                        "<all_urls>"
+                    ],
+                    "exclude_matches": [
+                        "https://*.hdblog.it/*",
+                        "https://*.anthropic.com/*",
+                        "https://*.shopify.engineering/*",
+                        "https://*.facebook.com/*"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {
+                "matches": [
+                    "https://*.getmerlin.in/*",
+                    "https://*.foyer.work/*",
+                    "http://localhost/*",
+                    "https://*.vercel.app/*"
+                ]
+            },
+            "storage": {}
+        },
+        {
+            "id": "andfohanhajengikbobaoblbdkmlkicp",
+            "downloads": "7000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "unlimitedStorage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "content_scripts": "font-src 'self' data:; script-src 'self'; object-src 'self'; worker-src 'self'",
+                "extension_pages": "font-src 'self' data:; script-src 'self'; object-src 'self'; worker-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fnfdomooadjpfohbepiaonnbdmkdjiog",
+            "downloads": "40000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "cookies",
+                "identity",
+                "tabs",
+                "unlimitedStorage",
+                "search",
+                "offscreen",
+                "scripting",
+                "declarativeNetRequestWithHostAccess",
+                "contextMenus",
+                "history",
+                "alarms",
+                "notifications",
+                "bookmarks",
+                "topSites",
+                "downloads",
+                "favicon",
+                "sidePanel"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {
+                "content_scripts": "font-src 'self' data:; script-src 'self'; object-src 'self'; worker-src 'self'",
+                "extension_pages": "font-src 'self' data:; script-src 'self'; object-src 'self'; worker-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "paodpkkacimmkacaecjmhdncjgjepcai",
+            "downloads": "90000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "identity",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "run_at": "document_start",
+                    "matches": [
+                        "*://*/*",
+                        "file:///*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "njggknpmkjapgklcfhaiigafiiebpchm",
+            "downloads": "40000",
+            "name": "__MSG_extName__",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting",
+                "contextMenus",
+                "storage",
+                "clipboardWrite",
+                "clipboardRead",
+                "cookies",
+                "management",
+                "sidePanel"
+            ],
+            "host_permissions": [
+                "https://hix.ai/*",
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content-scripts/_document-idle.js",
+                        "content-scripts/sidebar.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "all_frames": true,
+                    "run_at": "document_start",
+                    "js": [
+                        "content-scripts/_document-start.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://mail.google.com/*"
+                    ],
+                    "js": [
+                        "content-scripts/email.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://docs.google.com/document/*",
+                        "https://docs.google.com/document/d/*"
+                    ],
+                    "run_at": "document_start",
+                    "js": [
+                        "content-scripts/google-docs-annotate.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://docs.google.com/document/d/*"
+                    ],
+                    "js": [
+                        "content-scripts/google-docs.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://*.facebook.com/*",
+                        "https://*.instagram.com/*",
+                        "https://*.quora.com/*",
+                        "https://*.reddit.com/*",
+                        "https://*.tiktok.com/*",
+                        "https://*.twitter.com/*",
+                        "https://*.x.com/*",
+                        "https://*.youtube.com/*",
+                        "https://docs.google.com/document/d/*",
+                        "https://mail.google.com/*"
+                    ],
+                    "js": [
+                        "content-scripts/guide.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://*.yandex.by/search*",
+                        "https://*.yandex.com.tr/search*",
+                        "https://*.yandex.com/search*",
+                        "https://*.yandex.kz/search*",
+                        "https://*.yandex.ru/search*",
+                        "https://*.yandex.uz/search*",
+                        "https://cn.bing.com/search*",
+                        "https://duckduckgo.com/*",
+                        "https://search.brave.com/search*",
+                        "https://search.naver.com/search*",
+                        "https://search.yahoo.co.jp/search*",
+                        "https://search.yahoo.com/search*",
+                        "https://www.baidu.com/*",
+                        "https://www.bing.com/search*",
+                        "https://www.google.ad/search*",
+                        "https://www.google.ae/search*",
+                        "https://www.google.al/search*",
+                        "https://www.google.am/search*",
+                        "https://www.google.as/search*",
+                        "https://www.google.at/search*",
+                        "https://www.google.az/search*",
+                        "https://www.google.ba/search*",
+                        "https://www.google.be/search*",
+                        "https://www.google.bf/search*",
+                        "https://www.google.bg/search*",
+                        "https://www.google.bi/search*",
+                        "https://www.google.bj/search*",
+                        "https://www.google.bs/search*",
+                        "https://www.google.bt/search*",
+                        "https://www.google.by/search*",
+                        "https://www.google.ca/search*",
+                        "https://www.google.cat/search*",
+                        "https://www.google.cd/search*",
+                        "https://www.google.cf/search*",
+                        "https://www.google.cg/search*",
+                        "https://www.google.ch/search*",
+                        "https://www.google.ci/search*",
+                        "https://www.google.cl/search*",
+                        "https://www.google.cm/search*",
+                        "https://www.google.cn/search*",
+                        "https://www.google.co.ao/search*",
+                        "https://www.google.co.bw/search*",
+                        "https://www.google.co.ck/search*",
+                        "https://www.google.co.cr/search*",
+                        "https://www.google.co.id/search*",
+                        "https://www.google.co.il/search*",
+                        "https://www.google.co.in/search*",
+                        "https://www.google.co.jp/search*",
+                        "https://www.google.co.ke/search*",
+                        "https://www.google.co.kr/search*",
+                        "https://www.google.co.ls/search*",
+                        "https://www.google.co.ma/search*",
+                        "https://www.google.co.mz/search*",
+                        "https://www.google.co.nz/search*",
+                        "https://www.google.co.th/search*",
+                        "https://www.google.co.tz/search*",
+                        "https://www.google.co.ug/search*",
+                        "https://www.google.co.uk/search*",
+                        "https://www.google.co.uz/search*",
+                        "https://www.google.co.ve/search*",
+                        "https://www.google.co.vi/search*",
+                        "https://www.google.co.za/search*",
+                        "https://www.google.co.zm/search*",
+                        "https://www.google.co.zw/search*",
+                        "https://www.google.com.af/search*",
+                        "https://www.google.com.ag/search*",
+                        "https://www.google.com.ai/search*",
+                        "https://www.google.com.ar/search*",
+                        "https://www.google.com.au/search*",
+                        "https://www.google.com.bd/search*",
+                        "https://www.google.com.bh/search*",
+                        "https://www.google.com.bn/search*",
+                        "https://www.google.com.bo/search*",
+                        "https://www.google.com.br/search*",
+                        "https://www.google.com.bz/search*",
+                        "https://www.google.com.co/search*",
+                        "https://www.google.com.cu/search*",
+                        "https://www.google.com.cy/search*",
+                        "https://www.google.com.do/search*",
+                        "https://www.google.com.ec/search*",
+                        "https://www.google.com.eg/search*",
+                        "https://www.google.com.et/search*",
+                        "https://www.google.com.fj/search*",
+                        "https://www.google.com.gh/search*",
+                        "https://www.google.com.gi/search*",
+                        "https://www.google.com.gt/search*",
+                        "https://www.google.com.hk/search*",
+                        "https://www.google.com.jm/search*",
+                        "https://www.google.com.kh/search*",
+                        "https://www.google.com.kw/search*",
+                        "https://www.google.com.lb/search*",
+                        "https://www.google.com.ly/search*",
+                        "https://www.google.com.mm/search*",
+                        "https://www.google.com.mt/search*",
+                        "https://www.google.com.mx/search*",
+                        "https://www.google.com.my/search*",
+                        "https://www.google.com.na/search*",
+                        "https://www.google.com.ng/search*",
+                        "https://www.google.com.ni/search*",
+                        "https://www.google.com.np/search*",
+                        "https://www.google.com.om/search*",
+                        "https://www.google.com.pa/search*",
+                        "https://www.google.com.pe/search*",
+                        "https://www.google.com.pg/search*",
+                        "https://www.google.com.ph/search*",
+                        "https://www.google.com.pk/search*",
+                        "https://www.google.com.pr/search*",
+                        "https://www.google.com.py/search*",
+                        "https://www.google.com.qa/search*",
+                        "https://www.google.com.sa/search*",
+                        "https://www.google.com.sb/search*",
+                        "https://www.google.com.sg/search*",
+                        "https://www.google.com.sl/search*",
+                        "https://www.google.com.sv/search*",
+                        "https://www.google.com.tj/search*",
+                        "https://www.google.com.tr/search*",
+                        "https://www.google.com.tw/search*",
+                        "https://www.google.com.ua/search*",
+                        "https://www.google.com.uy/search*",
+                        "https://www.google.com.vc/search*",
+                        "https://www.google.com.vn/search*",
+                        "https://www.google.com/search*",
+                        "https://www.google.cv/search*",
+                        "https://www.google.cz/search*",
+                        "https://www.google.de/search*",
+                        "https://www.google.dj/search*",
+                        "https://www.google.dk/search*",
+                        "https://www.google.dm/search*",
+                        "https://www.google.dz/search*",
+                        "https://www.google.ee/search*",
+                        "https://www.google.es/search*",
+                        "https://www.google.fi/search*",
+                        "https://www.google.fm/search*",
+                        "https://www.google.fr/search*",
+                        "https://www.google.ga/search*",
+                        "https://www.google.ge/search*",
+                        "https://www.google.gg/search*",
+                        "https://www.google.gl/search*",
+                        "https://www.google.gm/search*",
+                        "https://www.google.gr/search*",
+                        "https://www.google.gy/search*",
+                        "https://www.google.hn/search*",
+                        "https://www.google.hr/search*",
+                        "https://www.google.ht/search*",
+                        "https://www.google.hu/search*",
+                        "https://www.google.ie/search*",
+                        "https://www.google.im/search*",
+                        "https://www.google.iq/search*",
+                        "https://www.google.is/search*",
+                        "https://www.google.it/search*",
+                        "https://www.google.je/search*",
+                        "https://www.google.jo/search*",
+                        "https://www.google.kg/search*",
+                        "https://www.google.ki/search*",
+                        "https://www.google.kz/search*",
+                        "https://www.google.la/search*",
+                        "https://www.google.li/search*",
+                        "https://www.google.lk/search*",
+                        "https://www.google.lt/search*",
+                        "https://www.google.lu/search*",
+                        "https://www.google.lv/search*",
+                        "https://www.google.md/search*",
+                        "https://www.google.me/search*",
+                        "https://www.google.mg/search*",
+                        "https://www.google.mk/search*",
+                        "https://www.google.ml/search*",
+                        "https://www.google.mn/search*",
+                        "https://www.google.ms/search*",
+                        "https://www.google.mu/search*",
+                        "https://www.google.mv/search*",
+                        "https://www.google.mw/search*",
+                        "https://www.google.ne/search*",
+                        "https://www.google.nl/search*",
+                        "https://www.google.no/search*",
+                        "https://www.google.nr/search*",
+                        "https://www.google.nu/search*",
+                        "https://www.google.pl/search*",
+                        "https://www.google.pn/search*",
+                        "https://www.google.ps/search*",
+                        "https://www.google.pt/search*",
+                        "https://www.google.ro/search*",
+                        "https://www.google.rs/search*",
+                        "https://www.google.ru/search*",
+                        "https://www.google.rw/search*",
+                        "https://www.google.sc/search*",
+                        "https://www.google.se/search*",
+                        "https://www.google.sh/search*",
+                        "https://www.google.si/search*",
+                        "https://www.google.sk/search*",
+                        "https://www.google.sm/search*",
+                        "https://www.google.sn/search*",
+                        "https://www.google.so/search*",
+                        "https://www.google.sr/search*",
+                        "https://www.google.st/search*",
+                        "https://www.google.td/search*",
+                        "https://www.google.tg/search*",
+                        "https://www.google.tl/search*",
+                        "https://www.google.tm/search*",
+                        "https://www.google.tn/search*",
+                        "https://www.google.to/search*",
+                        "https://www.google.tt/search*",
+                        "https://www.google.vg/search*",
+                        "https://www.google.vu/search*",
+                        "https://www.google.ws/search*"
+                    ],
+                    "js": [
+                        "content-scripts/search.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "run_at": "document_start",
+                    "js": [
+                        "content-scripts/sidebar-entry.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://*.facebook.com/*",
+                        "https://*.instagram.com/*",
+                        "https://*.quora.com/*",
+                        "https://*.reddit.com/*",
+                        "https://*.tiktok.com/*",
+                        "https://*.twitter.com/*",
+                        "https://*.x.com/*",
+                        "https://*.youtube.com/*"
+                    ],
+                    "js": [
+                        "content-scripts/social.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://*.youtube.com/*"
+                    ],
+                    "js": [
+                        "content-scripts/youtube-summarize.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "cknklikacoaeledfaldmhabmldkldocj",
+            "downloads": "40000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://x.com/*",
+                        "https://mobile.x.com/*",
+                        "https://twitter.com/*",
+                        "https://mobile.twitter.com/*"
+                    ],
+                    "js": [
+                        "scripts/contentscript.js"
+                    ],
+                    "css": [
+                        "styles/contentscript.css"
+                    ],
+                    "run_at": "document_end"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "iginnfkhmmfhlkagcmpgofnjhanpmklb",
+            "downloads": "1000000",
+            "name": "Boxel Rebound",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "accebjobnljiehcaocahignlanfnfkcc",
+            "downloads": "10000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "management",
+                "storage",
+                "unlimitedStorage",
+                "tabs",
+                "activeTab",
+                "cookies",
+                "scripting"
+            ],
+            "host_permissions": [
+                "<all_urls>",
+                "*://*/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pohibamcjdinnoefmcggajbcblnodgoe",
+            "downloads": "10000",
+            "name": "Dashy New Tab Dashboard and Side Panel",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "sidePanel",
+                "unlimitedStorage",
+                "history",
+                "favicon",
+                "declarativeNetRequest"
+            ],
+            "host_permissions": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "js": [
+                        "content.ts.js"
+                    ],
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "all_frames": true,
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "nbajbonmfjpkleamoonahcgchplllakd",
+            "downloads": "707",
+            "name": "Believe by Heart It Out",
+            "manifest_version": 3,
+            "permissions": [
+                "topSites",
+                "storage"
+            ],
+            "host_permissions": [
+                "https://heartitout.in/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "cipccbpjpemcnijhjcdjmkjhmhniiick",
+            "downloads": "300000",
+            "name": "unknown_extension",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        }
+    ]
+}

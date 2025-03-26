@@ -1,0 +1,4194 @@
+{
+    "path": "/lifestyle/household",
+    "extensions_count": 177,
+    "extraction_date": "2025-03-03T17:01:31.331001",
+    "extensions": [
+        {
+            "id": "lddlpciejomhjehckimopnomegilaocb",
+            "downloads": "1000",
+            "name": "Shutterfly Address Book Exporter",
+            "manifest_version": 3,
+            "permissions": [
+                "webRequest",
+                "downloads"
+            ],
+            "host_permissions": [
+                "https://www.shutterfly.com/*",
+                "https://api2.shutterfly.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.shutterfly.com/addressbook/management.sfly*"
+                    ],
+                    "js": [
+                        "dist/content.bundle.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kgpaljaijonkoclfgfaepecfdbkenpnb",
+            "downloads": "9",
+            "name": "Perfect Meat Temp: Steak & Meat Doneness Guide",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ompkaeckpgclehmhfnkjcjjbhcenlbic",
+            "downloads": "96",
+            "name": "Grocery King Recipe Organizer",
+            "manifest_version": 2,
+            "permissions": [
+                "tabs",
+                "https://www.groceryking.com/*"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "damjjbbjgjjecmoifgjanpaojbbjeahb",
+            "downloads": "200",
+            "name": "unknown_extension",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "nokioekibgihdnmpjboejnplkfofkjlk",
+            "downloads": "1",
+            "name": "Seed Oil Alert",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.amazon.com/*",
+                        "https://*.walgreens.com/*",
+                        "https://*.cvs.com/*",
+                        "https://*.hannaford.com/*",
+                        "https://*.walmart.com/*",
+                        "https://*.target.com/*",
+                        "https://*.costco.com/*",
+                        "https://*.lidl.com/*",
+                        "https://*.aldi.us/*",
+                        "https://*.heb.com/*"
+                    ],
+                    "js": [
+                        "content-js/content.js"
+                    ],
+                    "css": [
+                        "css/content.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "meiaopjpchmeehlindolllkoihgenahb",
+            "downloads": "4",
+            "name": "3SSENTIA",
+            "manifest_version": 3,
+            "permissions": [
+                "identity",
+                "identity.email",
+                "storage",
+                "scripting"
+            ],
+            "host_permissions": [
+                "*://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*/*"
+                    ],
+                    "js": [
+                        "contentScript.bundle.js",
+                        "shared/www-widgetapi.js"
+                    ],
+                    "run_at": "document_end",
+                    "match_about_blank": true,
+                    "match_origin_as_fallback": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "okjdkangibbkaackdmjndkhggpabiied",
+            "downloads": "5",
+            "name": "Count the Days",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "http://www.w3.org/2000/svg"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bomdbfmieohagcjbfckpihndjdeeabgo",
+            "downloads": "1000",
+            "name": "No sleep",
+            "manifest_version": 3,
+            "permissions": [
+                "notifications",
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content-script.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hglpafopgdpcgegbiccbpmimjdghagjf",
+            "downloads": "121",
+            "name": "Canva app",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ojofglimbmclnbinpbjnhcmkmipplibi",
+            "downloads": "231",
+            "name": "Web Content Filter (within your Browser)",
+            "manifest_version": 2,
+            "permissions": [
+                "tabs",
+                "<all_urls>",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "get_text_script.js"
+                    ],
+                    "run_at": "document_end",
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {
+                "managed_schema": "schema.json"
+            }
+        },
+        {
+            "id": "libognfmblggnngppccfepaghnpbhnpb",
+            "downloads": "24",
+            "name": "Recipe Jump",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "scripting",
+                "activeTab",
+                "sidePanel"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "script.js"
+                    ],
+                    "run_at": "document_end"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hknjpaididhfgeocegbacehlnkofjoni",
+            "downloads": "9000",
+            "name": "Everything Metric - Auto Unit Converter",
+            "manifest_version": 2,
+            "permissions": [
+                "tabs",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "js": [
+                        "contentscript.js"
+                    ],
+                    "run_at": "document_start",
+                    "css": [
+                        "everythingmetric.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pblahhcpdnegffcjjcnibcebpmcmkcba",
+            "downloads": "289",
+            "name": "Temple Search",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [
+                "https://temple-online-scheduling.churchofjesuschrist.org/*"
+            ],
+            "content_scripts": [
+                {
+                    "css": [
+                        "foreground.css"
+                    ],
+                    "js": [
+                        "temple-geo.js",
+                        "foreground.js"
+                    ],
+                    "matches": [
+                        "https://temple-online-scheduling.churchofjesuschrist.org/*"
+                    ],
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jecgjccbadfkhgggbhconpgmoanhgend",
+            "downloads": "97",
+            "name": "Three Daily Things",
+            "manifest_version": 2,
+            "permissions": [
+                "http://threedailythings.com/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "cmonfpbnfmmmflkgldilndhoiomfebae",
+            "downloads": "1",
+            "name": "Bible Reference Scanner (BoltQuiz.org)",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://extensionpay.com/*"
+                    ],
+                    "js": [
+                        "ExtPay.js"
+                    ],
+                    "run_at": "document_start"
+                },
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "ExtPay.js",
+                        "BibleReadingStats.js",
+                        "contentScript.js"
+                    ],
+                    "css": [
+                        "styles.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "okebmodpmefmbnipgdinccfbajjcplkm",
+            "downloads": null,
+            "name": "linely",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "declarativeNetRequest",
+                "declarativeNetRequestFeedback"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.amazon.com/gp/css/summary/print.html*",
+                        "https://*.amazon.com/your-orders/orders*",
+                        "https://*.amazon.com/gp/your-account/order-history*",
+                        "https://*.target.com/*",
+                        "https://target.com/*",
+                        "https://*.walmart.com/orders*",
+                        "https://walmart.com/orders*",
+                        "https://*.lowes.com/*",
+                        "https://*.lowescdn.com/*",
+                        "https://*.costco.com/*"
+                    ],
+                    "run_at": "document_start",
+                    "js": [
+                        "contentScript.js"
+                    ],
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ceihmkkgpmcpnlokkpilflpakpabcmei",
+            "downloads": "40",
+            "name": "Just the Recipe",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [
+                        "styles.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "famfklfcpjmoicmdhakofiabnfhgllfd",
+            "downloads": "1000",
+            "name": "Health and Fitness",
+            "manifest_version": 2,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "efpkbbhmfgmcaimcehbojooppjkogjpk",
+            "downloads": "69",
+            "name": "Event Tracking Tracker",
+            "manifest_version": 3,
+            "permissions": [
+                "webRequest",
+                "storage",
+                "tabs"
+            ],
+            "host_permissions": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hhhfnailhhjilimkeejbihfbkmbipjdk",
+            "downloads": "9",
+            "name": "Hawkly - kids guardian",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "history",
+                "downloads",
+                "scripting",
+                "tabs",
+                "activeTab",
+                "contextMenus",
+                "notifications"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "dnfglmkaoemhjbgpnpkpjlkckinkokin",
+            "downloads": "15",
+            "name": "Caterpillar",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "js": [
+                        "main.js"
+                    ],
+                    "matches": [
+                        "https://app.monarchmoney.com/*",
+                        "https://www.amazon.com/*"
+                    ],
+                    "css": [
+                        "main.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jknjdghffhcnbggmffhfkdfibcgegkfk",
+            "downloads": "12",
+            "name": "MapHabitatLeBonCoin",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab"
+            ],
+            "host_permissions": [
+                "https://www.leboncoin.fr/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.leboncoin.fr/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://www.skni.eu/leboncoin/annonces.html"
+                    ],
+                    "js": [
+                        "contentscript.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lomhgkajlmbdljaofgkonhnblcghmdjm",
+            "downloads": null,
+            "name": "Alaia",
+            "manifest_version": 2,
+            "permissions": [
+                "http://*/*",
+                "https://*/*",
+                "<all_urls>",
+                "tabs",
+                "webRequest",
+                "webRequestBlocking",
+                "webNavigation",
+                "storage",
+                "proxy",
+                "alarms",
+                "identity",
+                "identity.email",
+                "management",
+                "idle",
+                "background",
+                "notifications"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "js": [
+                        "js/content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": "script-src 'self' https://*.google.com https://*.gstatic.com https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "cigjjnkjdjhhncooaedjbkiojgelfocc",
+            "downloads": "4000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "assets/js/content.js"
+                    ],
+                    "css": [],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "nljjleggilfdkefokapecmngghmobfjh",
+            "downloads": "20",
+            "name": "HealthTag",
+            "manifest_version": 2,
+            "permissions": [
+                "tabs",
+                "cookies",
+                "https://app.healthtag.com/*",
+                "<all_urls>"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": "default-src 'self'; script-src 'self'; font-src * data:; connect-src http://* https://*; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data: http://* https://*;; frame-src https://app.healthtag.com",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "imibhdbmjdbjohopopmjoneedaddgbac",
+            "downloads": "23",
+            "name": "Extension Temu - Best Shop Chrome Extension",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "downloads"
+            ],
+            "host_permissions": [
+                "https://www.temu.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.temu.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fdmecciamicpgohcanjpchjpnlofmben",
+            "downloads": "4",
+            "name": "book reading for bunnies",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gnmdllojolkjkmgkcpoidgjkoegodnll",
+            "downloads": "1000",
+            "name": "Omegle - OmeTV IP locator",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [
+                "https://iplocation.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.omegle.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "naaffooocnnodpcmppdjhpjiogkljkch",
+            "downloads": "10000",
+            "name": "Find The Recipe",
+            "manifest_version": 3,
+            "permissions": [
+                "search"
+            ],
+            "host_permissions": [
+                "https://findtherecipe.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hcpncginlblddendcdnpockbjmojfpbj",
+            "downloads": "59",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [
+                "*://*/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lngnklnhbbklhooegdangfjcpndejool",
+            "downloads": "",
+            "name": "Home Scope",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://homescope.site/*",
+                "https://www.realestate.com.au/*",
+                "https://www.domain.com.au/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.domain.com.au/*",
+                        "https://*.realestate.com.au/*"
+                    ],
+                    "js": [
+                        "chart.js",
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ldepiejbipcbifnkhmgdplmnifanjpbo",
+            "downloads": "1000",
+            "name": "Scribd downloader",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ogilbpdfdbbikaihimgklimmgpfmjolm",
+            "downloads": "16",
+            "name": "Zillow Page Summarizer",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "https://www.zillow.com/*",
+                "https://extension-dkw5.onrender.com/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://www.zillow.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ikbmgehhghnkohaoehjlmfniegppchnd",
+            "downloads": "11",
+            "name": "Real Estate Assistant",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "https://real-estate-assistant-7c6723789c55.herokuapp.com"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bigbbglglobpibhdoelcdpjdocdocmoi",
+            "downloads": "69",
+            "name": "Pörssisähkön Hinta",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "alarms",
+                "storage"
+            ],
+            "host_permissions": [
+                "https://api.porssisahko.net/"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jepcdjidlnpjfdblhhkkfhgbgdgphile",
+            "downloads": "10000",
+            "name": "Recipes Stash",
+            "manifest_version": 3,
+            "permissions": [
+                "search"
+            ],
+            "host_permissions": [
+                "https://recipesstash.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "acmpamifnancklbfjleoeglnopncibhn",
+            "downloads": "225",
+            "name": "unknown_extension",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hcgimnngicbgljdpjdgbfehcbmbfdbpk",
+            "downloads": "6",
+            "name": "Recipes Make food with love - Tutdemy",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hbpkdbfkejoonmjlhjcokbldbncniddg",
+            "downloads": "1",
+            "name": "Water Softener Salt Monitor",
+            "manifest_version": 3,
+            "permissions": [
+                "alarms",
+                "activeTab"
+            ],
+            "host_permissions": [
+                "http://ws-sensor.yellick.me:5001/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "npppicejdhaagjjbpinkbbjbncecpekh",
+            "downloads": "716",
+            "name": "__MSG_extName__",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "storage",
+                "downloads",
+                "webRequest"
+            ],
+            "host_permissions": [
+                "https://open.spotify.com/*",
+                "https://episode-transcripts.spotifycdn.com/*",
+                "https://spclient.wg.spotify.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://open.spotify.com/*",
+                        "https://episode-transcripts.spotifycdn.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ppelgaainfjnmkcgkiigblbpghjaioil",
+            "downloads": "52",
+            "name": "Website Allower",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lkbpdddcomlkljolbencljkmkmdbealm",
+            "downloads": "3",
+            "name": "Renomate",
+            "manifest_version": 3,
+            "permissions": [
+                "webNavigation",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.bundle.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "cgmaedplkoahdlkopogkamiippobfgpg",
+            "downloads": "414",
+            "name": "HomeAssistant Panel",
+            "manifest_version": 3,
+            "permissions": [
+                "sidePanel",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eclmfaenpmdddccpianlfpmmhadmfpdi",
+            "downloads": "6",
+            "name": "Dteckt Vault - Password Manager",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "activeTab",
+                "storage",
+                "alarms",
+                "idle",
+                "cookies",
+                "scripting"
+            ],
+            "host_permissions": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "exclude_matches": [
+                        "https://googletagmanager.com/*",
+                        "https://www.google.com/recaptcha/*"
+                    ],
+                    "js": [
+                        "autofill.js"
+                    ],
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {
+                "ids": [
+                    "eclmfaenpmdddccpianlfpmmhadmfpdi"
+                ],
+                "matches": [
+                    "https://cp-api.dteckt.com/*",
+                    "https://cp-api.dev.dteckt.com/*",
+                    "https://o950766.ingest.sentry.io/*"
+                ],
+                "accepts_tls_channel_id": true
+            },
+            "storage": {}
+        },
+        {
+            "id": "eldebnnmgimmfpbjhmbhaiagdopeebjj",
+            "downloads": "557",
+            "name": "Sketchbook for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.sketchbook.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lmjefoingoabikapdakicejcnfefbjef",
+            "downloads": null,
+            "name": "Cerrajeros Sevilla",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fdgkhlnfpcliibmkipebpnpkhmamfjmn",
+            "downloads": "146",
+            "name": "Minute Journal",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bjkmolmmjlbkoaeeonbchnmapbbajlce",
+            "downloads": "3",
+            "name": "LimitTube",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "notifications",
+                "alarms",
+                "scripting"
+            ],
+            "host_permissions": [
+                "*://*.youtube.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "dfofjkbebdfmjgddbgijogjdoklgdico",
+            "downloads": null,
+            "name": "VA Native Plant Search",
+            "manifest_version": 3,
+            "permissions": [
+                "contextMenus",
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "heppdckhojfhajjbajbamcdihkhpdeeh",
+            "downloads": "34",
+            "name": "Daily Bible Reading",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pnlpbkniadcljbhebdjokkkeobenpefj",
+            "downloads": "4000",
+            "name": "Plan To Eat Recipe Clipper",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "tabs",
+                "sidePanel",
+                "scripting"
+            ],
+            "host_permissions": [
+                "*://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*/*"
+                    ],
+                    "js": [
+                        "content-scripts/index.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "dcppiehmfjnpeefgaglcmcooipbjkeio",
+            "downloads": "8",
+            "name": "Capi Extension",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "css": [
+                        "styles.css"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "efmgdcdepachiecodapidmmabfhdahig",
+            "downloads": "7",
+            "name": "Recipe Unit Converter",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "iifflligdkknedgcdjnlgmbdijkdnplb",
+            "downloads": "35",
+            "name": "Vitrose",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "js": [
+                        "scripts/data/category.js",
+                        "scripts/content.js"
+                    ],
+                    "matches": [
+                        "https://www.waitrose.com/*"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ainaefknpgcbgemmgjejkknfoimiimnj",
+            "downloads": "",
+            "name": "Airbnb Booking Days of the Week",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.airbnb.co.uk/hosting/messages/*",
+                        "https://www.airbnb.com/hosting/messages/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [
+                        "styles.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gcehlnlncjphiihlacpdfikinhickdni",
+            "downloads": "84",
+            "name": "Saverd Recipe Clipper",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eialklpplalecjhmkfgfoecenchpidka",
+            "downloads": null,
+            "name": "Purée It Button",
+            "manifest_version": 2,
+            "permissions": [
+                "activeTab",
+                "http://www.puree.us/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*/*",
+                        "http://*/*"
+                    ],
+                    "js": [
+                        "scripts/jquery-2.1.4.min.js",
+                        "scripts/content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "caalfceomlolnlffjlakhmdminpfjkmd",
+            "downloads": "7",
+            "name": "PropLens",
+            "manifest_version": 3,
+            "permissions": [
+                "https://test.realsaige.com/",
+                "https://app.realsaige.com/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.thealigngroup.ca/*",
+                        "https://*.followupboss.com/*",
+                        "https://*.housesigma.com/*",
+                        "https://*.rew.com/*",
+                        "https://*.zolo.ca/*",
+                        "https://*.zoocasa.com/*",
+                        "https://*.zealty.com/*",
+                        "https://*.zealty.ca/*",
+                        "https://*.rew.ca/*",
+                        "https://*.royallepage.ca/*",
+                        "https://*.autoprop.com/*",
+                        "https://*.paragonrels.com/*",
+                        "https://*.realsaige.com/*",
+                        "https://*.remax.ca/*",
+                        "https://*.realtor.ca/*",
+                        "https://*.redfin.ca/*",
+                        "https://*.zillow.com/*",
+                        "https://*.burnaby.ca/*",
+                        "https://*.vancouver.ca/*",
+                        "https://*.westvancouver.ca/*",
+                        "https://*.richmond.ca/*",
+                        "https://*.coquitlam.ca/*",
+                        "https://*.portcoquitlam.ca/*",
+                        "https://*.whistler.ca/*",
+                        "https://*.dnv.org/*",
+                        "https://*.langleycity.ca/*",
+                        "https://www.deltamap.ca/Html5Viewer/index.html?viewer=DeltaMapExternal.viewer/",
+                        "https://*.abbotsford.ca/*",
+                        "https://*.mapleridge.ca/*",
+                        "https://*.whiterockcity.ca/*",
+                        "https://*.arcgis.com/*",
+                        "https://*.chilliwack.com/*",
+                        "https://*.fvrd.ca/*",
+                        "https://*.scrd.ca/*",
+                        "https://*.surrey.ca/*",
+                        "https://*.squamish.ca/*",
+                        "https://*.portmoody.ca/*",
+                        "https://*.mission.ca/*",
+                        "http://arcgis.newwestcity.ca/Html5Viewer4122/index.html?viewer=CNWPublicMap"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [
+                        "style.css"
+                    ],
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hhkcdjhmjljcgahmoilacbedhmcpiogo",
+            "downloads": "932",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eglhkdhnmkggbbepgfdigfajlempkdif",
+            "downloads": "670",
+            "name": "Money Manager",
+            "manifest_version": 2,
+            "permissions": [
+                "storage",
+                "notifications",
+                "contextMenus"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ofokbkejapnkgolaccooepjmgpbidedg",
+            "downloads": "1000",
+            "name": "Metric Cooking",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "olcncjifmoonfodehobjohinlpikdefm",
+            "downloads": "7",
+            "name": "Chuyển Nhà Kiến Vàng (by Kienvang.com)",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "cedgkmoihbaiblkpmoopjgnoencgejkb",
+            "downloads": "3",
+            "name": "MealPrepr",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "webRequest",
+                "tabs",
+                "activeTab"
+            ],
+            "host_permissions": [
+                "<all_urls>",
+                "https://www.google-analytics.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.woolworths.com.au/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fmadlhmgbckdgdjegnbdidmihmpbkbga",
+            "downloads": null,
+            "name": "homebound",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.zoopla.co.uk/*"
+                    ],
+                    "js": [
+                        "zooplaDetail.bundle.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "*://*.rightmove.co.uk/*"
+                    ],
+                    "js": [
+                        "rightmoveDetail.bundle.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bkbkcjabmpjibkcpbnekpbihnbmncbal",
+            "downloads": "5",
+            "name": "Dog Rescuer by Fetched",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mlobmbbnjklhadljmkhjpgibgifgffjn",
+            "downloads": "16",
+            "name": "Simplify Recipes",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*",
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.global.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {
+                "matches": [
+                    "https://simplify.recipes/*"
+                ]
+            },
+            "storage": {}
+        },
+        {
+            "id": "gljbmiilfgabbipapcmfenedegaklnjb",
+            "downloads": null,
+            "name": "Picture & video downloader for Brightwheel",
+            "manifest_version": 3,
+            "permissions": [
+                "downloads",
+                "contextMenus"
+            ],
+            "host_permissions": [
+                "*://*.mybrightwheel.com/"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jngjmljecflgeoiagcladdhcpalcdfpm",
+            "downloads": "1000",
+            "name": "__MSG_appName__",
+            "manifest_version": 2,
+            "permissions": [
+                "tabs",
+                "cookies",
+                "https://*.secure.eloqua.com/",
+                "https://apps.p01.eloqua.com/",
+                "https://apps.p02.eloqua.com/",
+                "https://apps.p03.eloqua.com/",
+                "https://apps.p04.eloqua.com/",
+                "https://apps.p06.eloqua.com/",
+                "https://apps.p07.eloqua.com/",
+                "https://*.eloqua.com/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "js": [
+                        "/scripts/content.js"
+                    ],
+                    "run_at": "document_end"
+                }
+            ],
+            "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lfgaacpfbecalkpcmdllpdgnieacehjk",
+            "downloads": "16",
+            "name": "Get to the Recipe!",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "contentScript.js"
+                    ],
+                    "run_at": "document_end"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kdpgbgpjchfmkahcgnjgmbnamklfcope",
+            "downloads": "",
+            "name": "Rugs Rate Estimation By FMP",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ffkhjnlfjbgljofdaogfcjmcjokhlhkk",
+            "downloads": "3",
+            "name": "ADP Copy & Paste",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "https://*.adp.com/"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "css": [
+                        "adpCopyPaste.css",
+                        "lib/jquery.qtip.min.css"
+                    ],
+                    "js": [
+                        "lib/jquery.js",
+                        "lib/jquery.qtip.min.js",
+                        "helpers.js",
+                        "nonWorkableDays.js",
+                        "adpCopyPaste.js",
+                        "holidaysStore.js",
+                        "holidaysArgentina2016.js",
+                        "holidaysArgentina2017.js",
+                        "holidaysArgentinaFixed.js",
+                        "holidaysColombia.js",
+                        "holidaysUruguay2017.js",
+                        "holidaysUruguayFixed.js",
+                        "holidaysVenezuela2017.js",
+                        "holidaysVenezuelaFixed.js",
+                        "Holidays.js",
+                        "DateSelectorHelper.js"
+                    ],
+                    "run_at": "document_end",
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ehpejpjfeifejjhccccigpcimipmkbne",
+            "downloads": "20",
+            "name": "Discord Privacy Extension",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [
+                "https://discord.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://discord.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [
+                        "styles.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eccnkhkjhagigeodencdfcdeahdfpifp",
+            "downloads": "49",
+            "name": "Kitchen Konverter",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "js": [
+                        "scripts/bundle.js"
+                    ],
+                    "matches": [
+                        "*://*/*"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lgnnkihpnbnifngajpnlgheppighgjgl",
+            "downloads": "15",
+            "name": "Bing Chat for All Browsers",
+            "manifest_version": 3,
+            "permissions": [
+                "webRequest",
+                "declarativeNetRequestWithHostAccess"
+            ],
+            "host_permissions": [
+                "http://*.bing.com/*",
+                "https://*.bing.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mpjdadlofjgdhlaocbdjohlmmffekpan",
+            "downloads": "13",
+            "name": "Kulinary",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "js": [
+                        "assets/recipe-identification.ts-loader.js",
+                        "assets/scroll-to-recipe.ts-loader.js"
+                    ],
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "css": [
+                        "assets/style.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://fonts.googleapis.com"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ieihbaicbgpebhkfebnfkdhkpdemljfb",
+            "downloads": "212",
+            "name": "Manuals Viewer",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "scripting",
+                "tabs",
+                "declarativeNetRequest"
+            ],
+            "host_permissions": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "js": [
+                        "js/content-script.js"
+                    ],
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "all_frames": true,
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bjemhapmfddgfjohdgnmpljncfpllgdh",
+            "downloads": "488",
+            "name": "Better Today day planner",
+            "manifest_version": 2,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": "script-src 'self' https://js.stripe.com https://apis.google.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com 'unsafe-eval'; object-src 'self';",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "flcjpiajfmneklnfoejagpalpiemgmoj",
+            "downloads": "1000",
+            "name": "Catadoo - A Free, Playful and Fun Todolist!",
+            "manifest_version": 3,
+            "permissions": [
+                "alarms",
+                "storage",
+                "scripting"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ddffkcnilbablcdbdplgiddkepgknene",
+            "downloads": "38",
+            "name": "Realestate printer",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.realestate.com.au/*",
+                        "https://www.realcommercial.com.au/*",
+                        "https://www.commercialrealestate.com.au/*",
+                        "https://www.domain.com.au/*"
+                    ],
+                    "run_at": "document_idle",
+                    "exclude_matches": [],
+                    "js": [
+                        "RealEstatePrinter.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lifjpamfjcekmkaaagcmkhnjoifpcgga",
+            "downloads": "100",
+            "name": "Save for Instagram",
+            "manifest_version": 3,
+            "permissions": [
+                "contextMenus",
+                "downloads",
+                "storage"
+            ],
+            "host_permissions": [
+                "*://*.instagram.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.instagram.com/*"
+                    ],
+                    "js": [
+                        "contentscript.js"
+                    ],
+                    "all_frames": true,
+                    "run_at": "document_idle"
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eefampjmgmpmglccekaanhopjfhmafld",
+            "downloads": "140",
+            "name": "Extension Excel Spreadsheets for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.cloud.microsoft.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "akfdphahjclmpafapnnomneehfnhifcb",
+            "downloads": "",
+            "name": "MyGroceries",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*.hellofresh.fr/recipes/*",
+                        "https://*.hellofresh.fr/recipes/*"
+                    ],
+                    "js": [
+                        "plugins/hellofresh.js"
+                    ],
+                    "all_frames": true
+                },
+                {
+                    "matches": [
+                        "http://*.marmiton.org/recettes/*",
+                        "https://*.marmiton.org/recettes/*"
+                    ],
+                    "js": [
+                        "plugins/marmiton.js"
+                    ],
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jahbnancpdoiodmkhmckbckfchnepghb",
+            "downloads": "157",
+            "name": "Bíblia NVI",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kmcanjefgfcfcmggekpanbpbfkghjnjm",
+            "downloads": "1000",
+            "name": "HP Print Service Plugin for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [
+                        "content.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jflifofdjlblakegipmbgbeaembjjmgb",
+            "downloads": "3",
+            "name": "__MSG_extensionName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "declarativeNetRequest"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "imjnmlobljlkokplgmpbjdpbhmpbhipd",
+            "downloads": "4",
+            "name": "nestmachine",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kngkgofkaabdhoabifhdjhgifnhpjinm",
+            "downloads": "149",
+            "name": "Open link in same tab, pop-up as tab",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "storage"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "js": [
+                        "OpenInTheSameTab.js"
+                    ],
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "iedhppfggmebhlhdgngfgahfiilhddlk",
+            "downloads": "155",
+            "name": "Kreemana - Productivity Tool",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "idle",
+                "windows"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hjajebkcaemgbfkgcajcbbnhhlnhikfp",
+            "downloads": "4",
+            "name": "Oven Airfryer Converter",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ghbeonohlpjjjjlhpbnjhkdchgphoaff",
+            "downloads": "",
+            "name": "Дело Вкуса: Персональные заметки к рецептам",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "https://delovcusa.com/*",
+                "https://delo-vcusa.ru/*",
+                "https://delo-vcusa.com/*",
+                "https://delovkusa.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://delovcusa.com/*",
+                        "https://delo-vcusa.ru/*",
+                        "https://delo-vcusa.com/*",
+                        "https://delovkusa.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "deefcoodgkfkemnadjphindnllkcgjgp",
+            "downloads": "4000",
+            "name": "Eat This Much Recipe Clipper",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eebagoopeibddoicipkajpdpogoffoon",
+            "downloads": "1000",
+            "name": "WPS Office for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kinmcoeoioebdpdnmeclhcmmaehikigp",
+            "downloads": "25",
+            "name": "Nourish Chrome Extension",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [
+                "*://www.youtube.com/*",
+                "https://www.instagram.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.youtube.com/*",
+                        "https://www.instagram.com/*"
+                    ],
+                    "js": [
+                        "contentScript.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bhbbdfnfhbclpbnejnbphjacfbmdhfgg",
+            "downloads": "2",
+            "name": "9M2PJU Easy Recipe Finder",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lhfnioblcopbadilcpciampgmnfnocef",
+            "downloads": "",
+            "name": "Nutri-Nudge",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [
+                "https://*.blinkit.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.blinkit.com/*"
+                    ],
+                    "js": [
+                        "src/content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fkpdmnllplmdeopieofgfighgcchagel",
+            "downloads": "67",
+            "name": "McDonald's Browser Extension",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://www.mcdonalds.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bnpalipgomknhgbmgelaplknnmckljaf",
+            "downloads": "60000",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [
+                "https://www.currency.wiki/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gkoiknfcddbjpadkeffgebenhngcgain",
+            "downloads": "83",
+            "name": "AI Parental Control",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "notifications",
+                "alarms"
+            ],
+            "host_permissions": [
+                "https://aiparentalcontrol.com/*",
+                "https://api.stripe.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "css": [
+                        "hide.css"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "run_at": "document_start",
+                    "all_frames": true
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ikgaagdelhjelgcjnbhbaombfgnglide",
+            "downloads": "17",
+            "name": "FoodWiz",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting",
+                "storage",
+                "alarms"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eekibodjacokkihmicbjgdpdfhkjemlf",
+            "downloads": "312",
+            "name": "InteractiveFics",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "*://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "js": [
+                        "content_script.js"
+                    ],
+                    "run_at": "document_idle",
+                    "matches": [
+                        "<all_urls>"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kdonniiakioeaembldjdpjbhiakdpein",
+            "downloads": "13",
+            "name": "Airbnb Profit Calculator",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jfcmmaflpnmfpdpfpbklhkhdgimkiogh",
+            "downloads": "567",
+            "name": "PosturePanda",
+            "manifest_version": 2,
+            "permissions": [
+                "notifications",
+                "tabs",
+                "storage",
+                "idle"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "src/inject/inject.js"
+                    ]
+                }
+            ],
+            "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mjpglkoobapceigjldiaabfnhnhjmehc",
+            "downloads": "4",
+            "name": "Rental Time Tracking",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://extensionpay.com/*"
+                    ],
+                    "js": [
+                        "ExtPay.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "epgnfjieddbfjkmcpmfgiiabkbdgainb",
+            "downloads": "7",
+            "name": "GreenLight",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://streeteasy.com/building/*/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://streeteasy.com/for-rent/*"
+                    ],
+                    "js": [
+                        "search-content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eehlnkhjlfjilgfgebnkfiddgdnlpfie",
+            "downloads": "76",
+            "name": "Catch a Flat - ImmoScout24 Notifier",
+            "manifest_version": 3,
+            "permissions": [
+                "audio",
+                "scripting",
+                "notifications",
+                "activeTab",
+                "tabs",
+                "storage"
+            ],
+            "host_permissions": [
+                "https://www.immobilienscout24.de/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pcnmobonlkhdkdocgncppihegomicohl",
+            "downloads": null,
+            "name": "Remix for Chrome - CSA Recipe Saver",
+            "manifest_version": 2,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "nimflmcjbhkmjekipojccagkoicmdhlh",
+            "downloads": "1000",
+            "name": "OrganizEat Recipe Clipper",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "activeTab",
+                "scripting",
+                "contextMenus"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://web.organizeat.com/*"
+                    ],
+                    "js": [
+                        "content-script-webapp.js"
+                    ],
+                    "run_at": "document_idle",
+                    "all_frames": false
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hmpdmpklgehkaogoakociceocfcbkckg",
+            "downloads": "1000",
+            "name": "SimpleHue Control for Philips Hue",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [
+                "https://discovery.meethue.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hfpigmpejgbffkiocfedombfjooanabj",
+            "downloads": "16",
+            "name": "Jump To Recipe",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*/*"
+                    ],
+                    "js": [
+                        "main.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mbblikmebacdhomopnkafidgmgoabdlb",
+            "downloads": "212",
+            "name": "Right Click Translate",
+            "manifest_version": 3,
+            "permissions": [
+                "contextMenus",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jldiinhkellabnepineppajheilpblop",
+            "downloads": "4",
+            "name": "Brand-filter",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "dist/bundle.js"
+                    ],
+                    "run_at": "document_end"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lpoabjpmjmmhgmkpjeaidmiibkeeaiik",
+            "downloads": "10",
+            "name": "DimeTime Saver",
+            "manifest_version": 3,
+            "permissions": [
+                "notifications",
+                "tabs",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "babmkdjanlnbelonnkbdajhapcgginli",
+            "downloads": "16",
+            "name": "Biblical Wisdom",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [
+                "https://biblical-wisdom.vercel.app/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "oepplnnfceidfaaacjpdpobnjkcpgcpo",
+            "downloads": "2000",
+            "name": "RecipeSage Automatic Recipe Clipper",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fihbadnpinfemnkcmhmfelcafmmggbhk",
+            "downloads": "119",
+            "name": "Pixels",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "scripting",
+                "storage"
+            ],
+            "host_permissions": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hgphdkomkmjcaonfcijgbfemjfbjagbj",
+            "downloads": "217",
+            "name": "Extension Word Edit Documents for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://word.cloud.microsoft/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "doimjlepfkdblpncdddjpelbggbkdhmo",
+            "downloads": "78",
+            "name": "unknown_extension",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jgjeheokdgenniggodfoheoklihijcbm",
+            "downloads": "578",
+            "name": "CamScanner for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://www.camscanner.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ninjhiamekocpfhnaidinipdocmbiikp",
+            "downloads": "3000",
+            "name": "unknown_extension",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "oijojmgpoinkapcecpkhbhmlcdkgobfn",
+            "downloads": "",
+            "name": "Oda Kapısı Modelleri",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fngihnfceggicjldpcjkaningfcpjlfh",
+            "downloads": "3",
+            "name": "Shop Buddy",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "sidePanel",
+                "storage",
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://openaiproxy-917362189743.us-central1.run.app/*",
+                "https://api.openai.com/*",
+                "https://*.amazon.com/*",
+                "http://*.amazon.com/*",
+                "https://*.ebay.com/*",
+                "http://*.ebay.com/*",
+                "https://*.walmart.com/*",
+                "http://*.walmart.com/*",
+                "https://*.aliexpress.com/*",
+                "http://*.aliexpress.com/*",
+                "https://*.etsy.com/*",
+                "http://*.etsy.com/*",
+                "https://*.flipkart.com/*",
+                "http://*.flipkart.com/*",
+                "https://*.bestbuy.com/*",
+                "http://*.bestbuy.com/*",
+                "https://*.target.com/*",
+                "http://*.target.com/*",
+                "https://*.wayfair.com/*",
+                "http://*.wayfair.com/*",
+                "https://*.homedepot.com/*",
+                "http://*.homedepot.com/*",
+                "https://*.newegg.com/*",
+                "http://*.newegg.com/*",
+                "https://*.overstock.com/*",
+                "http://*.overstock.com/*",
+                "https://*.zappos.com/*",
+                "http://*.zappos.com/*",
+                "https://*.costco.com/*",
+                "http://*.costco.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "npcfgngbjnphcgkpkclpfdmhacahbgga",
+            "downloads": "",
+            "name": "Sharp Cooking Recipe Importer",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://sharpcooking.lpains.net/api/*",
+                "https://delightful-flower-0c3edd710-383.centralus.2.azurestaticapps.net/api/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pdnkikfbjfhikkpopfoaihhfbhaplpfc",
+            "downloads": "2000",
+            "name": "__MSG_extName__",
+            "manifest_version": 2,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/chart.js@2.8.0; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jmnheggelkjnhbgepnpoaamkpjoidjpl",
+            "downloads": "4",
+            "name": "Etuovi maaperä",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "js": [
+                        "scripts/d3.js",
+                        "scripts/content.js"
+                    ],
+                    "matches": [
+                        "https://www.etuovi.com/kohde/*"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hdeijbcnkdmfegofnighpdkoafljbolf",
+            "downloads": "3",
+            "name": "Cooked Wiki Redirector",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jenhlponehmdlalhflpoiehbekembmhl",
+            "downloads": "7",
+            "name": "AllSimpleRecipes",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "declarativeNetRequest",
+                "declarativeNetRequestWithHostAccess"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.allrecipes.com/*"
+                    ],
+                    "js": [
+                        "scripts/start.js"
+                    ],
+                    "run_at": "document_start"
+                },
+                {
+                    "matches": [
+                        "*://*.allrecipes.com/*"
+                    ],
+                    "js": [
+                        "scripts/content.js"
+                    ],
+                    "run_at": "document_idle"
+                },
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "scripts/popup.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lmmifoijniidigcnljjhcjajlncagejj",
+            "downloads": null,
+            "name": "Filendy",
+            "manifest_version": 3,
+            "permissions": [
+                "cookies",
+                "storage"
+            ],
+            "host_permissions": [
+                "*://*.filendy.com/*",
+                "*://api.october.eu/*",
+                "*://www.wiseed.com/*",
+                "*://www.anaxago.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.filendy.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "omgmafofklhdccndhahbhbjoiffpdnho",
+            "downloads": null,
+            "name": "Net Worth Forecast - Wealthsimple",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://my.wealthsimple.com/app/home"
+                    ],
+                    "js": [
+                        "js/content.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "https://my.wealthsimple.com/app/home"
+                    ],
+                    "js": [
+                        "js/popup.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self';"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ppkglcjpkfnkcalmjglbfmmlekilpgmm",
+            "downloads": "45",
+            "name": "Tidy recipe",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "scripting",
+                "activeTab",
+                "tabs"
+            ],
+            "host_permissions": [
+                "https://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*/*",
+                        "http://*/*"
+                    ],
+                    "js": [
+                        "sidebar.524fe15c.js"
+                    ],
+                    "css": [
+                        "sidebar.8dd968fb.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "adeciiegmjphppglnjcpgmegdnhobfdf",
+            "downloads": null,
+            "name": "__MSG_extName__",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://www.google.com/search*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pnchmmjmkognibhmbkjfcaehlnegdmie",
+            "downloads": "13",
+            "name": "Rohlik Meter",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [
+                "https://www.rohlik.cz/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "niagagbececbghcccjndaimpjecckdif",
+            "downloads": "325",
+            "name": "__MSG_extensionName__",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "contextMenus",
+                "storage",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "chmcmebphohemndojdoenligmojmpfjo",
+            "downloads": "",
+            "name": "End of Lease Clean Adelaide",
+            "manifest_version": 2,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "egiongjmkdoflecccemkonadifoinlep",
+            "downloads": "4",
+            "name": "Setlist to Spotify",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "identity",
+                "storage",
+                "scripting",
+                "notifications"
+            ],
+            "host_permissions": [
+                "https://api.spotify.com/*",
+                "https://www.setlist.fm/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "oolanenijlocoaongcedibdjdlkfpdja",
+            "downloads": "2",
+            "name": "Mačka u džaku",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kjbeppnobebomfbpjmfnabbhnlgcgmcp",
+            "downloads": "5",
+            "name": "Youtube Limiter",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.youtube.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "dopfldfdgjepcfbioakmjblkegmadopk",
+            "downloads": "2",
+            "name": "Debterminator",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "egpkfakjgpnphdkmbjfgjhoajkpkbcjb",
+            "downloads": "243",
+            "name": "MoneyLover Assistant",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "https://assistant.moneylover.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://assistant.moneylover.com/ext/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gkdmkoghmekfgmhbpedpbohlkcckbehi",
+            "downloads": "",
+            "name": "Financial Advisor",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "baojmlgpmdcjjmaeljbaogakllakiigm",
+            "downloads": "272",
+            "name": "Cash App - Do more with your money",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "contextMenus"
+            ],
+            "host_permissions": [
+                "https://cash.app/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "eomebclcdmdeneiikgihjlbhlieghfdl",
+            "downloads": "785",
+            "name": "Pestle for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage",
+                "scripting",
+                "tabs"
+            ],
+            "host_permissions": [
+                "https://www.pestlechef.app/*",
+                "https://localhost:9099/*",
+                "https://localhost:8081/*",
+                "https://localhost:6001/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {
+                "sandbox": "sandbox allow-scripts; script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mpgdjklaaligghacfflbaildiokahjic",
+            "downloads": "32",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lchfnbjpjoeejalacnpjnafenacmdocc",
+            "downloads": "2",
+            "name": "Mini Mealie",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "contextMenus",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "olicdoghlfbolkmmoaefalmjcgjeepld",
+            "downloads": "3",
+            "name": "__MSG_appName__",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "identity"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "default-src 'none'; img-src 'self'; script-src 'self'; connect-src https://radish-apis.inspiced.net;"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gniocjpkmpggmpaelmjdpekbjmchdhci",
+            "downloads": "374",
+            "name": "Tubi Movies & Live TV ",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hmnfkpdokpjajmpdmfokccembopphijb",
+            "downloads": "86",
+            "name": "Yahoo Mail - Chrome Extension",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab"
+            ],
+            "host_permissions": [
+                "https://*.yahoo.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*.yahoo.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "idklpdpjaflcbbkiabjbcfkmifpcbofc",
+            "downloads": "4",
+            "name": "Extension Fitbit - best chrome extension",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "storage"
+            ],
+            "host_permissions": [
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "npfahibmphoknkbddlpkibidibiibgca",
+            "downloads": "17",
+            "name": "Recipe Manager",
+            "manifest_version": 2,
+            "permissions": [
+                "<all_urls>",
+                "tabs",
+                "storage",
+                "activeTab",
+                "notifications"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kbpjlgdakcecpkdhpfkjmicpgjdhkbpp",
+            "downloads": "484",
+            "name": "Extension Zoom Workplace for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.zoom.us/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bhlnkgodecbgelfdokbciefhegcpblck",
+            "downloads": "",
+            "name": "NurRezepte",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "tabs"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kagphbkmbodofdlhhgamjeoobhdblmam",
+            "downloads": "14",
+            "name": "Best Vacuum WowContent",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "nbboeebkcbmofcppbbjbkmnbdnpkmcpl",
+            "downloads": "20",
+            "name": "Zara for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://www.zara.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.zara.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "gioiiinkphfmlagimjfjpamickecbnel",
+            "downloads": "1000",
+            "name": "Mouseless Stack-Calculator Ext",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [
+                "https://www.ecb.europa.eu/"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lgjinjcobiflbbnhenlfkcjpeeacklfl",
+            "downloads": "50000",
+            "name": "Copy Me That",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "contextMenus",
+                "scripting"
+            ],
+            "host_permissions": [
+                "https://button.copymethat.com/*",
+                "https://www.copymethat.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fonefhjcpmipemnobojdmphjljlcgeia",
+            "downloads": "18",
+            "name": "Appetized Recipe Manager",
+            "manifest_version": 2,
+            "permissions": [
+                "activeTab",
+                "tabs",
+                "https://appetized.herokuapp.com/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pgpcblkokcddbnlifngkfpjanehlpaoi",
+            "downloads": "15",
+            "name": "Tiny Kitchen",
+            "manifest_version": 2,
+            "permissions": [
+                "activeTab",
+                "tabs",
+                "http://localhost:8080/"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ojinmcoabnfpcphocdnkphkmfgicphmd",
+            "downloads": "155",
+            "name": "Quick Recipe",
+            "manifest_version": 3,
+            "permissions": [
+                "tabs"
+            ],
+            "host_permissions": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "pdfkffebnenmnghjajnghhmpdieikcli",
+            "downloads": null,
+            "name": "PlatePrepper",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "storage",
+                "scripting"
+            ],
+            "host_permissions": [
+                "<all_urls>",
+                "https://api.openai.com/*",
+                "https://browserbill.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "css": [
+                        "content.css"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "run_at": "document_idle",
+                    "world": "MAIN"
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fekfpgdgajbfdjkfimainjjhfcfoonlj",
+            "downloads": "4000",
+            "name": "RecipeBox – Save Your Recipes!",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "tabs",
+                "cookies"
+            ],
+            "host_permissions": [
+                "*://api.recipebox.com/*",
+                "*://*.recipebox.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "css": [
+                        "assets/css/content.css"
+                    ],
+                    "js": [
+                        "contentScript.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ncammloaampoflcfebafbkaafikagjpi",
+            "downloads": "323",
+            "name": "InShot - Powerful all-in-one",
+            "manifest_version": 3,
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "fkdidnbnhoglefobeageimpefmgnjfbk",
+            "downloads": "9",
+            "name": "Starz for Chrome",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "contextMenus"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.starz.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ]
+                },
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "contextMenuContent.js"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hglfgomcchoeihghpnfepnpjhgoklmag",
+            "downloads": "4",
+            "name": "Nata | Clutter-Free Recipes",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "declarativeNetRequest"
+            ],
+            "host_permissions": [
+                "https://*/*",
+                "<all_urls>"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "mellowtel.10409619.js"
+                    ],
+                    "all_frames": true,
+                    "run_at": "document_start",
+                    "css": []
+                },
+                {
+                    "matches": [
+                        "<all_urls>"
+                    ],
+                    "js": [
+                        "App.5d6bed13.js"
+                    ],
+                    "css": [
+                        "custom-fonts.b9ff456c.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "hlcjombmdmnbilkfhcjdaefgllbcfela",
+            "downloads": "90",
+            "name": "Google Meet Grid View",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab"
+            ],
+            "host_permissions": [
+                "https://meet.google.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://meet.google.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "run_at": "document_idle"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mmjadgjkjelfenjiakkgmfgjhljngdgi",
+            "downloads": "",
+            "name": "Savix",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "akoofjapknebhbbhnbdpfokfmkkgehlh",
+            "downloads": "23",
+            "name": "Facebook Privacy Extension",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "https://www.facebook.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.facebook.com/*"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [
+                        "styles.css"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "bgeoifdgcnafonfffcmlcjbeldhocnpd",
+            "downloads": "91",
+            "name": "Hide YouTube Comments",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "*://*.youtube.com/*"
+            ],
+            "content_scripts": [
+                {
+                    "css": [
+                        "youtube.css"
+                    ],
+                    "js": [
+                        "script.js"
+                    ],
+                    "matches": [
+                        "http://*.youtube.com/*",
+                        "https://*.youtube.com/*"
+                    ],
+                    "run_at": "document_start"
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ddoogcmcjnilclmbfdgfbpnokgebijlm",
+            "downloads": "107",
+            "name": "Draw Parking",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lifepnkbmcodbbikbkcphiagdfamljga",
+            "downloads": "29",
+            "name": "unknown_extension",
+            "manifest_version": "unknown",
+            "permissions": [],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ijlhanbdodlfgklfafdmlnfodbndbkph",
+            "downloads": "3000",
+            "name": "Umami",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting",
+                "storage",
+                "tabs",
+                "unlimitedStorage"
+            ],
+            "host_permissions": [
+                "*://*.umami.recipes/*",
+                "*://*.101cookbooks.com/*",
+                "*://*.750g.com/*",
+                "*://*.acouplecooks.com/*",
+                "*://*.afghankitchenrecipes.com/*",
+                "*://*.ah.nl/*",
+                "*://*.akispetretzikis.com/*",
+                "*://*.allrecipes.com/*",
+                "*://*.alltommat.se/*",
+                "*://*.altonbrown.com/*",
+                "*://*.amazingribs.com/*",
+                "*://*.ambitiouskitchen.com/*",
+                "*://*.archanaskitchen.com/*",
+                "*://*.arla.se/*",
+                "*://*.aspicyperspective.com/*",
+                "*://*.atelierdeschefs.fr/*",
+                "*://*.averiecooks.com/*",
+                "*://*.baking-sense.com/*",
+                "*://*.bakingmischief.com/*",
+                "*://*.bbcgoodfood.com/*",
+                "*://*.bettybossi.ch/*",
+                "*://*.bettycrocker.com/*",
+                "*://*.bigoven.com/*",
+                "*://*.blueapron.com/*",
+                "*://*.bodybuilding.com/*",
+                "*://*.bonappetit.com/*",
+                "*://*.bowlofdelicious.com/*",
+                "*://*.briceletbaklava.ch/*",
+                "*://*.budgetbytes.com/*",
+                "*://*.castironketo.net/*",
+                "*://*.cdkitchen.com/*",
+                "*://*.chefkoch.de/*",
+                "*://*.claudia.abril.com.br/*",
+                "*://*.closetcooking.com/*",
+                "*://*.comidinhasdochef.com/*",
+                "*://*.cookeatshare.com/*",
+                "*://*.cookieandkate.com/*",
+                "*://*.cooking.nytimes.com/*",
+                "*://*.cookingcircle.com/*",
+                "*://*.cookinglight.com/*",
+                "*://*.cookpad.com/*",
+                "*://*.cookstr.com/*",
+                "*://*.coop.se/*",
+                "*://*.copykat.com/*",
+                "*://*.countryliving.com/*",
+                "*://*.cucchiaio.it/*",
+                "*://*.cuisineaz.com/*",
+                "*://*.cybercook.com.br/*",
+                "*://*.davidlebovitz.com/*",
+                "*://*.delish.com/*",
+                "*://*.ditchthecarbs.com/*",
+                "*://*.domesticate-me.com/*",
+                "*://*.downshiftology.com/*",
+                "*://*.dr.dk/*",
+                "*://*.eatingbirdfood.com/*",
+                "*://*.eatingwell.com/*",
+                "*://*.eatwhattonight.com/*",
+                "*://*.emmikochteinfach.de/*",
+                "*://*.en.wikibooks.org/*",
+                "*://*.epicurious.com/*",
+                "*://*.ethanchlebowski.com/*",
+                "*://*.fifteenspatulas.com/*",
+                "*://*.finedininglovers.com/*",
+                "*://*.fitmencook.com/*",
+                "*://*.food.com/*",
+                "*://*.food52.com/*",
+                "*://*.foodandwine.com/*",
+                "*://*.foodnetwork.com/*",
+                "*://*.foodrepublic.com/*",
+                "*://*.forksoverknives.com/*",
+                "*://*.franzoesischkochen.de/*",
+                "*://*.fredriksfika.allas.se/*",
+                "*://*.geniuskitchen.com/*",
+                "*://*.gimmesomeoven.com/*",
+                "*://*.gonnawantseconds.com/*",
+                "*://*.gousto.co.uk/*",
+                "*://*.greatbritishchefs.com/*",
+                "*://*.halfbakedharvest.com/*",
+                "*://*.hassanchef.com/*",
+                "*://*.headbangerskitchen.com/*",
+                "*://*.healthyeating.nhlbi.nih.gov/*",
+                "*://*.heinzbrasil.com.br/*",
+                "*://*.homechef.com/*",
+                "*://*.hostthetoast.com/*",
+                "*://*.ica.se/*",
+                "*://*.im-worthy.com/*",
+                "*://*.indianhealthyrecipes.com/*",
+                "*://*.inspiralized.com/*",
+                "*://*.jamieoliver.com/*",
+                "*://*.jimcooksfoodgood.com/*",
+                "*://*.joyfoodsunshine.com/*",
+                "*://*.justataste.com/*",
+                "*://*.justbento.com/*",
+                "*://*.justonecookbook.com/*",
+                "*://*.kennymcgovern.com/*",
+                "*://*.kingarthurbaking.com/*",
+                "*://*.kitchenstories.com/*",
+                "*://*.kochbar.de/*",
+                "*://*.koket.se/*",
+                "*://*.kuchnia-domowa.pl/*",
+                "*://*.kwestiasmaku.com/*",
+                "*://*.latelierderoxane.com/*",
+                "*://*.leanandgreenrecipes.net/*",
+                "*://*.lecker.de/*",
+                "*://*.lecremedelacrumb.com/*",
+                "*://*.lekkerensimpel.com/*",
+                "*://*.littlespicejar.com/*",
+                "*://*.livelytable.com/*",
+                "*://*.lovingitvegan.com/*",
+                "*://*.maangchi.com/*",
+                "*://*.madensverden.dk/*",
+                "*://*.madewithlau.com/*",
+                "*://*.marmiton.org/*",
+                "*://*.marthastewart.com/*",
+                "*://*.matprat.no/*",
+                "*://*.meljoulwan.com/*",
+                "*://*.melskitchencafe.com/*",
+                "*://*.mindmegette.hu/*",
+                "*://*.minimalistbaker.com/*",
+                "*://*.misya.info/*",
+                "*://*.momswithcrockpots.com/*",
+                "*://*.monsieur-cuisine.com/*",
+                "*://*.motherthyme.com/*",
+                "*://*.mybakingaddiction.com/*",
+                "*://*.mykitchen101.com/*",
+                "*://*.mykitchen101en.com/*",
+                "*://*.mykoreankitchen.com/*",
+                "*://*.myplate.gov/*",
+                "*://*.myrecipes.com/*",
+                "*://*.nourishedbynutrition.com/*",
+                "*://*.nutritionbynathalie.com/*",
+                "*://*.ohsheglows.com/*",
+                "*://*.omnivorescookbook.com/*",
+                "*://*.owen-han.com/*",
+                "*://*.paleorunningmomma.com/*",
+                "*://*.panelinha.com.br/*",
+                "*://*.paninihappy.com/*",
+                "*://*.pingodoce.pt/*",
+                "*://*.popsugar.com/*",
+                "*://*.primaledgehealth.com/*",
+                "*://*.projectgezond.nl/*",
+                "*://*.przepisy.pl/*",
+                "*://*.purelypope.com/*",
+                "*://*.purplecarrot.com/*",
+                "*://*.rachlmansfield.com/*",
+                "*://*.rainbowplantlife.com/*",
+                "*://*.realfood.tesco.com/*",
+                "*://*.realsimple.com/*",
+                "*://*.receitas.globo.com/*",
+                "*://*.receitas.ig.com.br/*",
+                "*://*.recipes.timesofindia.com/*",
+                "*://*.recipetineats.com/*",
+                "*://*.redhousespice.com/*",
+                "*://*.reishunger.de/*",
+                "*://*.rezeptwelt.de/*",
+                "*://*.ricette.giallozafferano.it/*",
+                "*://*.rosannapansino.com/*",
+                "*://*.rutgerbakt.nl/*",
+                "*://*.sallysbakingaddiction.com/*",
+                "*://*.saveur.com/*",
+                "*://*.seriouseats.com/*",
+                "*://*.simple-veganista.com/*",
+                "*://*.simply-cookit.com/*",
+                "*://*.simplyquinoa.com/*",
+                "*://*.simplyrecipes.com/*",
+                "*://*.simplywhisked.com/*",
+                "*://*.skinnytaste.com/*",
+                "*://*.smulweb.nl/*",
+                "*://*.southernliving.com/*",
+                "*://*.spendwithpennies.com/*",
+                "*://*.springlane.de/*",
+                "*://*.steamykitchen.com/*",
+                "*://*.streetkitchen.hu/*",
+                "*://*.sundpaabudget.dk/*",
+                "*://*.sunset.com/*",
+                "*://*.sweetcsdesigns.com/*",
+                "*://*.sweetpeasandsaffron.com/*",
+                "*://*.tasteofhome.com/*",
+                "*://*.tastesbetterfromscratch.com/*",
+                "*://*.tastesoflizzyt.com/*",
+                "*://*.tasty.co/*",
+                "*://*.tastykitchen.com/*",
+                "*://*.theclevercarrot.com/*",
+                "*://*.thehappyfoodie.co.uk/*",
+                "*://*.thekitchenmagpie.com/*",
+                "*://*.thekitchn.com/*",
+                "*://*.thenutritiouskitchen.co/*",
+                "*://*.thepioneerwoman.com/*",
+                "*://*.thespruceeats.com/*",
+                "*://*.thevintagemixer.com/*",
+                "*://*.thewholesomedish.com/*",
+                "*://*.thewoksoflife.com/*",
+                "*://*.tine.no/*",
+                "*://*.tudogostoso.com.br/*",
+                "*://*.twopeasandtheirpod.com/*",
+                "*://*.valdemarsro.dk/*",
+                "*://*.vanillaandbean.com/*",
+                "*://*.vegolosi.it/*",
+                "*://*.vegrecipesofindia.com/*",
+                "*://*.wandercooks.com/*",
+                "*://*.watchwhatueat.com/*",
+                "*://*.weightwatchers.com/*",
+                "*://*.whatsgabycooking.com/*",
+                "*://*.woolworths.com.au/*",
+                "*://*.woop.co.nz/*",
+                "*://*.yemek.com/*",
+                "*://*.yummly.com/*",
+                "*://*.zeit.de/*",
+                "*://*.zenbelly.com/*"
+            ],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "lcfhmcjffbgobdkdhnmmglogcbfkccpc",
+            "downloads": "305",
+            "name": "Recipe Box",
+            "manifest_version": 3,
+            "permissions": [
+                "bookmarks",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "http://*/*",
+                        "https://*/*"
+                    ],
+                    "js": [
+                        "content.bundle.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kcjlhnbjmnhpmehndjgnbhanjnjonhmd",
+            "downloads": "34",
+            "name": "Hide YouTube Shorts",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [
+                "https://www.youtube.com/",
+                "https://m.youtube.com/"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://www.youtube.com/*",
+                        "https://m.youtube.com/*"
+                    ],
+                    "js": [
+                        "assets/main.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mmpfjepccmbmnpoiailhoenngodkgppm",
+            "downloads": "14",
+            "name": "Turbo Trolley for Sainsbury's",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "activeTab",
+                "sidePanel",
+                "webRequest"
+            ],
+            "host_permissions": [
+                "https://www.sainsburys.co.uk/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "*://*.sainsburys.co.uk/*"
+                    ],
+                    "js": [
+                        "src/pages/content/index.js"
+                    ]
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "kbjeibdgaknebjndoinoiolofpjjiodm",
+            "downloads": "2",
+            "name": "Chainwright",
+            "manifest_version": 3,
+            "permissions": [
+                "scripting",
+                "activeTab",
+                "cookies"
+            ],
+            "host_permissions": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://*/*"
+                    ],
+                    "js": [
+                        "utils.js",
+                        "content.js"
+                    ],
+                    "css": [
+                        "content.css"
+                    ],
+                    "type": "module"
+                }
+            ],
+            "content_security_policy": {},
+            "externally_connectable": {
+                "matches": [
+                    "https://*.chainwright.co.uk/*"
+                ]
+            },
+            "storage": {}
+        },
+        {
+            "id": "bjgdadfdeamjbcjffcpjdpaeoeeofoip",
+            "downloads": "",
+            "name": "Енергомонітор - графіки відключення світла ЦЕК",
+            "manifest_version": 3,
+            "permissions": [
+                "storage",
+                "notifications"
+            ],
+            "host_permissions": [
+                "https://cek.dp.ua/index.php/cpojivaham/vidkliuchennia.html"
+            ],
+            "content_scripts": [
+                {
+                    "matches": [
+                        "https://cek.dp.ua/index.php/cpojivaham/vidkliuchennia.html"
+                    ],
+                    "js": [
+                        "content.js"
+                    ],
+                    "css": [],
+                    "all_frames": false,
+                    "run_at": "document_end"
+                }
+            ],
+            "content_security_policy": {
+                "extension_pages": "script-src 'self'; object-src 'self'"
+            },
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "ckajjdoggfndeagaakclafpmddnmjldf",
+            "downloads": "53",
+            "name": "USD To ... Real-Time Currency Converter ",
+            "manifest_version": 3,
+            "permissions": [
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "mobnhacmajlmclipikcamflimnlmckbn",
+            "downloads": "14",
+            "name": "Simple Recipe",
+            "manifest_version": 3,
+            "permissions": [
+                "activeTab",
+                "scripting"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        },
+        {
+            "id": "jboklgjmhdennhfldfbojblpphiffpme",
+            "downloads": "70",
+            "name": "ConvertCups",
+            "manifest_version": 2,
+            "permissions": [
+                "activeTab",
+                "storage"
+            ],
+            "host_permissions": [],
+            "content_scripts": [],
+            "content_security_policy": {},
+            "externally_connectable": {},
+            "storage": {}
+        }
+    ]
+}

@@ -1,0 +1,1910 @@
+{
+    "cjpalhdlnbpafiamejdnhcphjbkeiagm": {
+        "alarms": true,
+        "contextMenus": true,
+        "privacy": true,
+        "storage": true,
+        "tabs": true,
+        "unlimitedStorage": false,
+        "webNavigation": true,
+        "webRequest": true,
+        "webRequestBlocking": false,
+        "<all_urls>": false
+    },
+    "inomeogfingihgjfjlpeplalcfajhgai": {
+        "nativeMessaging": false,
+        "downloads": true
+    },
+    "jlhmfgmfgeifomenelglieieghnjghma": {
+        "nativeMessaging": false
+    },
+    "bmnlcjabgnpnenekpadlanbbkooimhnj": {
+        "alarms": true,
+        "cookies": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "scripting": true,
+        "webRequest": true,
+        "offscreen": true
+    },
+    "llbcnfanfmjhpedaedhbcnpgeepdnnok": {
+        "storage": true,
+        "unlimitedStorage": false, 
+        "management": true,
+        "tabs": true,
+        "declarativeNetRequest": true,
+        "downloads": true,
+        "downloads.shelf": false,
+        "downloads.open": false,
+        "notifications": true,
+        "webNavigation": true,
+        "contextMenus": true,
+        "contentSettings": true,
+        "browsingData": true,
+        "history": true,
+        "nativeMessaging": false,
+        "idle": true,
+        "alarms": true,
+        "cookies": true
+    },
+    "oocalimimngaihdkbihfgmpkcpnmlaoa": {
+        "activeTab": false,
+        "storage": true,
+        "scripting": true,
+        "alarms": true
+    },
+    "kdpelmjpfafjppnhbloffcjpeomlnpah": {
+        "webRequest": true,
+        "webNavigation": true,
+        "storage": true,
+        "tabs": true,
+        "nativeMessaging": false,
+        "declarativeNetRequest": true,
+        "gcm": false,
+        "cookies": true
+    },
+    "anenfchlanlnhmjibebhkgbnelojooic": {
+        "alarms": true,
+        "scripting": true,
+        "storage": true,
+        "proxy": true
+    },
+    "liecbddmkiiihnedobmlmillhodjkdmb": {
+        "activeTab": false,
+        "alarms": true,
+        "contextMenus": true,
+        "cookies": true,
+        "desktopCapture": true,
+        "scripting": true,
+        "storage": true,
+        "tabCapture": true
+    },
+    "kgjfgplpablkjnlkjmjdecgdpfankdle": {
+        "storage": true,
+        "unlimitedStorage": false
+    },
+    "lpcaedmchfhocbbapmcbpinfpgnhiddi": {
+        "activeTab": false,
+        "identity": true,
+        "identity.email": false,
+        "contextMenus": true,
+        "storage": true,
+        "tabs": true,
+        "unlimitedStorage": false,
+        "scripting": true
+    },
+    "ihcjicgdanjaechkgeegckofjjedodee": {
+        "alarms": true,
+        "downloads": true,
+        "storage": true,
+        "tabs": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false,
+        "unlimitedStorage": false,
+        "webRequest": true,
+        "contextMenus": true,
+        "nativeMessaging": false,
+        "offscreen": true,
+        "activeTab": false
+    },
+    "pfpcdpogkleagockhnjfkoejmjjebpem": {
+        "alarms": true,
+        "declarativeNetRequest": false,
+        "storage": true,
+        "scripting": true
+    },
+    "gmbmikajjgmnabiglmofipeabaddhgne": {
+        "contextMenus": true,
+        "identity": true,
+        "printerProvider": true,
+        "notifications": true,
+        "pageCapture": true,
+        "storage": true,
+        "tabs": true,
+        "webRequest": true,
+        "scripting": true
+    },
+    "nkklhdhlfknnhmmldffbofbbomlicpig": {
+        "alarms": true,
+        "scripting": true,
+        "storage": true,
+        "proxy": true
+    },
+    "kbdlpfmnciffgllhfijijnakeipkngbe": {
+        "alarms": true,
+        "scripting": true,
+        "storage": true,
+        "proxy": true
+    },
+    "bihmplhobchoageeokmgbdihknkjbknd": {
+        "<all_urls>": false,
+        "tabs": false,
+        "storage": false,
+        "proxy": false,
+        "webRequest": false,
+        "webRequestBlocking": false,
+        "management": true,
+        "unlimitedStorage": false,
+        "background": false,
+        "privacy": false
+    },
+    "gomekmidlodglbbmalcneegieacbdmki": {
+        "tabs": true,
+        "activeTab": false,
+        "scripting": true,
+        "storage": true,
+        "alarms": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false
+    },
+    "ekhagklcjbdpajgpjgmbionohlpdbjgc": {
+        "tabs": true,
+        "contextMenus": false,
+        "cookies": false,
+        "scripting": true,
+        "offscreen": false,
+        "webRequest": false,
+        "declarativeNetRequest": true,
+        "webNavigation": false,
+        "storage": false
+    },
+    "flliilndjeohchalpbbcdekjklbdgfkk": {
+        "tabs": true,
+        "storage": true,
+        "webRequest": true,
+        "cookies": true,
+        "unlimitedStorage": false,
+        "scripting": true,
+        "declarativeNetRequest": true,
+        "alarms": true,
+        "webNavigation": true
+    },
+    "gpdjojdkbbmdfjfahjcgigfpmkopogic": {
+        "contextMenus": false,
+        "cookies": false,
+        "storage": false,
+        "activeTab": false,
+        "declarativeNetRequest": false
+    },
+    "eofcbnmajmjmplflapaojjnihcjkigck": {
+        "storage": true,
+        "alarms": true,
+        "webRequest": true
+    },
+    "gebbhagfogifgggkldgodflihgfeippi": {
+        "storage": true
+    },
+    "bhghoamapcdpbohphigoooaddinpkbai": {
+        "activeTab": false,
+        "storage": true,
+        "identity": true,
+        "alarms": true,
+        "scripting": true
+    },
+    "mmioliijnhnoblpgimnlajmefafdfilb": {
+        "tabCapture": true,
+        "storage": true,
+        "unlimitedStorage": false
+    },
+    "difoiogjjojoaoomphldepapgpbgkhkb": {
+        "storage": false,
+        "cookies": true,
+        "contextMenus": false,
+        "scripting": false,
+        "activeTab": false,
+        "unlimitedStorage": false,
+        "tabs": false,
+        "sidePanel": true,
+        "offscreen": true,
+        "alarms": false,
+        "declarativeNetRequest": false
+    },
+    "ibeabbjcphoflmlccjgpebbamkbglpip": {
+        "alarms": true,
+        "storage": true,
+        "contextMenus": true,
+        "scripting": true,
+        "declarativeNetRequest": true
+    },
+    "ccbpbkebodcjkknkfkpmfeciinhidaeh": {
+        "storage": true,
+        "alarms": true,
+        "webRequest": true,
+        "scripting": true
+    },
+    "ogdlpmhglpejoiomcodnpjnfgcpmgale": {
+        "scripting": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "notifications": true,
+        "alarms": true
+    },
+    "jghecgabfgfdldnmbfkhmffcabddioke": {
+        "activeTab": false,
+        "offscreen": true,
+        "tabCapture": true,
+        "tabs": true,
+        "storage": true
+    },
+    "gkojfkhlekighikafcpjkiklfbnlmeio": {
+        "proxy": true,
+        "webRequest": true,
+        "storage": true,
+        "tabs": true,
+        "webNavigation": true,
+        "cookies": true,
+        "scripting": true,
+        "webRequestAuthProvider": false,
+        "declarativeNetRequest": true
+    },
+    "iidnbdjijdkbmajdffnidomddglmieko": {
+        "alarms": false,
+        "cookies": true,
+        "storage": true,
+        "activeTab": false,
+        "contextMenus": false,
+        "notifications": true,
+        "scripting": false,
+        "sidePanel": true
+    },
+    "cofdbpoegempjloogbagkncekinflcnj": {
+        "activeTab": false,
+        "storage": true,
+        "contextMenus": true,
+        "tabs": true,
+        "scripting": true,
+        "declarativeNetRequest": true,
+        "identity": true,
+        "tts": true,
+        "alarms": true,
+        "webRequest": true,
+        "cookies": true,
+        "sidePanel": true
+    },
+    "mgijmajocgfcbeboacabfgobmjgjcoja": {
+        "storage": true
+    },
+    "bkgepfjmcfhiikfmamakfhdhogohgpac": {
+        "alarms": true,
+        "clipboardWrite": false,
+        "scripting": true,
+        "storage": true
+    },
+    "mclkkofklkfljcocdinagocijmpgbhab": {
+        "offscreen": true,
+        "tabs": true,
+        "storage": true,
+        "scripting": true
+    },
+    "chhjbpecpncaggjpdakmflnfcopglcmi": {
+        "tabs": false,
+        "webNavigation": false,
+        "webRequest": false,
+        "storage": false,
+        "cookies": false,
+        "alarms": false,
+        "scripting": false
+    },
+    "bfgdeiadkckfbkeigkoncpdieiiefpig": {
+        "storage": true,
+        "cookies": true,
+        "clipboardWrite": false,
+        "webRequest": false,
+        "webRequestBlocking": false,
+        "webNavigation": true,
+        "*://mail.google.com/*": false,
+        "*://*.bitbucket.org/*": false,
+        "*://*.github.com/*": false,
+        "*://*.atlassian.net/*": false,
+        "*://*.bitmoji.com/*": false
+    },
+    "ophjlpahpchlmihnnnihgmmeilfjmjjc": {},
+    "admmjipmmciaobhojoghlmleefbicajg": {
+        "notifications": true,
+        "storage": true,
+        "tabs": true,
+        "webNavigation": true,
+        "webRequest": true,
+        "alarms": true,
+        "clipboardWrite": false,
+        "scripting": true
+    },
+    "fdcgdnkidjaadafnichfpabhfomcebme": {
+        "activeTab": false,
+        "background": false,
+        "tabs": true,
+        "proxy": true,
+        "unlimitedStorage": false,
+        "storage": true,
+        "notifications": true,
+        "cookies": true,
+        "alarms": true,
+        "browsingData": true,
+        "webNavigation": true,
+        "privacy": true,
+        "scripting": true,
+        "https://www.google-analytics.com/*": false
+    },
+    "fjgncogppolhfdpijihbpfmeohpaadpc": {
+        "storage": true,
+        "webNavigation": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestWithHostAccess": false
+    },
+    "kngefefeojnjcfnaegliccjlnclnlgck": {
+        "alarms": true,
+        "scripting": true,
+        "storage": true
+    },
+    "dkbccihpiccbcheieabdbjikohfdfaje": {
+        "storage": true,
+        "tabs": true,
+        "downloads": true,
+        "webRequest": true
+    },
+    "lmjnegcaeklhafolokijcfjliaokphfk": {
+        "tabs": false,
+        "webRequest": false,
+        "downloads": false,
+        "webNavigation": false,
+        "notifications": false,
+        "scripting": false,
+        "storage": false,
+        "contextMenus": false,
+        "nativeMessaging": false,
+        "declarativeNetRequest": false,
+        "sidePanel": true
+    },
+    "hbkkncjljigpfhghnjhjaaimceakjdoo": {
+        "storage": true,
+        "scripting": true,
+        "alarms": true
+    },
+    "lkdokbndiffkmddlfpbjiokmfkafmgkm": {
+        "contextMenus": true,
+        "storage": true
+    },
+    "ofpnmcalabcbjgholdjcjblkibolbppb": {
+        "storage": true,
+        "scripting": false,
+        "sidePanel": true,
+        "contextMenus": false
+    },
+    "ohfgljdgelakfkefopgklcohadegdpjf": {},
+    "fbgcedjacmlbgleddnoacbnijgmiolem": {
+        "cookies": true,
+        "management": true,
+        "notifications": true,
+        "alarms": true,
+        "storage": true,
+        "scripting": true,
+        "declarativeNetRequest": true
+    },
+    "aielbbnajdbopdbnecilekkchkgocifh": {
+        "alarms": true,
+        "scripting": true,
+        "storage": true
+    },
+    "klopcieildbkpjfgfohccoknkbpchpcd": {
+        "contextMenus": true,
+        "scripting": true,
+        "alarms": true,
+        "storage": true
+    },
+    "gppongmhjkpfnbhagpmjfkannfbllamg": {
+        "cookies": true,
+        "storage": true,
+        "tabs": true,
+        "webRequest": true
+    },
+    "nlipoenfbbikpbjkfpfillcgkoblgpmj": {
+        "tabs": true,
+        "power": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "desktopCapture": true,
+        "tabCapture": true,
+        "cookies": true,
+        "activeTab": false,
+        "contextMenus": true,
+        "scripting": true,
+        "offscreen": true,
+        "alarms": true
+    },
+    "mfidniedemcgceagapgdekdbmanojomk": {
+        "cookies": false,
+        "storage": false,
+        "unlimitedStorage": false,
+        "webRequest": false,
+        "alarms": false
+    },
+    "ammjkodgmmoknidbanneddgankgfejfh": {
+        "scripting": true,
+        "storage": true,
+        "activeTab": false
+    },
+    "pachckjkecffpdphbpmfolblodfkgbhl": {
+        "cookies": true,
+        "clipboardWrite": false,
+        "storage": true,
+        "background": false
+    },
+    "ccjlpblmgkncnnimcmbanbnhbggdpkie": {
+        "tabCapture": true,
+        "offscreen": true,
+        "storage": true
+    },
+    "adbacgifemdbhdkfppmeilbgppmhaobf": {
+        "notifications": true,
+        "storage": true,
+        "alarms": true
+    },
+    "nffaoalbilbmmfgbnbgppjihopabppdk": {
+        "storage": true
+    },
+    "chphlpgkkbolifaimnlloiipkdnihall": {
+        "favicon": false,
+        "unlimitedStorage": false,
+        "storage": true,
+        "activeTab": false,
+        "scripting": true,
+        "tabs": true,
+        "contextMenus": true
+    },
+    "ndnaehgpjlnokgebbaldlmgkapkpjkkb": {
+        "storage": true,
+        "declarativeNetRequestWithHostAccess": false,
+        "notifications": true
+    },
+    "hoombieeljmmljlkjmnheibnpciblicm": {
+        "storage": true,
+        "contextMenus": true,
+        "activeTab": false,
+        "scripting": true
+    },
+    "dmghijelimhndkbmpgbldicpogfkceaj": {
+        "storage": true,
+        "contextMenus": true
+    },
+    "mbniclmhobmnbdlbpiphghaielnnpgdp": {
+        "activeTab": false,
+        "storage": true,
+        "unlimitedStorage": false,
+        "notifications": true,
+        "clipboardWrite": false,
+        "downloads": true,
+        "cookies": true
+    },
+    "jgjaeacdkonaoafenlfkkkmbaopkbilf": {
+        "storage": true,
+        "scripting": false,
+        "unlimitedStorage": false,
+        "offscreen": true,
+        "sidePanel": true
+    },
+    "bcjindcccaagfpapjjmafapmmgkkhgoa": {
+        "storage": true
+    },
+    "jabopobgcpjmedljpbcaablpmlmfcogm": {
+        "activeTab": false,
+        "scripting": false
+    },
+    "gpaiobkfhnonedkhhfjpmhdalgeoebfa": {
+        "alarms": true,
+        "storage": true,
+        "scripting": true,
+        "offscreen": true
+    },
+    "glghokcicpikglmflbbelbgeafpijkkf": {
+        "nativeMessaging": false
+    },
+    "bkkbcggnhapdmkeljlodobbkopceiche": {
+        "storage": true,
+        "activeTab": false,
+        "webRequest": true,
+        "declarativeNetRequest": false,
+        "declarativeNetRequestFeedback": false,
+        "contextMenus": true,
+        "scripting": true,
+        "webNavigation": true,
+        "alarms": true
+    },
+    "pioclpoplcdbaefihamjohnefbikjilc": {
+        "activeTab": false,
+        "tabs": true,
+        "cookies": true,
+        "contextMenus": false,
+        "storage": false,
+        "notifications": false,
+        "scripting": false
+    },
+    "hniebljpgcogalllopnjokppmgbhaden": {
+        "desktopCapture": true
+    },
+    "eokjikchkppnkdipbiggnmlkahcdkikp": {
+        "activeTab": false,
+        "notifications": true,
+        "storage": true,
+        "contextMenus": true
+    },
+    "cnpniohnfphhjihaiiggeabnkjhpaldj": {
+        "activeTab": false,
+        "downloads": true,
+        "webRequest": true,
+        "webRequestBlocking": false,
+        "http://*/*": false,
+        "https://*/*": false
+    },
+    "gohjpllcolmccldfdggmamodembldgpc": {
+        "contextMenus": true,
+        "storage": true
+    },
+    "fjnbnpbmkenffdnngjfgmeleoegfcffe": {},
+    "ekcgkejcjdcmonfpmnljobemcbpnkamh": {
+        "activeTab": false,
+        "storage": true,
+        "unlimitedStorage": false,
+        "identity": true,
+        "identity.email": false
+    },
+    "pdpfhanekfkeijhemmfbnnjffiblgefi": {
+        "activeTab": false,
+        "storage": true,
+        "unlimitedStorage": false,
+        "scripting": true
+    },
+    "mlloloooolpffjkjaclpfpeednngpjon": {
+        "tabs": true,
+        "scripting": true,
+        "storage": true,
+        "webRequest": true
+    },
+    "mlomiejdfkolichcflejclcbmpeaniij": {
+        "alarms": true,
+        "cookies": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false,
+        "webNavigation": true,
+        "storage": true,
+        "scripting": true,
+        "tabs": true,
+        "activeTab": false,
+        "webRequest": true,
+        "offscreen": true
+    },
+    "ohahllgiabjaoigichmmfljhkcfikeof": {
+        "tabs": true,
+        "contextMenus": true,
+        "scripting": true,
+        "storage": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false,
+        "unlimitedStorage": false,
+        "webNavigation": true,
+        "webRequest": true
+    },
+    "imdndkajeppdomiimjkcbhkafeeooghd": {
+        "tabs": true,
+        "nativeMessaging": false,
+        "webNavigation": true,
+        "declarativeNetRequest": true,
+        "storage": true,
+        "webRequest": true
+    },
+    "dgjbaljgolmlcmmklmmeafecikidmjpi": {
+        "activeTab": false,
+        "declarativeNetRequest": false,
+        "webRequest": false,
+        "scripting": false,
+        "storage": false
+    },
+    "camppjleccjaphfdbohjdohecfnoikec": {
+        "storage": true,
+        "tabs": false,
+        "contextMenus": false
+    },
+    "iginnfkhmmfhlkagcmpgofnjhanpmklb": {
+        "storage": true
+    },
+    "lmbopdiikkamfphhgcckcjhojnokgfeo": {
+        "alarms": false,
+        "tabs": false,
+        "contextMenus": false,
+        "nativeMessaging": false,
+        "management": false,
+        "storage": false,
+        "cookies": false,
+        "scripting": false
+    },
+    "oiiaigjnkhngdbnoookogelabohpglmd": {},
+    "mnlohknjofogcljbcknkakphddjpijak": {
+        "contextMenus": true,
+        "storage": true,
+        "tabs": true
+    },
+    "lkoeejijapdihgbegpljiehpnlkadljb": {},
+    "epbobagokhieoonfplomdklollconnkl": {
+        "scripting": true,
+        "tabs": true,
+        "storage": true,
+        "identity": true
+    },
+    "noaijdpnepcgjemiklgfkcfbkokogabh": {
+        "scripting": true,
+        "storage": true,
+        "contextMenus": true,
+        "tabs": true
+    },
+    "kabafodfnabokkkddjbnkgbcbmipdlmb": {
+        "storage": true
+    },
+    "pcblbflgdkdfdjpjifeppkljdnaekohj": {
+        "tabs": true,
+        "activeTab": false,
+        "storage": true
+    },
+    "becfinhbfclcgokjlobojlnldbfillpf": {
+        "storage": true,
+        "scripting": false,
+        "activeTab": false,
+        "unlimitedStorage": false,
+        "tabs": false,
+        "sidePanel": false
+    },
+    "lpfemeioodjbpieminkklglpmhlngfcn": {
+        "storage": false,
+        "declarativeNetRequestWithHostAccess": false
+    },
+    "jhikancdgcieieaapcjmbpjflikjgkpn": {
+        "cookies": true,
+        "declarativeNetRequest": true,
+        "tabs": true,
+        "alarms": true,
+        "storage": true,
+        "scripting": true,
+        "contextMenus": true,
+        "notifications": true
+    },
+    "bpoadfkcbjbfhfodiogcnhhhpibjhbnh": {
+        "storage": false,
+        "activeTab": false,
+        "contextMenus": false,
+        "webRequest": false,
+        "declarativeNetRequestWithHostAccess": false,
+        "declarativeNetRequestFeedback": false,
+        "declarativeNetRequest": false,
+        "offscreen": true
+    },
+    "nmmicjeknamkfloonkhhcjmomieiodli": {
+        "storage": false
+    },
+    "lcpbgpffiecejffeokiimlehgjobmlfa": {
+        "scripting": true,
+        "debugger": true,
+        "alarms": true,
+        "storage": true,
+        "downloads": true
+    },
+    "fllaojicojecljbmefodhfapmkghcbnh": {},
+    "plmlopfeeobajiecodiggabcihohcnge": {
+        "storage": true,
+        "tabCapture": true,
+        "system.display": false,
+        "tabs": true
+    },
+    "hbapdpeemoojbophdfndmlgdhppljgmp": {
+        "storage": true,
+        "activeTab": false,
+        "contextMenus": true,
+        "scripting": true
+    },
+    "eedlgdlajadkbbjoobobefphmfkcchfk": {
+        "cookies": false
+    },
+    "cndibmoanboadcifjkjbdpjgfedanolh": {
+        "storage": true
+    },
+    "ojnbohmppadfgpejeebfnmnknjdlckgj": {
+        "activeTab": false,
+        "contextMenus": true,
+        "declarativeNetRequestWithHostAccess": false,
+        "scripting": true,
+        "webRequest": true
+    },
+    "bgdpkilkheacbboffppjgceiplijhfpd": {
+        "tabs": true,
+        "storage": true
+    },
+    "nllcnknpjnininklegdoijpljgdjkijc": {
+        "http://*/*": false,
+        "https://*/*": false,
+        "cookies": false,
+        "storage": false,
+        "scripting": false,
+        "tabs": false,
+        "sidePanel": true
+    },
+    "hnfabcchmopgohnhkcojhocneefbnffg": {
+        "contextMenus": true,
+        "storage": true,
+        "tabs": true
+    },
+    "hkdmdpdhfaamhgaojpelccmeehpfljgf": {
+        "tabs": true,
+        "webRequest": true,
+        "declarativeNetRequest": true,
+        "cookies": true,
+        "storage": true
+    },
+    "jpkfgepcmmchgfbjblnodjhldacghenp": {
+        "alarms": false,
+        "cookies": false,
+        "tabs": false,
+        "storage": true,
+        "scripting": false,
+        "webNavigation": false,
+        "unlimitedStorage": false,
+        "declarativeNetRequestWithHostAccess": false,
+        "declarativeNetRequestFeedback": false,
+        "webRequest": false,
+        "management": false,
+        "offscreen": true
+    },
+    "imopknpgdihifjkjpmjaagcagkefddnb": {
+        "downloads": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "tabCapture": true,
+        "desktopCapture": true,
+        "scripting": true
+    },
+    "llcdellnofncikmhimjdbkdjgpmcjbik": {},
+    "eiimnmioipafcokbfikbljfdeojpcgbh": {
+        "tabs": true,
+        "declarativeNetRequest": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "contextMenus": true,
+        "notifications": false,
+        "webRequest": true,
+        "webNavigation": true,
+        "cookies": false,
+        "scripting": false,
+        "alarms": false,
+        "idle": false
+    },
+    "ijejnggjjphlenbhmjhhgcdpehhacaal": {
+        "storage": true,
+        "activeTab": false,
+        "tabCapture": true,
+        "unlimitedStorage": false,
+        "desktopCapture": true,
+        "scripting": true,
+        "offscreen": true,
+        "debugger": true
+    },
+    "jchmabokofdoabocpiicjljelmackhho": {
+        "tabCapture": true,
+        "tabs": true,
+        "storage": true,
+        "offscreen": true
+    },
+    "hoklmmgfnpapgjgcpechhaamimifchmp": {
+        "scripting": true,
+        "storage": true,
+        "tabs": true,
+        "webNavigation": true,
+        "webRequest": true
+    },
+    "djflhoibgkdhkhhcedjiklpkjnoahfmg": {
+        "storage": true,
+        "unlimitedStorage": false,
+        "tabs": true,
+        "declarativeNetRequest": true,
+        "offscreen": true
+    },
+    "hmdcmlfkchdmnmnmheododdhjedfccka": {
+        "activeTab": false,
+        "storage": false,
+        "scripting": false
+    },
+    "blipmdconlkpinefehnmjammfjpmpbjk": {
+        "activeTab": false,
+        "storage": true
+    },
+    "akdgnmcogleenhbclghghlkkdndkjdjc": {
+        "contextMenus": true,
+        "storage": true,
+        "scripting": true,
+        "tabs": true
+    },
+    "gbmdgpbipfallnflgajpaliibnhdgobh": {
+        "*://*/*": true,
+        "<all_urls>": false
+    },
+    "ohlencieiipommannpdfcmfdpjjmeolj": {
+        "activeTab": false,
+        "contextMenus": true,
+        "scripting": true,
+        "storage": true,
+        "unlimitedStorage": false
+    },
+    "bfogiafebfohielmmehodmfbbebbbpei": {
+        "contextMenus": true,
+        "tabs": true,
+        "alarms": true,
+        "idle": true,
+        "storage": true,
+        "browsingData": true,
+        "webNavigation": true,
+        "scripting": true,
+        "offscreen": true,
+        "webRequest": true,
+        "webRequestAuthProvider": false
+    },
+    "ofaokhiedipichpaobibbnahnkdoiiah": {
+        "webRequest": true,
+        "activeTab": false
+    },
+    "mgbhdehiapbjamfgekfpebmhmnmcmemg": {
+        "tabCapture": true,
+        "tabs": true,
+        "storage": true
+    },
+    "cnlhokffphohmfcddnibpohmkdfafdli": {
+        "unlimitedStorage": false,
+        "privacy": true,
+        "activeTab": false,
+        "browsingData": true,
+        "clipboardWrite": false,
+        "contextMenus": true,
+        "scripting": true,
+        "storage": true,
+        "tabs": true,
+        "offscreen": true,
+        "webRequest": true
+    },
+    "pfoflbejajgbpkmllhogfpnekjiempip": {
+        "storage": true,
+        "contextMenus": true
+    },
+    "njmehopjdpcckochcggncklnlmikcbnb": {
+        "background": false,
+        "activeTab": false,
+        "tabs": true,
+        "storage": true,
+        "unlimitedStorage": false
+    },
+    "hgeljhfekpckiiplhkigfehkdpldcggm": {
+        "notifications": true,
+        "tabs": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "contextMenus": false,
+        "scripting": true,
+        "offscreen": true
+    },
+    "gaiceihehajjahakcglkhmdbbdclbnlf": {
+        "storage": true,
+        "contextMenus": true
+    },
+    "jdlkkmamiaikhfampledjnhhkbeifokk": {
+        "webRequest": true,
+        "webNavigation": true,
+        "storage": true,
+        "contextMenus": true
+    },
+    "ebpckmjdefimgaenaebngljijofojncm": {
+        "tabCapture": true,
+        "storage": true,
+        "system.display": false
+    },
+    "gabfmnliflodkdafenbcpjdlppllnemd": {
+        "downloads": true,
+        "contextMenus": true,
+        "offscreen": true,
+        "scripting": true
+    },
+    "cmeakgjggjdlcpncigglobpjbkabhmjl": {
+        "notifications": true,
+        "alarms": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "background": false,
+        "webRequest": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false,
+        "cookies": true,
+        "activeTab": false,
+        "management": true
+    },
+    "ilifjbbjhbgkhgabebllmlcldfdgopfl": {
+        "storage": true,
+        "commands": true,
+        "scripting": true,
+        "alarms": true
+    },
+    "agionbommeaifngbhincahgmoflcikhm": {
+        "activeTab": false,
+        "downloads": true,
+        "storage": true,
+        "webRequest": true,
+        "scripting": true,
+        "declarativeNetRequest": true,
+        "sidePanel": true
+    },
+    "daeljdgmllhgmbdkpgnaojldjkdgkbjg": {
+        "storage": true,
+        "activeTab": false,
+        "scripting": true,
+        "downloads": true,
+        "webRequest": true,
+        "declarativeNetRequest": true
+    },
+    "mbckjcfnjmoiinpgddefodcighgikkgn": {
+        "storage": true,
+        "alarms": true,
+        "webRequest": true
+    },
+    "lphicbbhfmllgmomkkhjfkpbdlncafbn": {
+        "tabs": true,
+        "webRequest": true,
+        "storage": true,
+        "notifications": true
+    },
+    "jdcfmebflppkljibgpdlboifpcaalolg": {
+        "scripting": false,
+        "alarms": false,
+        "cookies": false,
+        "storage": true
+    },
+    "kfpgookelklhphhnihipmknjdgbeecgj": {},
+    "dpacanjfikmhoddligfbehkpomnbgblf": {
+        "identity": true,
+        "identity.email": false,
+        "storage": true,
+        "unlimitedStorage": false,
+        "activeTab": false,
+        "tabCapture": true
+    },
+    "cimpffimgeipdhnhjohpbehjkcdpjolg": {
+        "activeTab": false,
+        "webNavigation": true,
+        "declarativeNetRequest": true,
+        "scripting": true,
+        "storage": true
+    },
+    "bfhcafkikcmapcghoodimfjkmgidehfm": {},
+    "llmbdmomjmaeegghbkipaolieilmegld": {},
+    "fadndhdgpmmaapbmfcknlfgcflmmmieb": {},
+    "anflghppebdhjipndogapfagemgnlblh": {
+        "storage": true,
+        "unlimitedStorage": false,
+        "tabs": true,
+        "activeTab": false,
+        "scripting": true
+    },
+    "npgcnondjocldhldegnakemclmfkngch": {
+        "proxy": true,
+        "alarms": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "<all_urls>": false,
+        "tabs": true,
+        "contextMenus": true,
+        "notifications": true,
+        "webRequest": true,
+        "webRequestBlocking": false,
+        "webNavigation": true
+    },
+    "oofgbpoabipfcfjapgnbbjjaenockbdp": {},
+    "jmfikkaogpplgnfjmbjdpalkhclendgd": {
+        "activeTab": false,
+        "cookies": false,
+        "https://*.facebook.com/*": false
+    },
+    "jbojhlhhggfmmkpefknmbdhlaghehini": {
+        "storage": false
+    },
+    "lkhjgdkpibcepflmlgahofcmeagjmecc": {
+        "cookies": true,
+        "system.display": false,
+        "activeTab": false,
+        "storage": true,
+        "alarms": true,
+        "scripting": true
+    },
+    "njgehaondchbmjmajphnhlojfnbfokng": {
+        "tabs": true,
+        "scripting": true,
+        "webRequest": true,
+        "unlimitedStorage": false,
+        "management": true,
+        "downloads": true,
+        "storage": true
+    },
+    "kglhbbefdnlheedjiejgomgmfplipfeb": {},
+    "mhkhmbddkmdggbhaaaodilponhnccicb": {
+        "storage": true
+    },
+    "edlifbnjlicfpckhgjhflgkeeibhhcii": {
+        "storage": true,
+        "unlimitedStorage": false,
+        "scripting": true
+    },
+    "blfehknobghonbjigahfbmmjecooeeja": {
+        "storage": true
+    },
+    "ielooaepfhfcnmihgnabkldnpddnnldl": {
+        "storage": false,
+        "contextMenus": false
+    },
+    "epbpdmalnhhoggbcckpffgacohbmpapb": {
+        "fontSettings": true,
+        "activeTab": false,
+        "storage": true,
+        "tabs": true,
+        "alarms": true
+    },
+    "ljjmnbjaapnggdiibfleeiaookhcodnl": {
+        "storage": true,
+        "contextMenus": true,
+        "webNavigation": true
+    },
+    "acpcapnaopbhbelhmbbmppghilclpkep": {
+        "scripting": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "activeTab": false
+    },
+    "ebdbcfomjliacpblnioignhfhjeajpch": {
+        "storage": true,
+        "activeTab": false,
+        "offscreen": true,
+        "tabCapture": true,
+        "downloads": true,
+        "alarms": true
+    },
+    "hebjaboacandjnlnhocfikmaghgbfjlp": {},
+    "mnjggcdmjocbbbhaepdhchncahnbgone": {
+        "storage": true,
+        "scripting": true
+    },
+    "hipncndjamdcmphkgngojegjblibadbe": {
+        "proxy": false,
+        "storage": false,
+        "unlimitedStorage": false,
+        "history": false,
+        "webRequest": true,
+        "webRequestAuthProvider": false,
+        "declarativeNetRequest": false,
+        "declarativeNetRequestFeedback": false,
+        "tabs": false,
+        "privacy": false,
+        "management": false,
+        "scripting": false,
+        "offscreen": false,
+        "notifications": false
+    },
+    "cfnpidifppmenkapgihekkeednfoenal": {
+        "tabs": false,
+        "alarms": false,
+        "storage": false,
+        "scripting": false,
+        "webRequest": false,
+        "nativeMessaging": false
+    },
+    "pgoeobojimoocdnilcajmjihiabcmabn": {
+        "alarms": true,
+        "favicon": false,
+        "contextMenus": true,
+        "notifications": true,
+        "tabs": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "offscreen": true
+    },
+    "kjacjjdnoddnpbbcjilcajfhhbdhkpgk": {
+        "scripting": true,
+        "storage": false,
+        "unlimitedStorage": false,
+        "notifications": false,
+        "activeTab": false,
+        "tabs": true,
+        "offscreen": true,
+        "identity": false,
+        "alarms": true
+    },
+    "mhnlakgilnojmhinhkckjpncpbhabphi": {
+        "tabs": false,
+        "scripting": false,
+        "storage": false,
+        "management": false,
+        "contextMenus": false,
+        "clipboardRead": false,
+        "clipboardWrite": false,
+        "declarativeNetRequestWithHostAccess": false
+    },
+    "ffbkglfijbcbgblgflchnbphjdllaogb": {
+        "tabs": true,
+        "storage": true,
+        "alarms": true,
+        "proxy": true
+    },
+    "eljapbgkmlngdpckoiiibecpemleclhh": {
+        "activeTab": false,
+        "storage": true
+    },
+    "jfiihjeimjpkpoaekpdpllpaeichkiod": {
+        "activeTab": false,
+        "storage": true,
+        "scripting": true
+    },
+    "gcmemiedfkhgibnmdljhojmgnoimjpcd": {
+        "storage": true,
+        "unlimitedStorage": false
+    },
+    "mdanidgdpmkimeiiojknlnekblgmpdll": {
+        "management": true,
+        "activeTab": false
+    },
+    "pnlphjjfielecalmmjjdhjjninkbjdod": {
+        "storage": true,
+        "cookies": true,
+        "webRequest": true,
+        "downloads": true,
+        "tabs": true,
+        "system.display": false,
+        "declarativeNetRequest": true
+    },
+    "bnchicpgbdgahiecgofdabidjihblaff": {
+        "storage": true
+    },
+    "paahdfldanmapppepgbflkhibebaeaof": {
+        "storage": true,
+        "activeTab": false,
+        "tabCapture": true,
+        "tabs": true,
+        "offscreen": true,
+        "<all_urls>": false
+    },
+    "bdbedpgdcnjmnccdappdddadbcdichio": {
+        "tabCapture": true,
+        "tabs": true,
+        "storage": true,
+        "offscreen": true
+    },
+    "fihnjjcciajhdojfnbdddfaoknhalnja": {
+        "tabs": true,
+        "storage": true,
+        "notifications": true,
+        "webRequest": true,
+        "webNavigation": true,
+        "declarativeNetRequest": true,
+        "scripting": true
+    },
+    "gjjbmfigjpgnehjioicaalopaikcnheo": {
+        "storage": true,
+        "tabs": true,
+        "alarms": true,
+        "scripting": true
+    },
+    "mjnbclmflcpookeapghfhapeffmpodij": {
+        "webRequest": true,
+        "storage": true,
+        "proxy": true,
+        "alarms": true
+    },
+    "nnnmhgkokpalnmbeighfomegjfkklkle": {
+        "tabs": true,
+        "storage": true,
+        "scripting": true
+    },
+    "digojkgonhgmnohbapdfjllpnmjmdhpg": {
+        "activeTab": false,
+        "tabs": true,
+        "scripting": true
+    },
+    "bebmphofpgkhclocdbgomhnjcpelbenh": {
+        "contextMenus": true,
+        "storage": true,
+        "tabs": true,
+        "system.display": false,
+        "declarativeNetRequest": false,
+        "activeTab": false
+    },
+    "mjbepbhonbojpoaenhckjocchgfiaofo": {
+        "tabs": false,
+        "<all_urls>": false,
+        "webRequest": false,
+        "webRequestBlocking": false,
+        "notifications": false,
+        "storage": false,
+        "unlimitedStorage": false,
+        "clipboardWrite": false,
+        "contextMenus": false,
+        "nativeMessaging": false,
+        "cookies": false
+    },
+    "bjogjfinolnhfhkbipphpdlldadpnmhc": {
+        "activeTab": false,
+        "scripting": true
+    },
+    "aicmkgpgakddgnaphhhpliifpcfhicfo": {
+        "webRequest": true,
+        "nativeMessaging": false,
+        "storage": true,
+        "cookies": true,
+        "scripting": true,
+        "tabs": true
+    },
+    "idgpnmonknjnojddfkpgkljpfnnfcklj": {
+        "alarms": true,
+        "contextMenus": true,
+        "storage": true,
+        "webRequest": false,
+        "declarativeNetRequest": true,
+        "scripting": true
+    },
+    "mooikfkahbdckldjjndioackbalphokd": {
+        "tabs": false,
+        "activeTab": false,
+        "contextMenus": false,
+        "downloads": false,
+        "webNavigation": false,
+        "storage": false,
+        "debugger": true,
+        "<all_urls>": false
+    },
+    "khncfooichmfjbepaaaebmommgaepoid": {
+        "storage": false,
+        "webRequest": false
+    },
+    "lgjhepbpjcmfmjlpkkdjlbgomamkgonb": {
+        "storage": true
+    },
+    "ghnomdcacenbmilgjigehppbamfndblo": {
+        "scripting": true,
+        "activeTab": false,
+        "storage": false
+    },
+    "ogadflejmplcdhcldlloonbiekhnlopp": {
+        "tabCapture": true,
+        "tabs": true,
+        "storage": true,
+        "offscreen": true
+    },
+    "hjlekdknhjogancdagnndeenmobeofgm": {
+        "downloads": true,
+        "storage": true,
+        "webRequest": true,
+        "declarativeNetRequest": true
+    },
+    "bogabmgabnjabjbiggmfkdocbjgackfo": {
+        "scripting": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "notifications": true,
+        "alarms": true
+    },
+    "phfkifnjcmdcmljnnablahicoabkokbg": {
+        "tabs": true,
+        "activeTab": false,
+        "storage": true,
+        "scripting": true
+    },
+    "ifbdadgbpalmagalacllfaflfakmfkac": {
+        "desktopCapture": true
+    },
+    "fobaamfiblkoobhjpiigemmdegbmpohd": {
+        "system.display": false,
+        "storage": true,
+        "downloads": true,
+        "declarativeNetRequest": true
+    },
+    "nbcojefnccbanplpoffopkoepjmhgdgh": {
+        "declarativeNetRequest": false,
+        "alarms": true,
+        "proxy": true,
+        "storage": true,
+        "webRequest": true,
+        "webRequestAuthProvider": false,
+        "notifications": true,
+        "tabs": true,
+        "management": true
+    },
+    "ikcgnmhndofpnljaijlpjjbbpiamehan": {
+        "storage": true,
+        "downloads": true,
+        "system.display": false,
+        "declarativeNetRequest": true
+    },
+    "coobjpohmllnkflglnolcoemhmdihbjd": {
+        "tabCapture": true,
+        "storage": true,
+        "activeTab": false,
+        "system.display": false
+    },
+    "eenjdnjldapjajjofmldgmkjaienebbj": {
+        "contextMenus": false,
+        "activeTab": false,
+        "scripting": true,
+        "storage": true,
+        "notifications": false,
+        "nativeMessaging": false,
+        "clipboardRead": false,
+        "commands": true
+    },
+    "mbdojfbhgijnafkihnkhllmhjhkmhedg": {
+        "tabCapture": true,
+        "storage": true,
+        "activeTab": false,
+        "system.display": false
+    },
+    "gjknjjomckknofjidppipffbpoekiipm": {
+        "proxy": false,
+        "webRequest": true,
+        "webRequestBlocking": false,
+        "<all_urls>": false,
+        "background": false,
+        "storage": true,
+        "tabs": true,
+        "privacy": false,
+        "management": true
+    },
+    "bhmmomiinigofkjcapegjjndpbikblnp": {
+        "tabs": true,
+        "contextMenus": false,
+        "webNavigation": true,
+        "webRequest": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false,
+        "storage": true,
+        "scripting": false,
+        "alarms": false
+    },
+    "icpgjfneehieebagbmdbhnlpiopdcmna": {
+        "storage": true,
+        "favicon": false
+    },
+    "amfojhdiedpdnlijjbhjnhokbnohfdfb": {
+        "tabs": true,
+        "storage": true,
+        "tts": true,
+        "contextMenus": true,
+        "clipboardWrite": false,
+        "unlimitedStorage": false,
+        "notifications": true,
+        "scripting": true,
+        "offscreen": true
+    },
+    "mjjgmlmpeaikcaajghilhnioimmaibon": {
+        "storage": false
+    },
+    "pdnenlnelpdomajfejgapbdpmjkfpjkp": {
+        "storage": true,
+        "scripting": true
+    },
+    "hgmhmanijnjhaffoampdlllchpolkdnj": {
+        "tabs": true,
+        "storage": true
+    },
+    "nmpgaoofmjlimabncmnmnopjabbflegf": {
+        "tabs": true,
+        "storage": true,
+        "cookies": true
+    },
+    "alhgpfoeiimagjlnfekdhkjlkiomcapa": {
+        "contextMenus": true,
+        "notifications": true,
+        "scripting": true,
+        "storage": true,
+        "tabs": true,
+        "webNavigation": true
+    },
+    "cbhilkcodigmigfbnphipnnmamjfkipp": {
+        "activeTab": false,
+        "storage": false,
+        "scripting": true,
+        "unlimitedStorage": false
+    },
+    "afpbjjgbdimpioenaedcjgkaigggcdpp": {
+        "activeTab": false,
+        "contextMenus": true,
+        "storage": true
+    },
+    "fggkaccpbmombhnjkjokndojfgagejfb": {
+        "declarativeContent": true,
+        "activeTab": false,
+        "storage": true,
+        "alarms": true,
+        "scripting": true,
+        "unlimitedStorage": false,
+        "declarativeNetRequest": true
+    },
+    "ggacghlcchiiejclfdajbpkbjfgjhfol": {
+        "storage": false,
+        "scripting": false,
+        "notifications": false,
+        "contextMenus": false
+    },
+    "kjlooechnkmikejhimjlbdbkmmhlkkdd": {
+        "storage": true,
+        "activeTab": false,
+        "tabCapture": true,
+        "tabs": true,
+        "offscreen": true
+    },
+    "jlgkpaicikihijadgifklkbpdajbkhjo": {
+        "tabs": true,
+        "storage": true,
+        "contextMenus": true,
+        "webNavigation": true,
+        "webRequest": true,
+        "clipboardRead": false,
+        "clipboardWrite": false,
+        "bookmarks": true,
+        "unlimitedStorage": false,
+        "scripting": true,
+        "sessions": true
+    },
+    "nhpgknpddjnapobgocnpjkbfnjfkedpj": {
+        "storage": true,
+        "webRequest": true,
+        "declarativeNetRequest": false
+    },
+    "jldhpllghnbhlbpcmnajkpdmadaolakh": {
+        "storage": true,
+        "tabs": true,
+        "contextMenus": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestWithHostAccess": false
+    },
+    "fnmihdojmnkclgjpcoonokmkhjpjechg": {},
+    "jfafkhnopckjfmnpekbmpmghhdlijaja": {
+        "storage": true,
+        "activeTab": false,
+        "scripting": true,
+        "downloads": true,
+        "webRequest": true,
+        "declarativeNetRequest": true,
+        "sidePanel": true
+    },
+    "dpgjihldbpodlmnjolekemlfbcajnmod": {
+        "contextMenus": true
+    },
+    "gikbaopejleepnfocphkejjbgaifnico": {
+        "storage": true
+    },
+    "jjfblogammkiefalfpafidabbnamoknm": {
+        "alarms": false,
+        "cookies": true,
+        "scripting": false,
+        "storage": true,
+        "tabs": true,
+        "webNavigation": true,
+        "webRequest": true,
+        "declarativeNetRequestWithHostAccess": false
+    },
+    "edjkecefjhobekadlkdkopkggdefpgfp": {
+        "cookies": true,
+        "storage": true,
+        "tabs": true,
+        "unlimitedStorage": false,
+        "webRequest": true,
+        "scripting": true,
+        "alarms": true
+    },
+    "nakplnnackehceedgkgkokbgbmfghain": {
+        "identity": true,
+        "identity.email": false,
+        "unlimitedStorage": false,
+        "activeTab": false,
+        "storage": true,
+        "scripting": true,
+        "cookies": true
+    },
+    "pgmbeccjfkdbpdjfoldaahpfamjjafma": {
+        "contextMenus": true,
+        "storage": true
+    },
+    "jffafkigfgmjafhpkoibhfefeaebmccg": {
+        "nativeMessaging": false,
+        "storage": true
+    },
+    "bhloflhklmhfpedakmangadcdofhnnoh": {
+        "storage": true
+    },
+    "gbdjcgalliefpinpmggefbloehmmknca": {
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false,
+        "storage": true,
+        "tabs": true
+    },
+    "mafcicncghogpdpaieifglifaagndbni": {
+        "storage": true,
+        "contextMenus": true,
+        "clipboardWrite": false,
+        "notifications": true
+    },
+    "oifijhaokejakekmnjmphonojcfkpbbh": {
+        "storage": false,
+        "tabGroups": false,
+        "search": false
+    },
+    "mcfncmgpoefggbpeloigfonenlmamgjf": {
+        "tabs": true,
+        "storage": true,
+        "scripting": true,
+        "activeTab": false
+    },
+    "cohnbaldpeopekjhfifpfpoagfkhdmeo": {
+        "tabs": true,
+        "declarativeNetRequest": true,
+        "storage": true
+    },
+    "adlpodnneegcnbophopdmhedicjbcgco": {
+        "tabs": true,
+        "webRequest": true,
+        "webRequestAuthProvider": false,
+        "management": true,
+        "webNavigation": true,
+        "storage": true,
+        "alarms": true,
+        "unlimitedStorage": false,
+        "proxy": true,
+        "notifications": true,
+        "privacy": true,
+        "cookies": true,
+        "scripting": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestWithHostAccess": false,
+        "declarativeNetRequestFeedback": false
+    },
+    "gjfpmkejnolcfklaaddjnckanhhgegla": {
+        "webRequest": true,
+        "webRequestBlocking": false,
+        "declarativeNetRequestWithHostAccess": false,
+        "cookies": true,
+        "management": true,
+        "notifications": true,
+        "tabs": true,
+        "storage": true,
+        "idle": true,
+        "contextMenus": true,
+        "scripting": true,
+        "alarms": true
+    },
+    "nemmanchfojaehgkbgcfmdiidbopakpp": {
+        "storage": true,
+        "unlimitedStorage": false
+    },
+    "pjnefijmagpdjfhhkpljicbbpicelgko": {
+        "tabs": true,
+        "contextMenus": true,
+        "storage": true,
+        "clipboardRead": false,
+        "clipboardWrite": false,
+        "debugger": true,
+        "scripting": true,
+        "offscreen": true
+    },
+    "aejoelaoggembcahagimdiliamlcdmfm": {
+        "storage": true,
+        "unlimitedStorage": false,
+        "webRequest": true,
+        "declarativeNetRequest": true,
+        "clipboardWrite": false,
+        "identity": true,
+        "scripting": true
+    },
+    "kdfieneakcjfaiglcfcgkidlkmlijjnh": {
+        "tabs": true,
+        "background": false,
+        "cookies": false,
+        "storage": true
+    },
+    "laankejkbhbdhmipfmgcngdelahlfoji": {
+        "storage": false,
+        "tabs": false,
+        "alarms": false,
+        "webNavigation": false,
+        "notifications": false
+    },
+    "gecgipfabdickgidpmbicneamekgbaej": {
+        "management": true
+    },
+    "gidejehfgombmkfflghejpncblgfkagj": {
+        "tabs": true,
+        "storage": true,
+        "cookies": true,
+        "webRequest": true,
+        "scripting": true,
+        "alarms": true
+    },
+    "emalgedpdlghbkikiaeocoblajamonoh": {
+        "tabs": true,
+        "scripting": false,
+        "webRequest": false
+    },
+    "emnoomldgleagdjapdeckpmebokijail": {
+        "tabs": false,
+        "webNavigation": false,
+        "cookies": false,
+        "alarms": false,
+        "storage": false
+    },
+    "jhidcpailhmpjpbdbhceiaeeggkalgmd": {
+        "storage": true
+    },
+    "nfdfiepdkbnoanddpianalelglmfooik": {
+        "activeTab": false,
+        "tabCapture": true,
+        "tabs": true,
+        "storage": true
+    },
+    "iklgljbighkgbjoecoddejooldolenbj": {
+        "alarms": true,
+        "scripting": true,
+        "storage": true
+    },
+    "mefhakmgclhhfbdadeojlkbllmecialg": {
+        "storage": true
+    },
+    "ipdjnhgkpapgippgcgkfcbpdpcgifncb": {
+        "storage": true,
+        "activeTab": false,
+        "clipboardWrite": false
+    },
+    "bcocdbombenodlegijagbhdjbifpiijp": {
+        "alarms": true,
+        "background": false,
+        "cookies": true,
+        "offscreen": true,
+        "declarativeNetRequest": true
+    },
+    "jbbplnpkjmmeebjpijfedlgcdilocofh": {
+        "activeTab": false,
+        "contextMenus": true,
+        "scripting": true
+    },
+    "onepmapfbjohnegdmfhndpefjkppbjkm": {
+        "storage": true,
+        "tabs": true,
+        "scripting": true,
+        "declarativeNetRequest": true
+    },
+    "pnlccmojcmeohlpggmfnbbiapkmbliob": {
+        "tabs": false,
+        "scripting": false,
+        "storage": false,
+        "webRequest": false,
+        "webRequestAuthProvider": false,
+        "webNavigation": false,
+        "contextMenus": false,
+        "favicon": false,
+        "nativeMessaging": false,
+        "privacy": false,
+        "gcm": true
+    },
+    "nbmoafcmbajniiapeidgficgifbfmjfo": {
+        "tabs": true,
+        "activeTab": false,
+        "scripting": true,
+        "storage": true,
+        "alarms": true,
+        "declarativeNetRequest": true,
+        "declarativeNetRequestFeedback": false
+    },
+    "akcocjjpkmlniicdeemdceeajlmoabhg": {
+        "activeTab": false,
+        "proxy": true,
+        "storage": true,
+        "webRequest": true,
+        "privacy": true,
+        "alarms": true,
+        "management": true,
+        "scripting": true,
+        "webNavigation": true,
+        "webRequestAuthProvider": false,
+        "offscreen": true
+    },
+    "elpmkbbdldhoiggkjfpgibmjioncklbn": {
+        "contextMenus": true,
+        "storage": true,
+        "tabs": true
+    },
+    "cpcifbdmkopohnnofedkjghjiclmhdah": {
+        "webRequest": true,
+        "webNavigation": true,
+        "cookies": true,
+        "contextMenus": true,
+        "storage": true,
+        "downloads": true
+    },
+    "fedoeoceggohfajbhbadkfhgckjkieop": {
+        "tabCapture": true,
+        "storage": true,
+        "system.display": false
+    },
+    "jcbmcnpepaddcedmjdcmhbekjhbfnlff": {
+        "storage": true,
+        "scripting": true,
+        "activeTab": false
+    },
+    "aecnmadngpjbokeakinhbgfanlnjdnom": {
+        "storage": true,
+        "activeTab": false,
+        "tabs": true,
+        "unlimitedStorage": false
+    },
+    "jlmpjdjjbgclbocgajdjefcidcncaied": {
+        "scripting": false
+    },
+    "mbnbehikldjhnfehhnaidhjhoofhpehk": {
+        "activeTab": false,
+        "scripting": true
+    },
+    "mlkjjjmhjijlmafgjlpkiobpdocdbncj": {
+        "storage": true,
+        "unlimitedStorage": false,
+        "contextMenus": true,
+        "webRequest": true,
+        "cookies": true,
+        "declarativeNetRequest": false
+    },
+    "ifdepgnnjpnbkcgempionjablajancjc": {
+        "tabs": true,
+        "storage": true,
+        "unlimitedStorage": false,
+        "alarms": true,
+        "favicon": false,
+        "commands": true,
+        "contextMenus": true,
+        "notifications": true,
+        "offscreen": true
+    },
+    "jdopnakmnlnccgpfpmjmdjjohmcdgabp": {},
+    "lpofefdiokgmcdnnaigddelnfamkkghi": {
+        "sidePanel": true,
+        "contextMenus": true
+    },
+    "cbnhnlbagkabdnaoedjdfpbfmkcofbcl": {
+        "storage": true,
+        "activeTab": false,
+        "scripting": true,
+        "downloads": true,
+        "webRequest": true,
+        "declarativeNetRequest": true
+    },
+    "kmhkepipobnjllejbafajoemahjejdcm": {
+        "activeTab": false,
+        "webRequest": false,
+        "management": false,
+        "notifications": false,
+        "privacy": true,
+        "scripting": false,
+        "storage": true,
+        "tabs": true,
+        "unlimitedStorage": false,
+        "webNavigation": true,
+        "alarms": true
+    },
+    "hmlpiahhoampfgiodhahfofmeppmkaeo": {
+        "scripting": true,
+        "storage": true
+    },
+    "pnedebpjhiaidlbbhmogocmffpdolnek": {
+        "tabs": true,
+        "storage": true,
+        "alarms": true,
+        "cookies": true,
+        "webRequest": true
+    },
+    "elpdbicokgbedckgblmbhoamophfbchi": {
+        "downloads": true,
+        "storage": true,
+        "webRequest": true,
+        "declarativeNetRequest": true
+    },
+    "gnblbpbepfbfmoobegdogkglpbhcjofh": {
+        "activeTab": false,
+        "tabs": true,
+        "storage": true,
+        "scripting": true
+    },
+    "oppflpnigmhkldmdmmbnopidlhahanji": {
+        "storage": true
+    },
+    "nlbjncdgjeocebhnmkbbbdekmmmcbfjd": {
+        "tabs": true,
+        "storage": true,
+        "scripting": true
+    },
+    "pnjaodmkngahhkoihejjehlcdlnohgmp": {
+        "tabs": true,
+        "chrome://favicon/": false,
+        "storage": true,
+        "scripting": true,
+        "notifications": true,
+        "declarativeNetRequest": true,
+        "unlimitedStorage": false,
+        "contextMenus": true,
+        "alarms": true,
+        "offscreen": true
+    },
+    "iabeihobmhlgpkcgjiloemdbofjbdcic": {
+        "activeTab": false,
+        "clipboardWrite": false,
+        "identity": false,
+        "storage": false,
+        "contextMenus": false
+    },
+    "ceibjdigmfbbgcpkkdpmjokkokklodmc": {
+        "https://vk.com/*": true,
+        "https://m.vk.com/*": true,
+        "tabs": true,
+        "contextMenus": true,
+        "storage": true
+    },
+    "llaficoajjainaijghjlofdfmbjpebpa": {
+        "tabs": true,
+        "history": true,
+        "management": true,
+        "unlimitedStorage": false,
+        "contextMenus": true,
+        "storage": true,
+        "idle": true,
+        "scripting": true,
+        "activeTab": false
+    },
+    "npdkkcjlmhcnnaoobfdjndibfkkhhdfn": {
+        "tts": true,
+        "ttsEngine": false,
+        "contextMenus": true,
+        "unlimitedStorage": false,
+        "storage": true,
+        "webRequest": true,
+        "sidePanel": true,
+        "scripting": true
+    },
+    "eollffkcakegifhacjnlnegohfdlidhn": {
+        "storage": true
+    },
+    "kpiecbcckbofpmkkkdibbllpinceiihk": {
+        "proxy": true,
+        "webRequest": true,
+        "management": true,
+        "background": false,
+        "alarms": true,
+        "storage": true
+    },
+    "noondiphcddnnabmjcihcjfbhfklnnep": {
+        "identity": true,
+        "identity.email": false,
+        "notifications": true,
+        "storage": true,
+        "tabs": true,
+        "<all_urls>": false
+    }
+}

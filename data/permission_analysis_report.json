@@ -1,0 +1,863 @@
+{
+    "permission_usage": {
+        "alarms": {
+            "used": 63,
+            "unused": 13,
+            "requested": 76,
+            "ratio": "63/76"
+        },
+        "contextMenus": {
+            "used": 58,
+            "unused": 20,
+            "requested": 78,
+            "ratio": "58/78"
+        },
+        "privacy": {
+            "used": 6,
+            "unused": 4,
+            "requested": 10,
+            "ratio": "6/10"
+        },
+        "storage": {
+            "used": 212,
+            "unused": 33,
+            "requested": 245,
+            "ratio": "212/245"
+        },
+        "tabs": {
+            "used": 97,
+            "unused": 17,
+            "requested": 114,
+            "ratio": "97/114"
+        },
+        "unlimitedStorage": {
+            "used": 0,
+            "unused": 59,
+            "requested": 59,
+            "ratio": "0/59"
+        },
+        "webNavigation": {
+            "used": 29,
+            "unused": 8,
+            "requested": 37,
+            "ratio": "29/37"
+        },
+        "webRequest": {
+            "used": 60,
+            "unused": 16,
+            "requested": 76,
+            "ratio": "60/76"
+        },
+        "webRequestBlocking": {
+            "used": 0,
+            "unused": 8,
+            "requested": 8,
+            "ratio": "0/8"
+        },
+        "<all_urls>": {
+            "used": 0,
+            "unused": 9,
+            "requested": 9,
+            "ratio": "0/9"
+        },
+        "nativeMessaging": {
+            "used": 0,
+            "unused": 15,
+            "requested": 15,
+            "ratio": "0/15"
+        },
+        "downloads": {
+            "used": 21,
+            "unused": 2,
+            "requested": 23,
+            "ratio": "21/23"
+        },
+        "cookies": {
+            "used": 35,
+            "unused": 14,
+            "requested": 49,
+            "ratio": "35/49"
+        },
+        "scripting": {
+            "used": 104,
+            "unused": 26,
+            "requested": 130,
+            "ratio": "104/130"
+        },
+        "offscreen": {
+            "used": 32,
+            "unused": 2,
+            "requested": 34,
+            "ratio": "32/34"
+        },
+        "management": {
+            "used": 14,
+            "unused": 5,
+            "requested": 19,
+            "ratio": "14/19"
+        },
+        "declarativeNetRequest": {
+            "used": 42,
+            "unused": 12,
+            "requested": 54,
+            "ratio": "42/54"
+        },
+        "downloads.shelf": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "downloads.open": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "notifications": {
+            "used": 28,
+            "unused": 10,
+            "requested": 38,
+            "ratio": "28/38"
+        },
+        "contentSettings": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "browsingData": {
+            "used": 4,
+            "unused": 0,
+            "requested": 4,
+            "ratio": "4/4"
+        },
+        "history": {
+            "used": 2,
+            "unused": 1,
+            "requested": 3,
+            "ratio": "2/3"
+        },
+        "idle": {
+            "used": 4,
+            "unused": 1,
+            "requested": 5,
+            "ratio": "4/5"
+        },
+        "activeTab": {
+            "used": 0,
+            "unused": 83,
+            "requested": 83,
+            "ratio": "0/83"
+        },
+        "gcm": {
+            "used": 1,
+            "unused": 1,
+            "requested": 2,
+            "ratio": "1/2"
+        },
+        "proxy": {
+            "used": 12,
+            "unused": 3,
+            "requested": 15,
+            "ratio": "12/15"
+        },
+        "desktopCapture": {
+            "used": 6,
+            "unused": 0,
+            "requested": 6,
+            "ratio": "6/6"
+        },
+        "tabCapture": {
+            "used": 21,
+            "unused": 0,
+            "requested": 21,
+            "ratio": "21/21"
+        },
+        "identity": {
+            "used": 10,
+            "unused": 2,
+            "requested": 12,
+            "ratio": "10/12"
+        },
+        "identity.email": {
+            "used": 0,
+            "unused": 5,
+            "requested": 5,
+            "ratio": "0/5"
+        },
+        "declarativeNetRequestFeedback": {
+            "used": 0,
+            "unused": 13,
+            "requested": 13,
+            "ratio": "0/13"
+        },
+        "printerProvider": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "pageCapture": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "background": {
+            "used": 0,
+            "unused": 9,
+            "requested": 9,
+            "ratio": "0/9"
+        },
+        "sidePanel": {
+            "used": 11,
+            "unused": 1,
+            "requested": 12,
+            "ratio": "11/12"
+        },
+        "webRequestAuthProvider": {
+            "used": 0,
+            "unused": 7,
+            "requested": 7,
+            "ratio": "0/7"
+        },
+        "tts": {
+            "used": 3,
+            "unused": 0,
+            "requested": 3,
+            "ratio": "3/3"
+        },
+        "clipboardWrite": {
+            "used": 0,
+            "unused": 15,
+            "requested": 15,
+            "ratio": "0/15"
+        },
+        "*://mail.google.com/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "*://*.bitbucket.org/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "*://*.github.com/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "*://*.atlassian.net/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "*://*.bitmoji.com/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "https://www.google-analytics.com/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "declarativeNetRequestWithHostAccess": {
+            "used": 0,
+            "unused": 11,
+            "requested": 11,
+            "ratio": "0/11"
+        },
+        "power": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "favicon": {
+            "used": 0,
+            "unused": 5,
+            "requested": 5,
+            "ratio": "0/5"
+        },
+        "http://*/*": {
+            "used": 0,
+            "unused": 2,
+            "requested": 2,
+            "ratio": "0/2"
+        },
+        "https://*/*": {
+            "used": 0,
+            "unused": 2,
+            "requested": 2,
+            "ratio": "0/2"
+        },
+        "debugger": {
+            "used": 4,
+            "unused": 0,
+            "requested": 4,
+            "ratio": "4/4"
+        },
+        "system.display": {
+            "used": 0,
+            "unused": 10,
+            "requested": 10,
+            "ratio": "0/10"
+        },
+        "*://*/*": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "commands": {
+            "used": 3,
+            "unused": 0,
+            "requested": 3,
+            "ratio": "3/3"
+        },
+        "https://*.facebook.com/*": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "fontSettings": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "clipboardRead": {
+            "used": 0,
+            "unused": 4,
+            "requested": 4,
+            "ratio": "0/4"
+        },
+        "declarativeContent": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "bookmarks": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "sessions": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "tabGroups": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "search": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "chrome://favicon/": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        },
+        "https://vk.com/*": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "https://m.vk.com/*": {
+            "used": 1,
+            "unused": 0,
+            "requested": 1,
+            "ratio": "1/1"
+        },
+        "ttsEngine": {
+            "used": 0,
+            "unused": 1,
+            "requested": 1,
+            "ratio": "0/1"
+        }
+    },
+    "extensions_summary": {
+        "all_permissions_used": 105,
+        "with_unused_permissions": 180,
+        "ratio": "105/285"
+    },
+    "top_requested_permissions": [
+        {
+            "permission": "storage",
+            "requested": 245
+        },
+        {
+            "permission": "scripting",
+            "requested": 130
+        },
+        {
+            "permission": "tabs",
+            "requested": 114
+        },
+        {
+            "permission": "activeTab",
+            "requested": 83
+        },
+        {
+            "permission": "contextMenus",
+            "requested": 78
+        },
+        {
+            "permission": "alarms",
+            "requested": 76
+        },
+        {
+            "permission": "webRequest",
+            "requested": 76
+        },
+        {
+            "permission": "unlimitedStorage",
+            "requested": 59
+        },
+        {
+            "permission": "declarativeNetRequest",
+            "requested": 54
+        },
+        {
+            "permission": "cookies",
+            "requested": 49
+        }
+    ],
+    "top_wasted_permissions": [
+        {
+            "permission": "unlimitedStorage",
+            "unused_ratio": "59/59",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "webRequestBlocking",
+            "unused_ratio": "8/8",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "<all_urls>",
+            "unused_ratio": "9/9",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "nativeMessaging",
+            "unused_ratio": "15/15",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "downloads.shelf",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "downloads.open",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "activeTab",
+            "unused_ratio": "83/83",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "identity.email",
+            "unused_ratio": "5/5",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "declarativeNetRequestFeedback",
+            "unused_ratio": "13/13",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "background",
+            "unused_ratio": "9/9",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "webRequestAuthProvider",
+            "unused_ratio": "7/7",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "clipboardWrite",
+            "unused_ratio": "15/15",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "*://mail.google.com/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "*://*.bitbucket.org/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "*://*.github.com/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "*://*.atlassian.net/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "*://*.bitmoji.com/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "https://www.google-analytics.com/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "declarativeNetRequestWithHostAccess",
+            "unused_ratio": "11/11",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "favicon",
+            "unused_ratio": "5/5",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "http://*/*",
+            "unused_ratio": "2/2",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "https://*/*",
+            "unused_ratio": "2/2",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "system.display",
+            "unused_ratio": "10/10",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "https://*.facebook.com/*",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "clipboardRead",
+            "unused_ratio": "4/4",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "tabGroups",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "search",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "chrome://favicon/",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "ttsEngine",
+            "unused_ratio": "1/1",
+            "percentage_unused": 100.0
+        },
+        {
+            "permission": "gcm",
+            "unused_ratio": "1/2",
+            "percentage_unused": 50.0
+        },
+        {
+            "permission": "privacy",
+            "unused_ratio": "4/10",
+            "percentage_unused": 40.0
+        },
+        {
+            "permission": "history",
+            "unused_ratio": "1/3",
+            "percentage_unused": 33.33
+        },
+        {
+            "permission": "cookies",
+            "unused_ratio": "14/49",
+            "percentage_unused": 28.57
+        },
+        {
+            "permission": "management",
+            "unused_ratio": "5/19",
+            "percentage_unused": 26.32
+        },
+        {
+            "permission": "notifications",
+            "unused_ratio": "10/38",
+            "percentage_unused": 26.32
+        },
+        {
+            "permission": "contextMenus",
+            "unused_ratio": "20/78",
+            "percentage_unused": 25.64
+        },
+        {
+            "permission": "declarativeNetRequest",
+            "unused_ratio": "12/54",
+            "percentage_unused": 22.22
+        },
+        {
+            "permission": "webNavigation",
+            "unused_ratio": "8/37",
+            "percentage_unused": 21.62
+        },
+        {
+            "permission": "webRequest",
+            "unused_ratio": "16/76",
+            "percentage_unused": 21.05
+        },
+        {
+            "permission": "scripting",
+            "unused_ratio": "26/130",
+            "percentage_unused": 20.0
+        },
+        {
+            "permission": "idle",
+            "unused_ratio": "1/5",
+            "percentage_unused": 20.0
+        },
+        {
+            "permission": "proxy",
+            "unused_ratio": "3/15",
+            "percentage_unused": 20.0
+        },
+        {
+            "permission": "alarms",
+            "unused_ratio": "13/76",
+            "percentage_unused": 17.11
+        },
+        {
+            "permission": "identity",
+            "unused_ratio": "2/12",
+            "percentage_unused": 16.67
+        },
+        {
+            "permission": "tabs",
+            "unused_ratio": "17/114",
+            "percentage_unused": 14.91
+        },
+        {
+            "permission": "storage",
+            "unused_ratio": "33/245",
+            "percentage_unused": 13.47
+        },
+        {
+            "permission": "downloads",
+            "unused_ratio": "2/23",
+            "percentage_unused": 8.7
+        },
+        {
+            "permission": "sidePanel",
+            "unused_ratio": "1/12",
+            "percentage_unused": 8.33
+        },
+        {
+            "permission": "offscreen",
+            "unused_ratio": "2/34",
+            "percentage_unused": 5.88
+        },
+        {
+            "permission": "contentSettings",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "browsingData",
+            "unused_ratio": "0/4",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "desktopCapture",
+            "unused_ratio": "0/6",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "tabCapture",
+            "unused_ratio": "0/21",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "printerProvider",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "pageCapture",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "tts",
+            "unused_ratio": "0/3",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "power",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "debugger",
+            "unused_ratio": "0/4",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "*://*/*",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "commands",
+            "unused_ratio": "0/3",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "fontSettings",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "declarativeContent",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "bookmarks",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "sessions",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "https://vk.com/*",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        },
+        {
+            "permission": "https://m.vk.com/*",
+            "unused_ratio": "0/1",
+            "percentage_unused": 0.0
+        }
+    ],
+    "critical_permissions_unused": {
+        "<all_urls>": {
+            "total_requested": 9,
+            "total_unused": 9,
+            "ratio": "9/9"
+        },
+        "nativeMessaging": {
+            "total_requested": 15,
+            "total_unused": 15,
+            "ratio": "15/15"
+        },
+        "debugger": {
+            "total_requested": 4,
+            "total_unused": 0,
+            "ratio": "0/4"
+        },
+        "tabs": {
+            "total_requested": 114,
+            "total_unused": 17,
+            "ratio": "17/114"
+        },
+        "webRequest": {
+            "total_requested": 76,
+            "total_unused": 16,
+            "ratio": "16/76"
+        },
+        "webRequestBlocking": {
+            "total_requested": 8,
+            "total_unused": 8,
+            "ratio": "8/8"
+        }
+    },
+    "top_extensions_with_unused_permissions": [
+        {
+            "id": "hipncndjamdcmphkgngojegjblibadbe",
+            "unused_permissions": 13,
+            "total_permissions": 14
+        },
+        {
+            "id": "mjbepbhonbojpoaenhckjocchgfiaofo",
+            "unused_permissions": 11,
+            "total_permissions": 11
+        },
+        {
+            "id": "lmjnegcaeklhafolokijcfjliaokphfk",
+            "unused_permissions": 10,
+            "total_permissions": 11
+        },
+        {
+            "id": "jpkfgepcmmchgfbjblnodjhldacghenp",
+            "unused_permissions": 10,
+            "total_permissions": 12
+        },
+        {
+            "id": "pnlccmojcmeohlpggmfnbbiapkmbliob",
+            "unused_permissions": 10,
+            "total_permissions": 11
+        },
+        {
+            "id": "bihmplhobchoageeokmgbdihknkjbknd",
+            "unused_permissions": 9,
+            "total_permissions": 10
+        },
+        {
+            "id": "difoiogjjojoaoomphldepapgpbgkhkb",
+            "unused_permissions": 8,
+            "total_permissions": 11
+        },
+        {
+            "id": "bfgdeiadkckfbkeigkoncpdieiiefpig",
+            "unused_permissions": 8,
+            "total_permissions": 11
+        },
+        {
+            "id": "lmbopdiikkamfphhgcckcjhojnokgfeo",
+            "unused_permissions": 8,
+            "total_permissions": 8
+        },
+        {
+            "id": "mhnlakgilnojmhinhkckjpncpbhabphi",
+            "unused_permissions": 8,
+            "total_permissions": 8
+        }
+    ]
+}

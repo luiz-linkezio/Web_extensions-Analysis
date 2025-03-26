@@ -1,0 +1,5834 @@
+{
+  "extensions_count": 87,
+  "extraction_date": "2025-03-04T15:46:24.417183",
+  "extensions": [
+    {
+      "id": "cjpalhdlnbpafiamejdnhcphjbkeiagm",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 39000000,
+      "name": "uBlock Origin",
+      "manifest_version": 2,
+      "permissions": [
+        "alarms",
+        "contextMenus",
+        "privacy",
+        "storage",
+        "tabs",
+        "unlimitedStorage",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "js": [
+            "/js/vapi.js",
+            "/js/vapi-client.js",
+            "/js/contentscript.js"
+          ],
+          "match_about_blank": true,
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": false,
+          "js": [
+            "/js/scriptlets/subscriber.js"
+          ],
+          "matches": [
+            "https://easylist.to/*",
+            "https://*.fanboy.co.nz/*",
+            "https://filterlists.com/*",
+            "https://forums.lanik.us/*",
+            "https://github.com/*",
+            "https://*.github.io/*"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "all_frames": false,
+          "js": [
+            "/js/scriptlets/updater.js"
+          ],
+          "matches": [
+            "https://github.com/uBlockOrigin/*",
+            "https://ublockorigin.github.io/*",
+            "https://*.reddit.com/r/uBlockOrigin/*"
+          ],
+          "run_at": "document_idle"
+        }
+      ],
+      "content_security_policy": "script-src 'self'; object-src 'self'",
+      "externally_connectable": {},
+      "storage": {
+        "managed_schema": "managed_storage.json"
+      }
+    },
+    {
+      "id": "bmnlcjabgnpnenekpadlanbbkooimhnj",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 17000000,
+      "name": "__MSG_Honey_Title__",
+      "manifest_version": 3,
+      "permissions": [
+        "alarms",
+        "cookies",
+        "storage",
+        "unlimitedStorage",
+        "scripting",
+        "webRequest",
+        "offscreen"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "h1-check.js"
+          ],
+          "run_at": "document_end",
+          "match_about_blank": false,
+          "all_frames": false,
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';",
+        "isolated_world": "script-src 'self'; object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "kdpelmjpfafjppnhbloffcjpeomlnpah",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 10000000,
+      "name": "__MSG_extensionName__",
+      "manifest_version": 3,
+      "permissions": [
+        "webRequest",
+        "webNavigation",
+        "storage",
+        "tabs",
+        "nativeMessaging",
+        "declarativeNetRequest",
+        "gcm",
+        "cookies"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "liecbddmkiiihnedobmlmillhodjkdmb",
+      "paths": [
+        "/productivity/communication"
+      ],
+      "downloads": 8000000,
+      "name": "Loom – Screen Recorder & Screen Capture",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "alarms",
+        "contextMenus",
+        "cookies",
+        "desktopCapture",
+        "scripting",
+        "storage",
+        "tabCapture"
+      ],
+      "host_permissions": [
+        "<all_urls>",
+        "*://.loom.com/"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "js/companionBubble.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://mail.google.com/*"
+          ],
+          "js": [
+            "js/gmail.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://github.com/*",
+            "https://gitlab.com/*",
+            "https://app.intercom.io/*",
+            "https://*.intercom.help/*",
+            "https://support.loom.com/*",
+            "https://support.loom.com/*",
+            "https://projects.invisionapp.com/*",
+            "https://www.producthunt.com/*",
+            "https://www.dropbox.com/*",
+            "https://news.ycombinator.com/*",
+            "https://docs.google.com/document/*",
+            "https://*.force.com/*",
+            "https://app.salesforceiq.com/*",
+            "https://app.outreach.io/*",
+            "https://app.hubspot.com/*",
+            "https://app.salesloft.com/*"
+          ],
+          "js": [
+            "js/linkExpand.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://www.loom.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "bihmplhobchoageeokmgbdihknkjbknd",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 7000000,
+      "name": "__MSG_name__",
+      "manifest_version": 2,
+      "permissions": [
+        "<all_urls>",
+        "tabs",
+        "storage",
+        "proxy",
+        "webRequest",
+        "webRequestBlocking",
+        "management",
+        "unlimitedStorage",
+        "background",
+        "privacy"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "js": [
+            "insertion/insertion.js"
+          ],
+          "css": [
+            "insertion/insertion.css"
+          ]
+        }
+      ],
+      "content_security_policy": "script-src 'self'; object-src 'none'",
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "ekhagklcjbdpajgpjgmbionohlpdbjgc",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 6000000,
+      "name": "Zotero Connector",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "contextMenus",
+        "cookies",
+        "scripting",
+        "offscreen",
+        "webRequest",
+        "declarativeNetRequest",
+        "webNavigation",
+        "storage"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "run_at": "document_start",
+          "js": [
+            "browser-polyfill.js",
+            "zotero_config.js",
+            "zotero.js",
+            "translate/promise.js",
+            "utilities/date.js",
+            "utilities/openurl.js",
+            "utilities/xregexp-all.js",
+            "utilities/xregexp-unicode-zotero.js",
+            "utilities/resource/zoteroTypeSchemaData.js",
+            "utilities/utilities.js",
+            "utilities/utilities_item.js",
+            "utilities.js",
+            "http.js",
+            "proxy.js",
+            "translate/debug.js",
+            "utilities/schema.js",
+            "translate/rdf/init.js",
+            "translate/rdf/uri.js",
+            "translate/rdf/term.js",
+            "translate/rdf/identity.js",
+            "translate/rdf/rdfparser.js",
+            "translate/translation/translate.js",
+            "translate/translation/translate_item.js",
+            "translate/translator.js",
+            "translate/utilities_translate.js",
+            "inject/http.js",
+            "inject/sandboxManager.js",
+            "integration/connectorIntegration.js",
+            "cachedTypes.js",
+            "schema.js",
+            "messages.js",
+            "messaging_inject.js",
+            "inject/progressWindow_inject.js",
+            "inject/modalPrompt_inject.js",
+            "zoteroFrame.js",
+            "messagingGeneric.js",
+            "i18n.js",
+            "singlefile.js",
+            "api.js",
+            "inject/virtualOffscreenTranslate.js",
+            "inject/inject.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "run_at": "document_start",
+          "js": [
+            "zotero-google-docs-integration/kixAddZoteroMenu.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "run_at": "document_end",
+          "js": [
+            "zotero-google-docs-integration/googleDocs.js",
+            "zotero-google-docs-integration/client.js",
+            "zotero-google-docs-integration/clientAppsScript.js",
+            "zotero-google-docs-integration/document.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gpdjojdkbbmdfjfahjcgigfpmkopogic",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 6000000,
+      "name": "__MSG_extensionName__",
+      "manifest_version": 3,
+      "permissions": [
+        "contextMenus",
+        "cookies",
+        "storage",
+        "activeTab",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "js": [
+            "contentScript.js"
+          ],
+          "allFrames": false
+        }
+      ],
+      "content_security_policy": {
+        "img-src": "self"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "bhghoamapcdpbohphigoooaddinpkbai",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 6000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "storage",
+        "identity",
+        "alarms",
+        "scripting"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; font-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src https://www.google.com/ https://*.dropboxapi.com https://www.googleapis.com/ https://accounts.google.com/o/oauth2/revoke https://login.microsoftonline.com/common/oauth2/v2.0/token https://graph.microsoft.com/; default-src 'none'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval';"
+      },
+      "externally_connectable": {},
+      "storage": {
+        "managed_schema": "schema.json"
+      }
+    },
+    {
+      "id": "mmioliijnhnoblpgimnlajmefafdfilb",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 5000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "tabCapture",
+        "storage",
+        "unlimitedStorage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://www.shazam.com/*",
+            "*://amp.shazam.com/*"
+          ],
+          "js": [
+            "contentScript.bundle.js"
+          ],
+          "run_at": "document_idle"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "difoiogjjojoaoomphldepapgpbgkhkb",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 5000000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "cookies",
+        "contextMenus",
+        "scripting",
+        "activeTab",
+        "unlimitedStorage",
+        "tabs",
+        "sidePanel",
+        "offscreen",
+        "alarms",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "https://*.openai.com/",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "https://www.google.com/search*",
+            "https://www.google.ad/search*",
+            "https://www.google.ae/search*",
+            "https://www.google.com.af/search*",
+            "https://www.google.com.ag/search*",
+            "https://www.google.com.ai/search*",
+            "https://www.google.al/search*",
+            "https://www.google.am/search*",
+            "https://www.google.co.ao/search*",
+            "https://www.google.com.ar/search*",
+            "https://www.google.as/search*",
+            "https://www.google.at/search*",
+            "https://www.google.com.au/search*",
+            "https://www.google.az/search*",
+            "https://www.google.ba/search*",
+            "https://www.google.com.bd/search*",
+            "https://www.google.be/search*",
+            "https://www.google.bf/search*",
+            "https://www.google.bg/search*",
+            "https://www.google.com.bh/search*",
+            "https://www.google.bi/search*",
+            "https://www.google.bj/search*",
+            "https://www.google.com.bn/search*",
+            "https://www.google.com.bo/search*",
+            "https://www.google.com.br/search*",
+            "https://www.google.bs/search*",
+            "https://www.google.bt/search*",
+            "https://www.google.co.bw/search*",
+            "https://www.google.by/search*",
+            "https://www.google.com.bz/search*",
+            "https://www.google.ca/search*",
+            "https://www.google.cd/search*",
+            "https://www.google.cf/search*",
+            "https://www.google.cg/search*",
+            "https://www.google.ch/search*",
+            "https://www.google.ci/search*",
+            "https://www.google.co.ck/search*",
+            "https://www.google.cl/search*",
+            "https://www.google.cm/search*",
+            "https://www.google.cn/search*",
+            "https://www.google.com.co/search*",
+            "https://www.google.co.cr/search*",
+            "https://www.google.com.cu/search*",
+            "https://www.google.cv/search*",
+            "https://www.google.com.cy/search*",
+            "https://www.google.cz/search*",
+            "https://www.google.de/search*",
+            "https://www.google.dj/search*",
+            "https://www.google.dk/search*",
+            "https://www.google.dm/search*",
+            "https://www.google.com.do/search*",
+            "https://www.google.dz/search*",
+            "https://www.google.com.ec/search*",
+            "https://www.google.ee/search*",
+            "https://www.google.com.eg/search*",
+            "https://www.google.es/search*",
+            "https://www.google.com.et/search*",
+            "https://www.google.fi/search*",
+            "https://www.google.com.fj/search*",
+            "https://www.google.fm/search*",
+            "https://www.google.fr/search*",
+            "https://www.google.ga/search*",
+            "https://www.google.ge/search*",
+            "https://www.google.gg/search*",
+            "https://www.google.com.gh/search*",
+            "https://www.google.com.gi/search*",
+            "https://www.google.gl/search*",
+            "https://www.google.gm/search*",
+            "https://www.google.gr/search*",
+            "https://www.google.com.gt/search*",
+            "https://www.google.gy/search*",
+            "https://www.google.com.hk/search*",
+            "https://www.google.hn/search*",
+            "https://www.google.hr/search*",
+            "https://www.google.ht/search*",
+            "https://www.google.hu/search*",
+            "https://www.google.co.id/search*",
+            "https://www.google.ie/search*",
+            "https://www.google.co.il/search*",
+            "https://www.google.im/search*",
+            "https://www.google.co.in/search*",
+            "https://www.google.iq/search*",
+            "https://www.google.is/search*",
+            "https://www.google.it/search*",
+            "https://www.google.je/search*",
+            "https://www.google.com.jm/search*",
+            "https://www.google.jo/search*",
+            "https://www.google.co.jp/search*",
+            "https://www.google.co.ke/search*",
+            "https://www.google.com.kh/search*",
+            "https://www.google.ki/search*",
+            "https://www.google.kg/search*",
+            "https://www.google.co.kr/search*",
+            "https://www.google.com.kw/search*",
+            "https://www.google.kz/search*",
+            "https://www.google.la/search*",
+            "https://www.google.com.lb/search*",
+            "https://www.google.li/search*",
+            "https://www.google.lk/search*",
+            "https://www.google.co.ls/search*",
+            "https://www.google.lt/search*",
+            "https://www.google.lu/search*",
+            "https://www.google.lv/search*",
+            "https://www.google.com.ly/search*",
+            "https://www.google.co.ma/search*",
+            "https://www.google.md/search*",
+            "https://www.google.me/search*",
+            "https://www.google.mg/search*",
+            "https://www.google.mk/search*",
+            "https://www.google.ml/search*",
+            "https://www.google.com.mm/search*",
+            "https://www.google.mn/search*",
+            "https://www.google.ms/search*",
+            "https://www.google.com.mt/search*",
+            "https://www.google.mu/search*",
+            "https://www.google.mv/search*",
+            "https://www.google.mw/search*",
+            "https://www.google.com.mx/search*",
+            "https://www.google.com.my/search*",
+            "https://www.google.co.mz/search*",
+            "https://www.google.com.na/search*",
+            "https://www.google.com.ng/search*",
+            "https://www.google.com.ni/search*",
+            "https://www.google.ne/search*",
+            "https://www.google.nl/search*",
+            "https://www.google.no/search*",
+            "https://www.google.com.np/search*",
+            "https://www.google.nr/search*",
+            "https://www.google.nu/search*",
+            "https://www.google.co.nz/search*",
+            "https://www.google.com.om/search*",
+            "https://www.google.com.pa/search*",
+            "https://www.google.com.pe/search*",
+            "https://www.google.com.pg/search*",
+            "https://www.google.com.ph/search*",
+            "https://www.google.com.pk/search*",
+            "https://www.google.pl/search*",
+            "https://www.google.pn/search*",
+            "https://www.google.com.pr/search*",
+            "https://www.google.ps/search*",
+            "https://www.google.pt/search*",
+            "https://www.google.com.py/search*",
+            "https://www.google.com.qa/search*",
+            "https://www.google.ro/search*",
+            "https://www.google.ru/search*",
+            "https://www.google.rw/search*",
+            "https://www.google.com.sa/search*",
+            "https://www.google.com.sb/search*",
+            "https://www.google.sc/search*",
+            "https://www.google.se/search*",
+            "https://www.google.com.sg/search*",
+            "https://www.google.sh/search*",
+            "https://www.google.si/search*",
+            "https://www.google.sk/search*",
+            "https://www.google.com.sl/search*",
+            "https://www.google.sn/search*",
+            "https://www.google.so/search*",
+            "https://www.google.sm/search*",
+            "https://www.google.sr/search*",
+            "https://www.google.st/search*",
+            "https://www.google.com.sv/search*",
+            "https://www.google.td/search*",
+            "https://www.google.tg/search*",
+            "https://www.google.co.th/search*",
+            "https://www.google.com.tj/search*",
+            "https://www.google.tl/search*",
+            "https://www.google.tm/search*",
+            "https://www.google.tn/search*",
+            "https://www.google.to/search*",
+            "https://www.google.com.tr/search*",
+            "https://www.google.tt/search*",
+            "https://www.google.com.tw/search*",
+            "https://www.google.co.tz/search*",
+            "https://www.google.com.ua/search*",
+            "https://www.google.co.ug/search*",
+            "https://www.google.co.uk/search*",
+            "https://www.google.com.uy/search*",
+            "https://www.google.co.uz/search*",
+            "https://www.google.com.vc/search*",
+            "https://www.google.co.ve/search*",
+            "https://www.google.vg/search*",
+            "https://www.google.co.vi/search*",
+            "https://www.google.com.vn/search*",
+            "https://www.google.vu/search*",
+            "https://www.google.ws/search*",
+            "https://www.google.rs/search*",
+            "https://www.google.co.za/search*",
+            "https://www.google.co.zm/search*",
+            "https://www.google.co.zw/search*",
+            "https://www.google.cat/search*",
+            "https://kagi.com/search*",
+            "https://www.bing.com/search*",
+            "https://cn.bing.com/search*",
+            "https://search.yahoo.com/search*",
+            "https://search.yahoo.co.jp/search*",
+            "https://search.naver.com/search*",
+            "https://search.brave.com/search*",
+            "https://duckduckgo.com/*",
+            "https://www.baidu.com/*",
+            "https://*.yandex.com/search*",
+            "https://*.yandex.ru/search*",
+            "https://*.yandex.com.tr/search*",
+            "https://*.yandex.uz/search*",
+            "https://*.yandex.kz/search*",
+            "https://*.yandex.by/search*",
+            "https://searx.be/search*"
+          ],
+          "js": [
+            "content-script.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://chat.openai.com/*"
+          ],
+          "js": [
+            "content-chat.openai.com.js"
+          ]
+        },
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "all_frames": true,
+          "run_at": "document_end",
+          "js": [
+            "content-all.js"
+          ],
+          "css": [
+            "fonts/fonts.css"
+          ]
+        },
+        {
+          "matches": [
+            "https://www.youtube.com/embed/*",
+            "https://www.youtube-nocookie.com/embed/*"
+          ],
+          "all_frames": true,
+          "run_at": "document_end",
+          "js": [
+            "content-youtube-embed.js"
+          ],
+          "css": [
+            "fonts/fonts.css"
+          ]
+        },
+        {
+          "matches": [
+            "https://www.netflix.com/*"
+          ],
+          "run_at": "document_end",
+          "js": [
+            "inject-json-hack.js"
+          ],
+          "world": "MAIN"
+        },
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "all_frames": true,
+          "run_at": "document_start",
+          "js": [
+            "all-frames.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://www.zaobao.com/*",
+            "https://www.zaobao.com.sg/*"
+          ],
+          "run_at": "document_start",
+          "world": "MAIN",
+          "all_frames": true,
+          "js": [
+            "all-frames-main-start.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' http://localhost:8097/ 'wasm-unsafe-eval'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' https://ssl.google-analytics.com https://www.google-analytics.com https://connect.facebook.net https://platform.twitter.com http://localhost:8097/; object-src 'self';  connect-src ws://localhost:8097"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "ogdlpmhglpejoiomcodnpjnfgcpmgale",
+      "paths": [
+        "/lifestyle/fun"
+      ],
+      "downloads": 5000000,
+      "name": "__MSG_app_name__",
+      "manifest_version": 3,
+      "permissions": [
+        "scripting",
+        "storage",
+        "unlimitedStorage",
+        "notifications",
+        "alarms"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "js": [
+            "content.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "isolated_world": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://*.custom-cursor.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "gkojfkhlekighikafcpjkiklfbnlmeio",
+      "paths": [
+        "/make_chrome_yours/functionality"
+      ],
+      "downloads": 5000000,
+      "name": "__MSG_appNameChrome__",
+      "manifest_version": 3,
+      "permissions": [
+        "proxy",
+        "webRequest",
+        "storage",
+        "tabs",
+        "webNavigation",
+        "cookies",
+        "scripting",
+        "webRequestAuthProvider",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "run_at": "document_start",
+          "matches": [
+            "https://*.hola.org/*",
+            "https://*.zspeed-cdn.com/*",
+            "https://*.h-vpn.org/*",
+            "https://*.holavpn.com/*",
+            "https://*.holavpnworld.com/*",
+            "https://*.holavpnextension.com/*",
+            "https://*.holavpninstaller.com/*",
+            "https://*.holabrowser.com/*",
+            "https://*.holafreevpn.com/*",
+            "https://*.holavpnrussia.com/*",
+            "https://*.hola-vpn.com/*",
+            "https://*.holax.io/*",
+            "https://*.holavpn.net/*",
+            "https://*.holavpnandroid.com/*",
+            "https://*.c6gj-static.net/*",
+            "https://*.su89-cdn.net/*",
+            "https://*.yd6n63ptky.com/*",
+            "https://*.yg5sjx5kzy.com/*",
+            "https://*.kbz0pwvxmv.com/*",
+            "https://*.wbzby2a2k9.com/*",
+            "https://*.hola-compat.com/*",
+            "https://*.x-cdn-static.com/*",
+            "*://new-tab-page/*",
+            "*://hola-new-tab-page/*",
+            "*://hola-diagnostics/*",
+            "*://hola-settings/*",
+            "*://settings/*"
+          ],
+          "js": [
+            "js/bext/vpn/bg/cs_hola.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "connect-src *; img-src *; style-src 'self' 'unsafe-inline'; default-src 'self';"
+      },
+      "externally_connectable": {
+        "ids": []
+      },
+      "storage": {}
+    },
+    {
+      "id": "iidnbdjijdkbmajdffnidomddglmieko",
+      "paths": [
+        "/productivity/communication"
+      ],
+      "downloads": 4000000,
+      "name": "__MSG_extensionName__",
+      "manifest_version": 3,
+      "permissions": [
+        "alarms",
+        "cookies",
+        "storage",
+        "activeTab",
+        "contextMenus",
+        "notifications",
+        "scripting",
+        "sidePanel"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "https://quillbot.com/",
+        "https://quillbot.com/*"
+      ],
+      "content_scripts": [
+        {
+          "css": [],
+          "js": [
+            "main-world-injection.js"
+          ],
+          "matches": [
+            "https://docs.google.com/document/*",
+            "https://docs.google.com/presentation/*"
+          ],
+          "run_at": "document_start",
+          "world": "MAIN"
+        },
+        {
+          "css": [],
+          "js": [
+            "content-gdocs-pre.js"
+          ],
+          "matches": [
+            "https://docs.google.com/document/*",
+            "https://docs.google.com/presentation/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "css": [
+            "assets/css/quillbot-fonts.css",
+            "assets/css/gdocs-overrides.css"
+          ],
+          "js": [
+            "content-gdocs.js"
+          ],
+          "matches": [
+            "https://docs.google.com/document/*",
+            "https://docs.google.com/presentation/*"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "css": [
+            "assets/css/quillbot-fonts.css"
+          ],
+          "exclude_matches": [
+            "https://docs.google.com/document/*",
+            "https://docs.google.com/presentation/*"
+          ],
+          "js": [
+            "quillbot-content.js"
+          ],
+          "matches": [
+            "*://*.wordpress.com/*"
+          ],
+          "run_at": "document_idle",
+          "match_origin_as_fallback": true,
+          "all_frames": true
+        },
+        {
+          "css": [
+            "assets/css/quillbot-fonts.css"
+          ],
+          "exclude_matches": [
+            "https://docs.google.com/document/*",
+            "https://docs.google.com/presentation/*"
+          ],
+          "js": [
+            "quillbot-content.js"
+          ],
+          "matches": [
+            "*://mail.google.com/*"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "all_frames": true,
+          "css": [
+            "assets/css/quillbot-fonts.css"
+          ],
+          "exclude_matches": [
+            "https://docs.google.com/document/*",
+            "https://docs.google.com/presentation/*",
+            "*://mail.google.com/*",
+            "*://*.wordpress.com/*"
+          ],
+          "js": [
+            "detect-editors.js"
+          ],
+          "matches": [
+            "*://*/*"
+          ],
+          "run_at": "document_idle",
+          "match_origin_as_fallback": true,
+          "match_about_blank": true
+        },
+        {
+          "all_frames": true,
+          "css": [
+            "assets/css/styles.css"
+          ],
+          "match_about_blank": true,
+          "match_origin_as_fallback": true,
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_idle"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "https://*.coursehero.com/*",
+          "https://*.quillbot.com/*",
+          "https://*.quillbot.dev/*",
+          "https://quillbot.com/*",
+          "https://quillbot.dev/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "cofdbpoegempjloogbagkncekinflcnj",
+      "paths": [
+        "/productivity/communication"
+      ],
+      "downloads": 4000000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "storage",
+        "contextMenus",
+        "tabs",
+        "scripting",
+        "declarativeNetRequest",
+        "identity",
+        "tts",
+        "alarms",
+        "webRequest",
+        "cookies",
+        "sidePanel"
+      ],
+      "host_permissions": [
+        "*://*.deepl.com/*",
+        "https://api-test.deepl.com/v1/*",
+        "https://api.deepl.com/v1/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "css": [
+            "build/content.css"
+          ],
+          "js": [
+            "build/content.js"
+          ],
+          "run_at": "document_idle",
+          "all_frames": false
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {
+        "managed_schema": "schema.json"
+      }
+    },
+    {
+      "id": "chhjbpecpncaggjpdakmflnfcopglcmi",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 4000000,
+      "name": "__MSG_extensionName__",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "storage",
+        "cookies",
+        "alarms",
+        "scripting"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": false,
+          "matches": [
+            "https://*.rakuten.com/*",
+            "https://*.rakuten.co.uk/*"
+          ],
+          "js": [
+            "js/libs/snippet.js"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "bfgdeiadkckfbkeigkoncpdieiiefpig",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 4000000,
+      "name": "Bitmoji",
+      "manifest_version": 2,
+      "permissions": [
+        "storage",
+        "cookies",
+        "clipboardWrite",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation",
+        "*://mail.google.com/*",
+        "*://*.bitbucket.org/*",
+        "*://*.github.com/*",
+        "*://*.atlassian.net/*",
+        "*://*.bitmoji.com/*"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "https://mail.google.com/*",
+            "https://bitbucket.org/*",
+            "https://*.github.com/*",
+            "https://*.atlassian.net/*",
+            "*://*.bitmoji.com/*"
+          ],
+          "js": [
+            "thirdparty/jquery.min.js",
+            "thirdparty/sweetalert.min.js",
+            "thirdparty/webpicker-sdk.js",
+            "dist/bitmoji-chrome-extension.js",
+            "dist/chrome-extension-page-detector.js"
+          ],
+          "css": [
+            "thirdparty/webpicker-sdk.css",
+            "dist/chrome-extension.css"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "https://test.bitmoji.com/account_v2/*",
+          "https://www.bitmoji.com/account_v2/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "fjgncogppolhfdpijihbpfmeohpaadpc",
+      "paths": [
+        "/productivity/education"
+      ],
+      "downloads": 3000000,
+      "name": "__MSG_extensionName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "webNavigation",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "exclude_globs": [
+            "*://127.0.0.1/*",
+            "*://localhost:*/*",
+            "*://cas1.calstatela.edu/cas/*",
+            "*://*sci-hub.*/*",
+            "*://*kopernio.com/*",
+            "*://*click.endnote.com/*",
+            "*://*news.ycombinator.com/*",
+            "*://*facebook.com/*",
+            "*://*twitter.com/*",
+            "*://*youtube.com/*",
+            "*://*instagram.com/*",
+            "*://*linkedin.com/*",
+            "*://*wordpress.org/*",
+            "*://*pinterest.com/*",
+            "*://*wordpress.com/*",
+            "*://*blogspot.com/*",
+            "*://*apple.com/*",
+            "*://*adobe.com/*",
+            "*://*tumblr.com/*",
+            "*://*youtu.be/*",
+            "*://*amazon.com/*",
+            "*://*vimeo.com/*",
+            "*://*flickr.com/*",
+            "*://*microsoft.com/*",
+            "*://*yahoo.com/*",
+            "*://*godaddy.com/*",
+            "*://*qq.com/*",
+            "*://*bit.ly/*",
+            "*://*vk.com/*",
+            "*://*reddit.com/*",
+            "*://*w3.org/*",
+            "*://*nytimes.com/*",
+            "*://*t.co/*",
+            "*://*europa.eu/*",
+            "*://*buydomains.com/*",
+            "*://*wp.com/*",
+            "*://*statcounter.com/*",
+            "*://*miitbeian.gov.cn/*",
+            "*://*jimdo.com/*",
+            "*://*blogger.com/*",
+            "*://*github.com/*",
+            "*://*weebly.com/*",
+            "*://*soundcloud.com/*",
+            "*://*mozilla.org/*",
+            "*://*bbc.co.uk/*",
+            "*://*yandex.ru/*",
+            "*://*myspace.com/*",
+            "*://*addthis.com/*",
+            "*://*theguardian.com/*",
+            "*://*cnn.com/*",
+            "*://*stumbleupon.com/*",
+            "*://*gravatar.com/*",
+            "*://*digg.com/*",
+            "*://*addtoany.com/*",
+            "*://*creativecommons.org/*",
+            "*://*paypal.com/*",
+            "*://*yelp.com/*",
+            "*://*imdb.com/*",
+            "*://*huffingtonpost.com/*",
+            "*://*feedburner.com/*",
+            "*://*issuu.com/*",
+            "*://*wixsite.com/*",
+            "*://*wix.com/*",
+            "*://*dropbox.com/*",
+            "*://*forbes.com/*",
+            "*://*miibeian.gov.cn/*",
+            "*://*amazonaws.com/*",
+            "*://*washingtonpost.com/*",
+            "*://*bluehost.com/*",
+            "*://*etsy.com/*",
+            "*://*go.com/*",
+            "*://*msn.com/*",
+            "*://*wsj.com/*",
+            "*://*ameblo.jp/*",
+            "*://*archive.org/*",
+            "*://*slideshare.net/*",
+            "*://*e-recht24.de/*",
+            "*://*weibo.com/*",
+            "*://*fc2.com/*",
+            "*://*eventbrite.com/*",
+            "*://*parallels.com/*",
+            "*://*doubleclick.net/*",
+            "*://*mail.ru/*",
+            "*://*sourceforge.net/*",
+            "*://*amazon.co.uk/*",
+            "*://*telegraph.co.uk/*",
+            "*://*ebay.com/*",
+            "*://*amzn.to/*",
+            "*://*livejournal.com/*",
+            "*://*51.la/*",
+            "*://*free.fr/*",
+            "*://*yahoo.co.jp/*",
+            "*://*dailymail.co.uk/*",
+            "*://*reuters.com/*",
+            "*://*taobao.com/*",
+            "*://*wikimedia.org/*",
+            "*://*amazon.de/*",
+            "*://*typepad.com/*",
+            "*://*hatena.ne.jp/*",
+            "*://*bloomberg.com/*",
+            "*://*elegantthemes.com/*",
+            "*://*eepurl.com/*",
+            "*://*usatoday.com/*",
+            "*://*about.com/*",
+            "*://*medium.com/*",
+            "*://*macromedia.com/*",
+            "*://*xing.com/*",
+            "*://*bing.com/*",
+            "*://*time.com/*",
+            "*://*www.gov.uk/*",
+            "*://*cdc.gov/*",
+            "*://*tripadvisor.com/*",
+            "*://*cpanel.net/*",
+            "*://*amazon.co.jp/*",
+            "*://*npr.org/*",
+            "*://*bbb.org/*",
+            "*://*aol.com/*",
+            "*://*constantcontact.com/*",
+            "*://*latimes.com/*",
+            "*://*icio.us/*",
+            "*://*list-manage.com/*",
+            "*://*webs.com/*",
+            "*://*opera.com/*",
+            "*://*beian.gov.cn/*",
+            "*://*vkontakte.ru/*",
+            "*://*blogspot.co.uk/*",
+            "*://*live.com/*",
+            "*://*bandcamp.com/*",
+            "*://*apache.org/*",
+            "*://*bbc.com/*",
+            "*://*businessinsider.com/*",
+            "*://*dailymotion.com/*",
+            "*://*cpanel.com/*",
+            "*://*disqus.com/*",
+            "*://*behance.net/*",
+            "*://*rambler.ru/*",
+            "*://*gnu.org/*",
+            "*://*sina.com.cn/*",
+            "*://*spotify.com/*",
+            "*://*joomla.org/*",
+            "*://*line.me/*",
+            "*://*wired.com/*",
+            "*://*github.io/*",
+            "*://*googleusercontent.com/*",
+            "*://*kickstarter.com/*",
+            "*://*guardian.co.uk/*",
+            "*://*imgur.com/*",
+            "*://*goodreads.com/*",
+            "*://*nasa.gov/*",
+            "*://*rakuten.co.jp/*",
+            "*://*surveymonkey.com/*",
+            "*://*delicious.com/*",
+            "*://*independent.co.uk/*",
+            "*://*whatsapp.com/*",
+            "*://*one.com/*",
+            "*://*photobucket.com/*",
+            "*://*ted.com/*",
+            "*://*themeforest.net/*",
+            "*://*homestead.com/*",
+            "*://*cnet.com/*",
+            "*://*1und1.de/*",
+            "*://*deviantart.com/*",
+            "*://*scribd.com/*",
+            "*://*jiathis.com/*",
+            "*://*domainname.de/*",
+            "*://*ca.gov/*",
+            "*://*shopify.com/*",
+            "*://*plesk.com/*",
+            "*://*who.int/*",
+            "*://*un.org/*",
+            "*://*buzzfeed.com/*",
+            "*://*theatlantic.com/*",
+            "*://*barnesandnoble.com/*",
+            "*://*sakura.ne.jp/*",
+            "*://*pbs.org/*",
+            "*://*nationalgeographic.com/*",
+            "*://*getpocket.com/*",
+            "*://*blogspot.com.es/*",
+            "*://*networksolutions.com/*",
+            "*://*webmd.com/*",
+            "*://*foxnews.com/*",
+            "*://*cbsnews.com/*",
+            "*://*techcrunch.com/*",
+            "*://*booking.com/*",
+            "*://*php.net/*",
+            "*://*cloudfront.net/*",
+            "*://*ibm.com/*",
+            "*://*a8.net/*",
+            "*://*163.com/*",
+            "*://*nbcnews.com/*",
+            "*://*skype.com/*",
+            "*://*mashable.com/*",
+            "*://*naver.com/*",
+            "*://*domainretailing.com/*",
+            "*://*usda.gov/*",
+            "*://*wp.me/*",
+            "*://*4.cn/*",
+            "*://*whitehouse.gov/*",
+            "*://*squarespace.com/*",
+            "*://*phoca.cz/*",
+            "*://*change.org/*",
+            "*://*cbc.ca/*",
+            "*://*ft.com/*",
+            "*://*epa.gov/*",
+            "*://*secureserver.net/*",
+            "*://*enable-javascript.com/*",
+            "*://*meetup.com/*",
+            "*://*noaa.gov/*",
+            "*://*cnbc.com/*",
+            "*://*nps.gov/*",
+            "*://*phpbb.com/*",
+            "*://*wikia.com/*",
+            "*://*usnews.com/*",
+            "*://*myshopify.com/*",
+            "*://*mapquest.com/*",
+            "*://*trustpilot.com/*",
+            "*://*domainactive.co/*",
+            "*://*uol.com.br/*",
+            "*://*foursquare.com/*",
+            "*://*ow.ly/*",
+            "*://*telegram.me/*",
+            "*://*sohu.com/*",
+            "*://*loc.gov/*",
+            "*://*economist.com/*",
+            "*://*fda.gov/*",
+            "*://*irs.gov/*",
+            "*://*themegrill.com/*",
+            "*://*wufoo.com/*",
+            "*://*geocities.jp/*",
+            "*://*bigcartel.com/*",
+            "*://*livedoor.jp/*",
+            "*://*chicagotribune.com/*",
+            "*://*dribbble.com/*",
+            "*://*hp.com/*",
+            "*://*doi.org/*",
+            "*://*prnewswire.com/*",
+            "*://*ed.gov/*",
+            "*://*ok.ru/*",
+            "*://*newyorker.com/*",
+            "*://*abc.net.au/*",
+            "*://*bizjournals.com/*",
+            "*://*slate.com/*",
+            "*://*houzz.com/*",
+            "*://*umblr.com/*",
+            "*://*fb.com/*",
+            "*://*vice.com/*",
+            "*://*xinhuanet.com/*",
+            "*://*engadget.com/*",
+            "*://*nifty.com/*",
+            "*://*t.me/*",
+            "*://*marriott.com/*",
+            "*://*clickbank.net/*",
+            "*://*globo.com/*",
+            "*://*list-manage1.com/*",
+            "*://*histats.com/*",
+            "*://*state.gov/*",
+            "*://*cbslocal.com/*",
+            "*://*hostnet.nl/*",
+            "*://*house.gov/*",
+            "*://*youku.com/*",
+            "*://*theverge.com/*",
+            "*://*ocn.ne.jp/*",
+            "*://*storify.com/*",
+            "*://*sogou.com/*",
+            "*://*goo.ne.jp/*",
+            "*://*fortune.com/*",
+            "*://*wunderground.com/*",
+            "*://*aboutcookies.org/*",
+            "*://*rs6.net/*",
+            "*://*namejet.com/*",
+            "*://*gofundme.com/*",
+            "*://*oracle.com/*",
+            "*://*ifeng.com/*",
+            "*://*indiatimes.com/*",
+            "*://*samsung.com/*",
+            "*://*athemes.com/*",
+            "*://*1and1.com/*",
+            "*://*studiopress.com/*",
+            "*://*hilton.com/*",
+            "*://*debian.org/*",
+            "*://*wikihow.com/*",
+            "*://*fbcdn.net/*",
+            "*://*fb.me/*",
+            "*://*senate.gov/*",
+            "*://*fastcompany.com/*",
+            "*://*mailchimp.com/*",
+            "*://*alibaba.com/*",
+            "*://*youronlinechoices.com/*",
+            "*://*android.com/*",
+            "*://*ustream.tv/*",
+            "*://*dedecms.com/*",
+            "*://*zdnet.com/*",
+            "*://*home.pl/*",
+            "*://*exblog.jp/*",
+            "*://*cryoutcreations.eu/*",
+            "*://*entrepreneur.com/*",
+            "*://*drupal.org/*",
+            "*://*tripadvisor.co.uk/*",
+            "*://*businesswire.com/*",
+            "*://*shinystat.com/*",
+            "*://*jugem.jp/*",
+            "*://*hbr.org/*",
+            "*://*ftc.gov/*",
+            "*://*1688.com/*",
+            "*://*inc.com/*",
+            "*://*loopia.se/*",
+            "*://*visma.com/*",
+            "*://*dreamhost.com/*",
+            "*://*mijndomein.nl/*",
+            "*://*loopia.com/*",
+            "*://*scientificamerican.com/*",
+            "*://*stackoverflow.com/*",
+            "*://*1and1.fr/*",
+            "*://*sedo.com/*",
+            "*://*mozilla.com/*",
+            "*://*worldbank.org/*",
+            "*://*hubspot.com/*",
+            "*://*census.gov/*",
+            "*://*arstechnica.com/*",
+            "*://*mysql.com/*",
+            "*://*allaboutcookies.org/*",
+            "*://*usgs.gov/*",
+            "*://*intel.com/*",
+            "*://*amazon.fr/*",
+            "*://*shop-pro.jp/*",
+            "*://*aliyun.com/*",
+            "*://*office.com/*",
+            "*://*alexa.com/*",
+            "*://*zendesk.com/*",
+            "*://*colorlib.com/*",
+            "*://*accuweather.com/*",
+            "*://*cisco.com/*",
+            "*://*hibu.com/*",
+            "*://*hollywoodreporter.com/*",
+            "*://*admin.ch/*",
+            "*://*example.com/*",
+            "*://*hhs.gov/*",
+            "*://*twitch.tv/*",
+            "*://*networkadvertising.org/*",
+            "*://*teamviewer.com/*",
+            "*://*nazwa.pl/*",
+            "*://*variety.com/*",
+            "*://*netflix.com/*",
+            "*://*box.com/*",
+            "*://*prestashop.com/*",
+            "*://*bls.gov/*",
+            "*://*wsimg.com/*",
+            "*://*www.nhs.uk/*",
+            "*://*eventbrite.co.uk/*",
+            "*://*opensource.org/*",
+            "*://*zenfolio.com/*",
+            "*://*blogspot.jp/*",
+            "*://*va.gov/*",
+            "*://*oecd.org/*",
+            "*://*mlb.com/*",
+            "*://*ename.com.cn/*",
+            "*://*usa.gov/*",
+            "*://*steampowered.com/*",
+            "*://*redcross.org/*",
+            "*://*bund.de/*",
+            "*://*thehill.com/*",
+            "*://*dictionary.com/*",
+            "*://*360.cn/*",
+            "*://*hostgator.com/*",
+            "*://*icann.org/*",
+            "*://*dot.gov/*",
+            "*://*adweek.com/*",
+            "*://*fao.org/*",
+            "*://*sun.com/*",
+            "*://*iubenda.com/*",
+            "*://*gesetze-im-internet.de/*",
+            "*://*tmall.com/*",
+            "*://*today.com/*",
+            "*://*nginx.org/*",
+            "*://*xiti.com/*",
+            "*://*venturebeat.com/*",
+            "*://*snapchat.com/*",
+            "*://*ietf.org/*",
+            "*://*symantec.com/*",
+            "*://*japanpost.jp/*",
+            "*://*giphy.com/*",
+            "*://*netscape.com/*",
+            "*://*justgiving.com/*",
+            "*://*sec.gov/*",
+            "*://*att.com/*",
+            "*://*squareup.com/*",
+            "*://*aboutads.info/*",
+            "*://*gpo.gov/*",
+            "*://*tucowsdomains.com/*",
+            "*://*domainnameshop.com/*",
+            "*://*reference.com/*",
+            "*://*ssa.gov/*",
+            "*://*libsyn.com/*",
+            "*://*windowsphone.com/*",
+            "*://*ny.gov/*",
+            "*://*bigcommerce.com/*",
+            "*://*oreilly.com/*",
+            "*://*domeneshop.no/*",
+            "*://*googleapis.com/*",
+            "*://*artisteer.com/*",
+            "*://*thenextweb.com/*",
+            "*://*gotowebinar.com/*",
+            "*://*deloitte.com/*",
+            "*://*blackberry.com/*",
+            "*://*w3schools.com/*",
+            "*://*dol.gov/*",
+            "*://*python.org/*",
+            "*://*siteorigin.com/*",
+            "*://*ewebdevelopment.com/*",
+            "*://*moz.com/*",
+            "*://*warnerbros.com/*",
+            "*://*justice.gov/*",
+            "*://*quantcast.com/*",
+            "*://*dhs.gov/*",
+            "*://*java.com/*",
+            "*://*fcc.gov/*",
+            "*://*congress.gov/*",
+            "*://*g.co/*",
+            "*://*playstation.com/*",
+            "*://*iso.org/*",
+            "*://*opencart.com/*",
+            "*://*eff.org/*",
+            "*://*moodle.org/*",
+            "*://*web.de/*",
+            "*://*unsplash.com/*",
+            "*://*msdn.com/*",
+            "*://*unicef.org/*",
+            "*://*mlit.go.jp/*",
+            "*://*canada.ca/*",
+            "*://*bitbucket.org/*",
+            "*://*azurewebsites.net/*",
+            "*://*nginx.com/*",
+            "*://*dmca.com/*",
+            "*://*etracker.de/*",
+            "*://*mynavi.jp/*",
+            "*://*aarp.org/*",
+            "*://*gartner.com/*",
+            "*://*starwoodhotels.com/*",
+            "*://*typeform.com/*",
+            "*://*sedoparking.com/*",
+            "*://*ticketmaster.com/*",
+            "*://mail.*/*",
+            "*://chat.*/*",
+            "*://store.*/*",
+            "*://play.google.com/*",
+            "*://chat.google.com/*",
+            "*://*openai.com/*",
+            "*://taskassist*/*",
+            "*://signaler*/*",
+            "*://bilibili.com/*"
+          ],
+          "js": [
+            "uqiswts.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://www.kopernio.com/*",
+            "*://kopernio.com/*",
+            "*://click.endnote.com/*"
+          ],
+          "js": [
+            "ycpo49jmvwp183.js"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "hbkkncjljigpfhghnjhjaaimceakjdoo",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 3000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "scripting",
+        "alarms"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "js/content.js"
+          ],
+          "all_frames": false,
+          "match_about_blank": false,
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "lkdokbndiffkmddlfpbjiokmfkafmgkm",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 3000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "contextMenus",
+        "storage"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_end",
+          "all_frames": true,
+          "js": [
+            "src/js/contentScript.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "fbgcedjacmlbgleddnoacbnijgmiolem",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 3000000,
+      "name": "__MSG_RewardsTitle__",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies",
+        "management",
+        "notifications",
+        "alarms",
+        "storage",
+        "scripting",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "https://www.bing.com/*",
+          "https://browserdefaults.microsoft.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "nlipoenfbbikpbjkfpfillcgkoblgpmj",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 3000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "power",
+        "storage",
+        "unlimitedStorage",
+        "desktopCapture",
+        "tabCapture",
+        "cookies",
+        "activeTab",
+        "contextMenus",
+        "scripting",
+        "offscreen",
+        "alarms"
+      ],
+      "host_permissions": [
+        "*://*.awesomescreenshot.com/",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "javascripts/libs/jquery-3.4.0.min.js",
+            "javascripts/libs/dragresize.js",
+            "javascripts/jquery.draggable.js",
+            "javascripts/libs/jquery-ui-custom.min.js",
+            "javascripts/bundles/content.bundle.js"
+          ],
+          "css": [
+            "stylesheets/selected.css"
+          ],
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "exclude_globs": [
+            "https://awesomescreenshot.com/save-local-flash/SaveToDisk.html"
+          ],
+          "all_frames": true,
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "javascripts/bundles/content_record.bundle.js"
+          ],
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "exclude_globs": [
+            "https://awesomescreenshot.com/save-local-flash/SaveToDisk.html"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "matches": [
+            "https://mail.google.com/*",
+            "https://inbox.google.com/*"
+          ],
+          "js": [
+            "javascripts/bundles/gmailContent.bundle.js"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval' ; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' https://ssl.google-analytics.com https://www.google-analytics.com https://connect.facebook.net https://platform.twitter.com http://localhost:8097/; object-src 'self';  connect-src ws://localhost:8097"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://*.awesomescreenshot.cn/*",
+          "https://*.awesomescreenshot.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "mfidniedemcgceagapgdekdbmanojomk",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 3000000,
+      "name": "__MSG_app_name__",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies",
+        "storage",
+        "unlimitedStorage",
+        "webRequest",
+        "alarms"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": false,
+          "js": [
+            "vendor.js",
+            "content.js"
+          ],
+          "match_about_blank": false,
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "all_frames": false,
+          "js": [
+            "vendor.js",
+            "guide.js"
+          ],
+          "match_about_blank": false,
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "lifbcibllhkdhoafpjfnlhfpfgnpldfl",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 3000000,
+      "name": "Skype",
+      "manifest_version": 2,
+      "permissions": [
+        "cookies",
+        "https://web.skype.com/"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*",
+            "file://*/*"
+          ],
+          "js": [
+            "browserSpecificScript.js"
+          ],
+          "css": [
+            "skypeFont.css"
+          ],
+          "run_at": "document_end",
+          "all_frames": false
+        }
+      ],
+      "content_security_policy": "trusted-types meetNowWidgetPolicy 'allow-duplicates'; require-trusted-types-for 'script'; script-src 'self' https://*.microsoft.com https://secure.skypeassets.com https://qaassetswesteurope.blob.core.windows.net/apollo/meetnowwidget/latest/static/js/main.js https://preassetswesteurope.blob.core.windows.net/apollo/meetnowwidget/latest/static/js/main.js; img-src 'self' data: blob: https://*.microsoft.com https://*.secure.skypeassets.com https://secure.skypeassets.com https://qaassetswesteurope.blob.core.windows.net https://preassetswesteurope.blob.core.windows.net; style-src 'self' 'unsafe-inline' https://*.microsoft.com https://secure.skypeassets.com https://qaassetswesteurope.blob.core.windows.net/apollo/meetnowwidget/latest/static/css/main.css https://preassetswesteurope.blob.core.windows.net/apollo/meetnowwidget/latest/static/css/main.css; font-src 'self' https://secure.skypeassets.com https://qaassetswesteurope.blob.core.windows.net https://preassetswesteurope.blob.core.windows.net; connect-src 'self' https://*.microsoft.com https://*.skype.com https://*.live.com https://*.secure.skypeassets.com https://secure.skypeassets.com https://qaassetswesteurope.blob.core.windows.net https://preassetswesteurope.blob.core.windows.net; form-action https://web.skype.com; default-src 'self' https://*.microsoft.com https://*.skype.com https://*.live.com https://secure.skypeassets.com https://qaassetswesteurope.blob.core.windows.net https://preassetswesteurope.blob.core.windows.net; object-src 'self'; base-uri 'self'; frame-ancestors 'none'; report-uri https://csp.microsoft.com/report/Skype-ChromeExtension-PROD; block-all-mixed-content;",
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "pachckjkecffpdphbpmfolblodfkgbhl",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 3000000,
+      "name": "vidIQ Vision for YouTube",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies",
+        "clipboardWrite",
+        "storage",
+        "background"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://www.youtube.com/*",
+            "*://studio.youtube.com/*"
+          ],
+          "exclude_matches": [
+            "*://www.youtube.com/subscribe_embed*"
+          ],
+          "css": [
+            "bundle.css"
+          ],
+          "js": [
+            "bundle.bundle.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://www.tiktok.com/*"
+          ],
+          "js": [
+            "tiktok.bundle.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://www.tiktok.com/*"
+          ],
+          "js": [
+            "tiktokDocumentStart.bundle.js"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://www.youtube.com/embed/*"
+          ],
+          "all_frames": true,
+          "js": [
+            "getIframeVideoStill.bundle.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://app.vidiq.com/*",
+            "*://vidiq.com/*"
+          ],
+          "run_at": "document_idle",
+          "js": [
+            "extensionLogin.bundle.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "mbniclmhobmnbdlbpiphghaielnnpgdp",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 2000000,
+      "name": "__MSG_screenshotplugin_name__",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "storage",
+        "unlimitedStorage",
+        "notifications",
+        "clipboardWrite",
+        "downloads",
+        "cookies"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "bcjindcccaagfpapjjmafapmmgkkhgoa",
+      "paths": [
+        "/productivity/developer"
+      ],
+      "downloads": 2000000,
+      "name": "JSON Formatter",
+      "manifest_version": 3,
+      "permissions": [
+        "storage"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "content.js"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gpaiobkfhnonedkhhfjpmhdalgeoebfa",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 2000000,
+      "name": "__MSG_AppName__",
+      "manifest_version": 3,
+      "permissions": [
+        "alarms",
+        "storage",
+        "scripting",
+        "offscreen"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "https://login.live.com/*",
+            "https://login.microsoftonline.com/*"
+          ],
+          "js": [
+            "common/browserHandler.js",
+            "content/auth.js"
+          ],
+          "run_at": "document_start",
+          "all_frames": true,
+          "match_about_blank": true
+        },
+        {
+          "matches": [
+            "https://support.microsoft.com/*/office/welcome-to-the-microsoft-editor-browser-extension-9a5ee6c4-f6b7-4b26-bbca-cd38a8b44d6a*"
+          ],
+          "js": [
+            "common/browserHandler.js",
+            "content/postInstallPage.js"
+          ],
+          "run_at": "document_start",
+          "all_frames": true,
+          "match_about_blank": false
+        },
+        {
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "js": [
+            "editor/config.js",
+            "editor/content.js"
+          ],
+          "all_frames": false,
+          "run_at": "document_end"
+        },
+        {
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "js": [
+            "content/gDocsSupportMv3.js"
+          ],
+          "all_frames": false,
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "js": [
+            "content/gDocsAnnotatedCanvas.js"
+          ],
+          "world": "MAIN",
+          "all_frames": false,
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "default-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; connect-src https://roaming.edog.officeapps.live.com https://*.office.net https://*.office365.us https://*.office.com https://*.officeppe.net https://augloop-dogfood.officeppe.com wss://augloop-dogfood.officeppe.com https://augloop.office.com wss://augloop.office.com https://*.augloop-dogfood.officeppe.com wss://*.augloop-dogfood.officeppe.com https://*.augloop.office.com wss://*.augloop.office.com https://roaming.officeapps.live.com https://*.aria.microsoft.com https://browser.events.data.microsoft.com https://graph.microsoft.com https://login.microsoftonline.com https://login.windows.net https://login.live.com https://apis.live.net https://petrol.office.microsoft.com https://petrol-int.office.microsoft.com wss://augloop-int.officeppe.com https://*.trafficmanager.net:9443 https://*.usgovtrafficmanager.net:9443 https://editor-thesaurus.northeurope.cloudapp.azure.com:9443; frame-src https://login.microsoftonline.com https://login.live.com/; base-uri 'none'; script-src 'self'; object-src 'self'; form-action 'none'; frame-ancestors https: http:; block-all-mixed-content; font-src 'self' https://*.cdn.office.net/files/ https://static2.sharepointonline.com/files/fabric/assets/ https://spoprod-a.akamaihd.net/files/fabric/assets/ https://*.azureedge.net;"
+      },
+      "externally_connectable": {},
+      "storage": {
+        "managed_schema": "managed_schema.json"
+      }
+    },
+    {
+      "id": "pioclpoplcdbaefihamjohnefbikjilc",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 2000000,
+      "name": "__MSG_ExtensionName__",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "tabs",
+        "cookies",
+        "contextMenus",
+        "storage",
+        "notifications",
+        "scripting"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*",
+            "ftp://*/*"
+          ],
+          "js": [
+            "commons.js",
+            "content.js"
+          ],
+          "css": [
+            "content.css",
+            "SkitchStyles.css",
+            "TopFrames.css"
+          ]
+        },
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*",
+            "ftp://*/*"
+          ],
+          "all_frames": true,
+          "js": [
+            "ContentScriptFrames.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "cnpniohnfphhjihaiiggeabnkjhpaldj",
+      "paths": [
+        "/lifestyle/art"
+      ],
+      "downloads": 2000000,
+      "name": "Image Downloader",
+      "manifest_version": 2,
+      "permissions": [
+        "activeTab",
+        "downloads",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gohjpllcolmccldfdggmamodembldgpc",
+      "paths": [
+        "/lifestyle/fun"
+      ],
+      "downloads": 2000000,
+      "name": "Shimeji Browser Extension",
+      "manifest_version": 3,
+      "permissions": [
+        "contextMenus",
+        "storage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "js": [
+            "content-script.430647cf.js"
+          ],
+          "run_at": "document_end",
+          "css": [
+            "content-script.d43d51f5.css"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "*://*.shimejis.xyz/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "ekcgkejcjdcmonfpmnljobemcbpnkamh",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 2000000,
+      "name": "WA Web Plus by Elbruz Technologies",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "storage",
+        "unlimitedStorage",
+        "identity",
+        "identity.email"
+      ],
+      "host_permissions": [
+        "*://web.whatsapp.com/*",
+        "*://wawplus.com/*",
+        "*://*.web.app/*",
+        "*://*.firebaseio.com/*",
+        "*://*.firebaseapp.com/*",
+        "*://*.cloudfunctions.net/*",
+        "*://*.zapier.com/*",
+        "*://*.pabbly.com/*",
+        "*://*.integrately.com/*",
+        "*://*.integromat.com/*",
+        "*://apiway.ai/*",
+        "*://*.konnectzit.com/*",
+        "*://*.knzt.it/*",
+        "*://api.antsandapps.com/*",
+        "*://res.cloudinary.com/*"
+      ],
+      "content_scripts": [
+        {
+          "run_at": "document_end",
+          "matches": [
+            "*://web.whatsapp.com/*"
+          ],
+          "js": [
+            "/bundle.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "*://wawplus.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "lmbopdiikkamfphhgcckcjhojnokgfeo",
+      "paths": [
+        "/productivity/communication"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_name__",
+      "manifest_version": 3,
+      "permissions": [
+        "alarms",
+        "tabs",
+        "contextMenus",
+        "nativeMessaging",
+        "management",
+        "storage",
+        "cookies",
+        "scripting"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "js": [
+            "src/tierces_parties/inboxsdk.js",
+            "src/gestionnaireAntiOups.js"
+          ],
+          "matches": [
+            "https://mail.google.com/*",
+            "https://inbox.google.com/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": true,
+          "exclude_matches": [
+            "https://*.antidote.app/*",
+            "https://telechargement12.druide.com/texteurs/Outlook/Commun/courant/*",
+            "https://telechargement12.druide.com/texteurs/OfficeJS/Commun/courant/*",
+            "https://docs.google.com/document/*"
+          ],
+          "js": [
+            "src/cstAntidote.js",
+            "src/dictionnaire.js",
+            "src/gestion-t.js",
+            "src/outils.js",
+            "src/filemessage.js",
+            "extensions/DetecteurWeb/tierces_parties/diff_match_patch.js",
+            "extensions/DetecteurWeb/tierces_parties/react.production.min.js",
+            "extensions/DetecteurWeb/tierces_parties/react-dom.production.min.js",
+            "extensions/DetecteurWeb/infobulle/infobulleDW.js",
+            "extensions/DetecteurWeb/detecteurWeb_patron.js",
+            "extensions/DetecteurWeb/detecteurWeb.js",
+            "extensions/DetecteurWeb/objetBoutonBulle.js",
+            "extensions/DetecteurWeb/detecteurWebWordpress.js",
+            "extensions/DetecteurWeb/detecteurWebWordpress_patron.js",
+            "src/antidote.js",
+            "src/AgentTexteurGen.js",
+            "src/AgentTexteurStd.js",
+            "src/AgentTexteurWordpress.js",
+            "src/AgentTexteurGoogleDocs.js",
+            "src/AgentTexteurForm.js",
+            "src/AgentTexteurGrav.js",
+            "extensions/Dialogue/dialogue_patron.js",
+            "extensions/Dialogue/dialogue.js"
+          ],
+          "matches": [
+            "file:///*",
+            "http://*/*",
+            "https://*/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": false,
+          "js": [
+            "src/cstAntidote.js",
+            "src/dictionnaire.js",
+            "src/gestion-t.js",
+            "src/outils.js",
+            "src/filemessage.js",
+            "extensions/DetecteurWeb/tierces_parties/diff_match_patch.js",
+            "extensions/DetecteurWeb/tierces_parties/react.production.min.js",
+            "extensions/DetecteurWeb/tierces_parties/react-dom.production.min.js",
+            "extensions/DetecteurWeb/infobulle/infobulleDW.js",
+            "extensions/DetecteurWeb/detecteurWeb_patron.js",
+            "extensions/DetecteurWeb/detecteurWeb.js",
+            "extensions/DetecteurWeb/objetBoutonBulle.js",
+            "src/antidote.js",
+            "src/AgentTexteurGen.js",
+            "src/AgentTexteurStd.js",
+            "src/AgentTexteurGoogleDocs.js",
+            "src/AgentTexteurForm.js",
+            "src/AgentTexteurGrav.js",
+            "extensions/Dialogue/dialogue_patron.js",
+            "extensions/Dialogue/dialogue.js",
+            "src/injecteurGoogleDocs.js",
+            "extensions/DetecteurWeb/detecteurWebGoogleDocs_patron.js",
+            "extensions/DetecteurWeb/detecteurWebGoogleDocs.js"
+          ],
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": true,
+          "js": [
+            "src/aw-aide.js"
+          ],
+          "matches": [
+            "https://*.antidote.app/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": true,
+          "js": [
+            "src/services-druide.js"
+          ],
+          "matches": [
+            "https://services.druide.com/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": true,
+          "js": [
+            "src/cstAntidote.js",
+            "src/outils.js",
+            "src/antidoteOfficeAddin.js"
+          ],
+          "matches": [
+            "https://telechargement12.druide.com/texteurs/Outlook/Commun/courant/*",
+            "https://telechargement12.druide.com/texteurs/OfficeJS/Commun/courant/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "all_frames": true,
+          "js": [
+            "src/beta-comm.js"
+          ],
+          "matches": [
+            "https://www.antidote.info/fr/antidote-plus/beta/observation"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval';object-src 'self'; worker-src 'self'; connect-src *"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://docs.google.com/*",
+          "https://drive.google.com/*",
+          "https://*.googleusercontent.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "epbobagokhieoonfplomdklollconnkl",
+      "paths": [
+        "/productivity/education"
+      ],
+      "downloads": 1000000,
+      "name": "Scribbr Citation Generator",
+      "manifest_version": 3,
+      "permissions": [
+        "scripting",
+        "tabs",
+        "storage",
+        "identity"
+      ],
+      "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "content_scripts": [
+        {
+          "run_at": "document_start",
+          "matches": [
+            "https://*/*",
+            "http://*/*"
+          ],
+          "js": [
+            "main.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://*.ncbi.nlm.nih.gov/*",
+            "https://*.sciencedirect.com/*",
+            "https://*.researchgate.net/*",
+            "https://*.cdc.gov/*",
+            "https://*.britannica.com/*",
+            "https://*.forbes.com/*",
+            "https://*.investopedia.com/*",
+            "https://*.mayoclinic.org/*",
+            "https://*.nytimes.com/*",
+            "https://*.wikipedia.org/*",
+            "https://*.indeed.com/jobs*",
+            "https://*.indeed.com/cmp/*",
+            "https://*.indeed.com/companies/*",
+            "https://*.indeed.com/career/*",
+            "https://*.indeed.com/career-advice/*",
+            "https://*.linkedin.com/pulse/*",
+            "https://*.linkedin.com/advice/*",
+            "https://*.linkedin.com/learning/*",
+            "https://*.linkedin.com/posts/*",
+            "https://*.psychologytoday.com/*",
+            "https://*.hbr.org/*",
+            "https://*.cnn.com/*",
+            "https://*.proquest.com/*",
+            "https://*.apa.org/*",
+            "https://*.tandfonline.com/*",
+            "https://*.who.int/*"
+          ],
+          "js": [
+            "citation-badge.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://docs.google.com/document/*"
+          ],
+          "js": [
+            "docs-widget.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "https://*.scribbr.com/*",
+          "https://*.scribbr.co.uk/*",
+          "https://*.scribbr.nl/*",
+          "https://*.scribbr.fr/*",
+          "https://*.scribbr.de/*",
+          "https://*.scribbr.ch/*",
+          "https://*.scribbr.at/*",
+          "https://*.scribbr.es/*",
+          "https://*.scribbr.dk/*",
+          "https://*.scribbr.it/*",
+          "http://localhost/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "jhikancdgcieieaapcjmbpjflikjgkpn",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_ExtnName__",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies",
+        "declarativeNetRequest",
+        "tabs",
+        "alarms",
+        "storage",
+        "scripting",
+        "contextMenus",
+        "notifications"
+      ],
+      "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://browserdefaults.microsoft.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "bpoadfkcbjbfhfodiogcnhhhpibjhbnh",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_brandName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "activeTab",
+        "contextMenus",
+        "webRequest",
+        "declarativeNetRequestWithHostAccess",
+        "declarativeNetRequestFeedback",
+        "declarativeNetRequest",
+        "offscreen"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>",
+            "file:///*",
+            "*://*/*"
+          ],
+          "js": [
+            "content_script.js"
+          ],
+          "run_at": "document_end",
+          "all_frames": true
+        },
+        {
+          "matches": [
+            "<all_urls>",
+            "file:///*",
+            "*://*/*"
+          ],
+          "js": [
+            "content_start.js"
+          ],
+          "run_at": "document_start",
+          "all_frames": true
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "eedlgdlajadkbbjoobobefphmfkcchfk",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_store_title__",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies"
+      ],
+      "host_permissions": [
+        "*://*.ecosia.org/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*.ecosia.org/*"
+          ],
+          "js": [
+            "funnel.js"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "*://*.ecosia.org/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "nllcnknpjnininklegdoijpljgdjkijc",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 1000000,
+      "name": "Wordtune: AI Paraphrasing and Grammar Tool",
+      "manifest_version": 3,
+      "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "cookies",
+        "storage",
+        "scripting",
+        "tabs",
+        "sidePanel"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "https://*.wordtune.com/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_idle",
+          "js": [
+            "content-scripts/browserDetector.js",
+            "content-scripts/content.js",
+            "content-scripts/read.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://docs.google.com/document/*"
+          ],
+          "run_at": "document_start",
+          "js": [
+            "content-scripts/enableCanvasAnnotations.js"
+          ],
+          "world": "MAIN"
+        },
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_start",
+          "js": [
+            "content-scripts/wordtuneExtensionInstalled.js"
+          ],
+          "world": "MAIN"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://app.wordtune.com/*",
+          "https://www.wordtune.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "hkdmdpdhfaamhgaojpelccmeehpfljgf",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_name__",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "webRequest",
+        "declarativeNetRequest",
+        "cookies",
+        "storage"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "js": [
+            "js/jquery-3.1.1.min.js",
+            "js/common.js",
+            "js/contentscript.js"
+          ],
+          "matches": [
+            "*://*/*"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "llcdellnofncikmhimjdbkdjgpmcjbik",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 1000000,
+      "name": "Internet-Start",
+      "manifest_version": 2,
+      "permissions": [],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gbmdgpbipfallnflgajpaliibnhdgobh",
+      "paths": [
+        "/productivity/developer"
+      ],
+      "downloads": 1000000,
+      "name": "JSON Viewer",
+      "manifest_version": 2,
+      "permissions": [
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "assets/viewer.js"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "ohlencieiipommannpdfcmfdpjjmeolj",
+      "paths": [
+        "/productivity/developer"
+      ],
+      "downloads": 1000000,
+      "name": "PrintFriendly - Print, PDF, and Screenshot Web Pages",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "contextMenus",
+        "scripting",
+        "storage",
+        "unlimitedStorage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';",
+        "sandbox": "sandbox allow-scripts allow-popups allow-modals allow-downloads; script-src 'self'; child-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "bfogiafebfohielmmehodmfbbebbbpei",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_artwork_appname__",
+      "manifest_version": 3,
+      "permissions": [
+        "contextMenus",
+        "tabs",
+        "alarms",
+        "idle",
+        "storage",
+        "browsingData",
+        "webNavigation",
+        "scripting",
+        "offscreen",
+        "webRequest",
+        "webRequestAuthProvider"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "js": [
+            "content_scripts/webauthn/webauthn.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ],
+          "world": "MAIN",
+          "exclude_matches": [
+            "https://keepersecurity.com/vault/*",
+            "https://keepersecurity.eu/vault/*",
+            "https://keepersecurity.com.au/vault/*",
+            "https://keepersecurity.ca/vault/*",
+            "https://keepersecurity.jp/vault/*",
+            "https://govcloud.keepersecurity.us/vault/*",
+            "https://keepersecurity.com/*console/*",
+            "https://keepersecurity.eu/*console/*",
+            "https://keepersecurity.com.au/*console/*",
+            "https://keepersecurity.ca/*console/*",
+            "https://keepersecurity.jp/*console/*",
+            "https://govcloud.keepersecurity.us/*console/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "default-src": "'self'; ",
+        "script-src": "'self'; ",
+        "object-src": "'none'; ",
+        "connect-src": "'self' *; ",
+        "img-src": "'self' https: data:; ",
+        "style-src": "'self' 'unsafe-inline'; "
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://keepersecurity.com/vault/*",
+          "https://keepersecurity.eu/vault/*",
+          "https://keepersecurity.com.au/vault/*",
+          "https://keepersecurity.ca/vault/*",
+          "https://keepersecurity.jp/vault/*",
+          "https://govcloud.keepersecurity.us/vault/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "cnlhokffphohmfcddnibpohmkdfafdli",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "unlimitedStorage",
+        "privacy",
+        "activeTab",
+        "browsingData",
+        "clipboardWrite",
+        "contextMenus",
+        "scripting",
+        "storage",
+        "tabs",
+        "offscreen",
+        "webRequest"
+      ],
+      "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';",
+        "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://*.multipassword.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "cmeakgjggjdlcpncigglobpjbkabhmjl",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 1000000,
+      "name": "Steam Inventory Helper",
+      "manifest_version": 3,
+      "permissions": [
+        "notifications",
+        "alarms",
+        "storage",
+        "unlimitedStorage",
+        "background",
+        "webRequest",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "cookies",
+        "activeTab",
+        "management"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/json2.js",
+            "js/tradeoffer.js",
+            "js/common/settings.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/controls.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/tradeoffer/*",
+            "*://steamcommunity.com/trade/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/json2.js",
+            "js/gifts.js"
+          ],
+          "matches": [
+            "*://*.steampowered.com/checkout/sendgift/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/inventprice.js",
+            "js/common/settings.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "css/inventprice.css",
+            "bundle/css/controls.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/inventory",
+            "*://steamcommunity.com/id/*/inventory/*",
+            "*://steamcommunity.com/profiles/*/inventory",
+            "*://steamcommunity.com/profiles/*/inventory/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/profile.js",
+            "bundle/js/profilestat.js",
+            "js/profile.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/profile.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*",
+            "*://steamcommunity.com/profiles/*"
+          ],
+          "exclude_matches": [
+            "*://steamcommunity.com/id/*/inventory*",
+            "*://steamcommunity.com/profiles/*/inventory*",
+            "*://steamcommunity.com/id/*/badges*",
+            "*://steamcommunity.com/profiles/*/badges*",
+            "*://steamcommunity.com/id/*/gamecards*",
+            "*://steamcommunity.com/profiles/*/gamecards*",
+            "*://steamcommunity.com/id/*/friends/pending*",
+            "*://steamcommunity.com/profiles/*/friends/pending*",
+            "*://steamcommunity.com/id/*/groups*",
+            "*://steamcommunity.com/profiles/*/groups*",
+            "*://steamcommunity.com/id/*/tradeoffer*",
+            "*://steamcommunity.com/profiles/*/tradeoffer*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/profileStats.js"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/stats/*",
+            "*://steamcommunity.com/profiles/*/stats/*",
+            "*://steamcommunity.com/id/*/stats",
+            "*://steamcommunity.com/profiles/*/stats"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/tradeofferrev.js"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/tradeoffers/*",
+            "*://steamcommunity.com/profiles/*/tradeoffers/*",
+            "*://steamcommunity.com/id/*/tradeoffers",
+            "*://steamcommunity.com/profiles/*/tradeoffers"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/listing.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/controls.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/market/listings/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/market.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/controls.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/market/*",
+            "*://steamcommunity.com/market"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/gamecards.js",
+            "js/badge.js"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/gamecards/*",
+            "*://steamcommunity.com/profiles/*/gamecards/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/groups.js",
+            "bundle/js/invites.js",
+            "js/invites.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/groups.css",
+            "bundle/css/invites.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/friends*",
+            "*://steamcommunity.com/id/*/groups*",
+            "*://steamcommunity.com/profiles/*/friends*",
+            "*://steamcommunity.com/profiles/*/groups*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/gameprice.js",
+            "bundle/js/gamestat.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/gameprice.css",
+            "css/fam-flags.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/app/*",
+            "*://*.steampowered.com/bundle/*",
+            "*://*.steampowered.com/sub/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/spentmoney.js"
+          ],
+          "matches": [
+            "*://*.steampowered.com/account/",
+            "*://*.steampowered.com/account/store_transactions/"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/highlight.js",
+            "bundle/js/steampoweredlogin.js"
+          ],
+          "matches": [
+            "*://*.steampowered.com/*"
+          ],
+          "exclude_matches": [
+            "*://*.steampowered.com/checkout/sendgift/*",
+            "*://*.steampowered.com/account/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/history.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/history.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/inventoryhistory/",
+            "*://steamcommunity.com/profiles/*/inventoryhistory/"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/levels.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/levels.css"
+          ],
+          "matches": [
+            "*://steamcommunity.com/id/*/badges/*",
+            "*://steamcommunity.com/id/*/badges",
+            "*://steamcommunity.com/profiles/*/badges/*",
+            "*://steamcommunity.com/profiles/*/badges",
+            "*://steamcommunity.com/market/multibuy*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/common.js",
+            "bundle/js/badgeprogress.js",
+            "js/gamePage.js"
+          ],
+          "css": [
+            "css/fontello.css",
+            "bundle/css/badgeprogress.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/app/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/pointsPage.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/points/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/search.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/search/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/cart.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/cart/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/wishlist.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/wishlist/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/explore.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/explore/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "js/sih_global_header.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://*.steampowered.com/*",
+            "*://steamcommunity.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/waxpeer/waxpeer.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://waxpeer.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/csgocom/csgocom.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://market.csgo.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/buff/buff.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://buff.163.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/skinport/skinport.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://skinport.com/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/lisskins/lisskins.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://lis-skins.ru/*",
+            "*://lis-skins.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/haloskins/haloskins.js"
+          ],
+          "matches": [
+            "*://www.haloskins.com/*",
+            "*://haloskins.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/shadowpay/shadowpay.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://shadowpay.com/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/bitskins/bitskins.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://bitskins.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/whitemarket/whitemarket.js"
+          ],
+          "matches": [
+            "*://white.market/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/skinout/skinout.js"
+          ],
+          "matches": [
+            "*://skinout.gg/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/gamerpay/gamerpay.js"
+          ],
+          "matches": [
+            "*://gamerpay.gg/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/mannco/mannco.js"
+          ],
+          "matches": [
+            "*://mannco.store/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/igxe/igxe.js"
+          ],
+          "matches": [
+            "*://www.igxe.cn/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/dmarket/dmarket.js"
+          ],
+          "css": [
+            "css/fontello.css"
+          ],
+          "matches": [
+            "*://dmarket.com/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/csmoney/csmoney.js"
+          ],
+          "matches": [
+            "*://cs.money/*"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/tradeit/tradeit.js"
+          ],
+          "matches": [
+            "*://tradeit.gg/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "js/jquery/jquery-1.10.2.min.js",
+            "bundle/js/externalMarketHandler.js",
+            "js/otherMarkets/skinbaron/skinbaron.js"
+          ],
+          "matches": [
+            "*://skinbaron.de/*"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://api.steaminventoryhelper.com/*",
+          "https://stats.steaminventoryhelper.com/*",
+          "https://wss-api.steaminventoryhelper.com/*",
+          "*://*.steampowered.com/*",
+          "*://steamcommunity.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "jdcfmebflppkljibgpdlboifpcaalolg",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 1000000,
+      "name": "Méliuz: Cashback e cupons em suas compras",
+      "manifest_version": 3,
+      "permissions": [
+        "scripting",
+        "alarms",
+        "cookies",
+        "storage"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "css": [
+            "content-scripts/fonts-loader/loader.css"
+          ],
+          "run_at": "document_idle"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "dpacanjfikmhoddligfbehkpomnbgblf",
+      "paths": [
+        "/lifestyle/entertainment"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "identity",
+        "identity.email",
+        "storage",
+        "unlimitedStorage",
+        "activeTab",
+        "tabCapture"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "js": [
+            "content.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-eval'; child-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "npgcnondjocldhldegnakemclmfkngch",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 2,
+      "permissions": [
+        "proxy",
+        "alarms",
+        "storage",
+        "unlimitedStorage",
+        "<all_urls>",
+        "tabs",
+        "contextMenus",
+        "notifications",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "jmfikkaogpplgnfjmbjdpalkhclendgd",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 1000000,
+      "name": "Save to Facebook",
+      "manifest_version": 2,
+      "permissions": [
+        "activeTab",
+        "cookies",
+        "https://*.facebook.com/*"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": "script-src 'self' 'unsafe-eval' chrome-extension-resource: https://*.facebook.com https://*.fbcdn.net; object-src 'self' chrome-extension-resource: https://*.facebook.com https://*.fbcdn.net;",
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "lkhjgdkpibcepflmlgahofcmeagjmecc",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 1000000,
+      "name": "Scener",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies",
+        "system.display",
+        "activeTab",
+        "storage",
+        "alarms",
+        "scripting"
+      ],
+      "host_permissions": [
+        "https://*.scener.com/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "scener_content/index.js"
+          ],
+          "matches": [
+            "https://*.scener.com/*"
+          ],
+          "run_at": "document_idle",
+          "all_frames": true
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "default-src 'self'; object-src 'self'; script-src 'self'; connect-src https://sentry.io https://scener.com https://*.scener.com https://*.amazonaws.com https://*.googleapis.com;"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://*.netflix.com/*",
+          "*://*.disneyplus.com/*",
+          "*://*.crunchyroll.com/*",
+          "*://*.hbogo.com/*",
+          "*://*.shudder.com/*",
+          "*://*.tubitv.com/*",
+          "*://*.roku.com/*",
+          "*://*.gizmoplex.com/*",
+          "*://*.hbonow.com/*",
+          "*://*.hbomax.com/*",
+          "*://*.max.com/*",
+          "*://*.drafthouse.com/*",
+          "*://*.funimation.com/*",
+          "*://*.pluto.tv/*",
+          "*://*.rifftrax.com/*",
+          "*://*.youtube.com/*",
+          "*://*.scener.com/*",
+          "*://*.hulu.com/*",
+          "*://*.amazon.com/*",
+          "*://*.vimeo.com/*",
+          "*://*.hotstar.com/*",
+          "*://*.primevideo.com/*",
+          "*://*.amazon.co.uk/*",
+          "*://*.indee.tv/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "epbpdmalnhhoggbcckpffgacohbmpapb",
+      "paths": [
+        "/make_chrome_yours/accessibility"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "fontSettings",
+        "activeTab",
+        "storage",
+        "tabs",
+        "alarms"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "*://*/*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "run_at": "document_start",
+          "js": [
+            "javascript/content.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "ebdbcfomjliacpblnioignhfhjeajpch",
+      "paths": [
+        "/make_chrome_yours/accessibility"
+      ],
+      "downloads": 1000000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "activeTab",
+        "offscreen",
+        "tabCapture",
+        "downloads",
+        "alarms"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_end",
+          "js": [
+            "src/js/contentScript.js"
+          ],
+          "all_frames": true
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "kjacjjdnoddnpbbcjilcajfhhbdhkpgk",
+      "paths": [
+        "/productivity/workflow",
+        "/root"
+      ],
+      "downloads": 900000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "scripting",
+        "storage",
+        "unlimitedStorage",
+        "notifications",
+        "activeTab",
+        "tabs",
+        "offscreen",
+        "identity",
+        "alarms"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "exclude_matches": [
+            "https://auth.staging.seekrtech.com/*",
+            "https://auth.seekrtech.com/*",
+            "https://auth.upwardsware.com/*"
+          ],
+          "js": [
+            "src/content/index.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "ids": [
+          "*"
+        ],
+        "matches": [
+          "https://auth.seekrtech.com/*",
+          "https://auth.upwardsware.com/*",
+          "https://auth.staging.seekrtech.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "pnlphjjfielecalmmjjdhjjninkbjdod",
+      "paths": [
+        "/lifestyle/entertainment"
+      ],
+      "downloads": 900000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "cookies",
+        "webRequest",
+        "downloads",
+        "tabs",
+        "system.display",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "run_at": "document_start",
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "js/main.js",
+            "js/content.js",
+            "js/mobileTransform.js"
+          ],
+          "css": [
+            "css/main.css"
+          ],
+          "all_frames": true
+        },
+        {
+          "matches": [
+            "*://*.instagram.com/*"
+          ],
+          "js": [
+            "js/inject.js"
+          ],
+          "run_at": "document_start",
+          "world": "MAIN"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "nnnmhgkokpalnmbeighfomegjfkklkle",
+      "paths": [
+        "/productivity/education"
+      ],
+      "downloads": 800000,
+      "name": "Cite This For Me: Web Citer",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "storage",
+        "scripting"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "js/contentscript.js"
+          ],
+          "matches": [
+            "*://*/*"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://*/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "mjbepbhonbojpoaenhckjocchgfiaofo",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 800000,
+      "name": "__MSG_extName__",
+      "manifest_version": 2,
+      "permissions": [
+        "tabs",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "notifications",
+        "storage",
+        "unlimitedStorage",
+        "clipboardWrite",
+        "contextMenus",
+        "nativeMessaging",
+        "cookies"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "js": [
+            "injected-web.js",
+            "injected.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_start",
+          "all_frames": true
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "mooikfkahbdckldjjndioackbalphokd",
+      "paths": [
+        "/productivity/developer"
+      ],
+      "downloads": 800000,
+      "name": "Selenium IDE",
+      "manifest_version": 2,
+      "permissions": [
+        "tabs",
+        "activeTab",
+        "contextMenus",
+        "downloads",
+        "webNavigation",
+        "storage",
+        "debugger",
+        "<all_urls>"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "assets/vendor/global.js",
+            "assets/vendor/selenium-browserdetect.js",
+            "assets/atoms.js",
+            "assets/polyfills.js",
+            "assets/escape.js",
+            "assets/playback.js",
+            "assets/record.js"
+          ],
+          "match_about_blank": true,
+          "all_frames": true
+        }
+      ],
+      "content_security_policy": "script-src 'self' 'sha256-W7QWmGne6B9hjKtOqoGmUFOPgpFcUo4Nr/yyMqtgXcU=' 'sha256-g0sGx5oQNWQA7+VAX6oocWOlrBzbLK0jggpU/mFFNHE=' 'unsafe-eval'; object-src 'self'",
+      "externally_connectable": {
+        "ids": [
+          "*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "bogabmgabnjabjbiggmfkdocbjgackfo",
+      "paths": [
+        "/lifestyle/fun"
+      ],
+      "downloads": 800000,
+      "name": "__MSG_app_name__",
+      "manifest_version": 3,
+      "permissions": [
+        "scripting",
+        "storage",
+        "unlimitedStorage",
+        "notifications",
+        "alarms"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "js": [
+            "content.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "isolated_world": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://*.custom-cursor.com/*",
+          "*://*.custom-cursor-helper.com/*",
+          "*://*.cursor-helper.com/*",
+          "*://*.custom-cursors.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "ifbdadgbpalmagalacllfaflfakmfkac",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 800000,
+      "name": "__MSG_appName__",
+      "manifest_version": 2,
+      "permissions": [
+        "desktopCapture"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "*://*.webex.com/*",
+          "*://*.webex.com.cn/*",
+          "https://*.qa.webex.com/*",
+          "https://*.qa.webex.com.cn/*",
+          "https://*.ciscospark.com/*",
+          "https://*.cisco.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "nbcojefnccbanplpoffopkoepjmhgdgh",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 800000,
+      "name": "Hoxx VPN Proxy",
+      "manifest_version": 3,
+      "permissions": [
+        "declarativeNetRequest",
+        "alarms",
+        "proxy",
+        "storage",
+        "webRequest",
+        "webRequestAuthProvider",
+        "notifications",
+        "tabs",
+        "management"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+      },
+      "externally_connectable": {
+        "matches": [
+          "<all_urls>"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "gjknjjomckknofjidppipffbpoekiipm",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 800000,
+      "name": "__MSG_name__",
+      "manifest_version": 2,
+      "permissions": [
+        "proxy",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "background",
+        "storage",
+        "tabs",
+        "privacy",
+        "management"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "js": [
+            "content/content.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": "script-src 'self'; object-src 'none'",
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "bhmmomiinigofkjcapegjjndpbikblnp",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 800000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "contextMenus",
+        "webNavigation",
+        "webRequest",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "storage",
+        "scripting",
+        "alarms"
+      ],
+      "host_permissions": [
+        "http://www.mywot.com/*",
+        "http://api.mywot.com/*",
+        "https://api.mywot.com/*",
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "css": [
+            "styles/content.css"
+          ],
+          "js": [
+            "scripts/crossbrowser.js",
+            "libs/lodash.min.js",
+            "libs/react.min.js",
+            "libs/react-dom.min.js",
+            "libs/react-redux.min.js",
+            "libs/webext-redux.js",
+            "libs/react-custom-scrollbar.js",
+            "libs/bodymovin-lottie-engine.js",
+            "scripts/shared/constants.js",
+            "scripts/shared/fonts.js",
+            "scripts/shared/utils.js",
+            "scripts/shared/wotCrypto.js",
+            "scripts/shared/wotApi.js",
+            "scripts/shared/lottieAnimation.js",
+            "scripts/shared/titleWithTooltip.js",
+            "scripts/background/app/actions.js",
+            "scripts/content/components/common/warningReportsContainer.js",
+            "scripts/content/components/common/ratingStars.js",
+            "scripts/content/components/common/buttonAction.js",
+            "scripts/content/components/common/reputationBubble.js",
+            "scripts/content/components/assistant/preCheckAssistant.js",
+            "scripts/content/components/assistant/popup.js",
+            "scripts/content/components/assistant/assistantPopup.js",
+            "scripts/content/components/shield/shield.js",
+            "scripts/content/components/shield/shieldOnBoarding.js",
+            "scripts/content/components/serpPopup/ScorecardData.js",
+            "scripts/content/components/serpPopup/scorecardLink.js",
+            "scripts/content/components/serpPopup/SerpPopupFooter.js",
+            "scripts/content/components/serpWarning/serpWarning.js",
+            "scripts/content/components/serpWarning/mailOffering.js",
+            "scripts/shared/scheduler.js",
+            "scripts/content/components/leakHook/leakHook.js",
+            "scripts/content/components/idTheftHookInGmail/idTheftHookInGmail.js",
+            "scripts/content/components/warning/warningAttributes.js",
+            "scripts/content/components/warning/warningActionsContainer.js",
+            "scripts/content/components/warning/warningMessageContainer.js",
+            "scripts/content/components/warning/warningStrip.js",
+            "scripts/content/components/warning/optoutStrip.js",
+            "scripts/content/components/warning/badRatingNotification.js",
+            "scripts/content/components/warning/warning.js",
+            "scripts/content/addReviewHandler.js",
+            "scripts/content/components/common/extendHandler.js",
+            "scripts/content/components/common/previewHandler.js",
+            "scripts/content/preCheckAssistantHandler.js",
+            "scripts/content/serpHandler.js",
+            "scripts/content/redirectHandler.js",
+            "scripts/content/sharingHandler.js",
+            "scripts/content/warningHandler.js",
+            "scripts/content/leakHookHandler.js",
+            "scripts/content/socialAuthHandler.js",
+            "scripts/shared/getPremium.js",
+            "scripts/shared/statelessFunctions.js",
+            "scripts/shared/statelessFunctionsComponents.js",
+            "scripts/content/popup/sliderManager.js",
+            "scripts/content/popup/serpPopupManager.js",
+            "scripts/content/index.js",
+            "scripts/shared/pinWotPopup/pinPopupHandler.js",
+            "scripts/shared/pinWotPopup/pinPopupContainer.js",
+            "scripts/content/popupV2/popupOnboardingHandler.js",
+            "scripts/content/popupV2/popupOnboarding.js",
+            "scripts/content/popupV2/popupContentArea.js",
+            "scripts/content/popupV2/popupMainContainer.js"
+          ],
+          "run_at": "document_end",
+          "all_frames": true,
+          "match_about_blank": true
+        },
+        {
+          "matches": [
+            "*://*.mywot.com/*"
+          ],
+          "js": [
+            "scripts/content/extInfo.js"
+          ],
+          "run_at": "document_start",
+          "all_frames": false
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "style-src 'self' 'unsafe-inline' http://fonts.googleapis.com; script-src 'self' ; object-src 'self'; img-src * data:;"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "mjjgmlmpeaikcaajghilhnioimmaibon",
+      "paths": [
+        "/lifestyle/games",
+        "/root"
+      ],
+      "downloads": 700000,
+      "name": "Boxel 3D",
+      "manifest_version": 3,
+      "permissions": [
+        "storage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "nmpgaoofmjlimabncmnmnopjabbflegf",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 700000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "storage",
+        "cookies"
+      ],
+      "host_permissions": [
+        "*://*.google.com/*",
+        "*://*.googleapis.com/*",
+        "*://*.youtube.com/*",
+        "*://*.amazon.com/*",
+        "*://green.api.neilpatel.com/*",
+        "*://blue.api.neilpatel.com/*",
+        "*://app.neilpatel.com/*",
+        "*://fonts.googleapis.com/*",
+        "*://fonts.gstatic.com/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "lib/jquery.min.js",
+            "contentScript.bundle.js"
+          ],
+          "css": [
+            "content.styles.css"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; script-src-elem 'self' http: https:;object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "alhgpfoeiimagjlnfekdhkjlkiomcapa",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 700000,
+      "name": "Apollo.io: Free B2B Phone Number & Email Finder",
+      "manifest_version": 3,
+      "permissions": [
+        "contextMenus",
+        "notifications",
+        "scripting",
+        "storage",
+        "tabs",
+        "webNavigation"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "js/apolloIconManager.bundle.js"
+          ],
+          "world": "ISOLATED"
+        },
+        {
+          "matches": [
+            "*://*.linkedin.com/*"
+          ],
+          "js": [
+            "js/injectLINetwork.bundle.js"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://o101058.ingest.sentry.io https://app.apollo.io https://extension.apollo.io https://api.amplitude.com https://track.customer.io https://insights-collector.newrelic.com http://whatis.customeriomail.com/ wss://voice-js.roaming.twilio.com/signal https://sdk.twilio.com;"
+      },
+      "externally_connectable": {
+        "matches": [
+          "https://www.apollo.io/*",
+          "https://beta.apollo.io/*",
+          "https://app.apollo.io/*",
+          "https://extension.apollo.io/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "cbhilkcodigmigfbnphipnnmamjfkipp",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 700000,
+      "name": "Calendly: Meeting Scheduling Software",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "storage",
+        "scripting",
+        "unlimitedStorage"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "/module_async_frame.js"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "exclude_matches": [
+            "https://*.calendly.com/*",
+            "http://localhost/*"
+          ],
+          "js": [
+            "module_async_optibutton.js"
+          ],
+          "all_frames": false,
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "https://*.calendly.com/*"
+          ],
+          "exclude_matches": [
+            "https://clients-assets.calendly.com/*/auth.html*",
+            "https://clients-assets-staging.calendly.com/*/auth.html*"
+          ],
+          "js": [
+            "module_async_calendly.js"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "https://clients-assets.calendly.com/*/auth.html*",
+            "https://clients-assets-staging.calendly.com/*/auth.html*"
+          ],
+          "js": [
+            "module_async_auth.js"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "https://mail.google.com/*"
+          ],
+          "js": [
+            "/module_async_gmenu.content.js"
+          ],
+          "css": [
+            "/styles/gmail.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "https://calendar.google.com/*"
+          ],
+          "js": [
+            "/module_async_gcal.content.js"
+          ],
+          "css": [
+            "/styles/gcal.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "https://www.linkedin.com/*"
+          ],
+          "js": [
+            "/module_async_linkedIn.content.js"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "https://*.gong.io/*"
+          ],
+          "js": [
+            "/module_async_gong.content.js"
+          ],
+          "run_at": "document_idle"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {
+        "matches": [
+          "*://*.calendly.com/*",
+          "*://localhost/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "jfafkhnopckjfmnpekbmpmghhdlijaja",
+      "paths": [
+        "/lifestyle/art"
+      ],
+      "downloads": 700000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "downloads",
+        "webRequest",
+        "declarativeNetRequest",
+        "sidePanel"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_end",
+          "all_frames": true,
+          "js": [
+            "js/contentScript.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gikbaopejleepnfocphkejjbgaifnico",
+      "paths": [
+        "/lifestyle/well_being"
+      ],
+      "downloads": 700000,
+      "name": "Ripple Tool",
+      "manifest_version": 3,
+      "permissions": [
+        "storage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "all_frames": true,
+          "js": [
+            "popup.js"
+          ],
+          "include_globs": [
+            "*://*.google.*/search*",
+            "*://duckduckgo.*",
+            "*://*.yahoo.*/search*",
+            "*://*.bing.*/search*",
+            "*://*.ask.*/web*",
+            "*://*.ecosia.*/search*",
+            "*://*.youtube.*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://*.google.*/search?*"
+          ],
+          "css": [
+            "css/style.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://duckduckgo.*"
+          ],
+          "css": [
+            "css/style_ddg.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://*.yahoo.*/search*"
+          ],
+          "css": [
+            "css/style_yahoo.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://*.bing.*/search?*"
+          ],
+          "css": [
+            "css/style.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://*.ask.*/web?*"
+          ],
+          "css": [
+            "css/style_ask.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://*.ecosia.*/search?*"
+          ],
+          "css": [
+            "css/style_ecosia.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "include_globs": [
+            "*://*.youtube.*"
+          ],
+          "css": [
+            "css/style_youtube.css"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "jjfblogammkiefalfpafidabbnamoknm",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 700000,
+      "name": "RetailMeNot: Codes, Cash Back and Coupons",
+      "manifest_version": 3,
+      "permissions": [
+        "alarms",
+        "cookies",
+        "scripting",
+        "storage",
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "declarativeNetRequestWithHostAccess"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "js": [
+            "inject.bundle.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "edjkecefjhobekadlkdkopkggdefpgfp",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 700000,
+      "name": "Smarty",
+      "manifest_version": 3,
+      "permissions": [
+        "cookies",
+        "storage",
+        "tabs",
+        "unlimitedStorage",
+        "webRequest",
+        "scripting",
+        "alarms"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "exclude_matches": [
+            "https://www.joinsmarty.com/*"
+          ],
+          "css": [
+            "css/content.css",
+            "css/sweetalert.min.css"
+          ],
+          "js": [
+            "js/libs/jquery-3.4.1.min.js",
+            "js/libs/mustache.min.js",
+            "js/libs/sweetalert-dev.min.js",
+            "js/libs/clipboard.min.js",
+            "js/libs/md5.js",
+            "js/content_script.js"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "https://www.joinsmarty.com/*",
+            "https://*/*jslander=itsme*"
+          ],
+          "js": [
+            "js/install.js"
+          ]
+        },
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "js/page_utils.js"
+          ],
+          "all_frames": true,
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "nakplnnackehceedgkgkokbgbmfghain",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 700000,
+      "name": "Fakespot Fake Amazon Reviews and eBay Sellers",
+      "manifest_version": 3,
+      "permissions": [
+        "identity",
+        "identity.email",
+        "unlimitedStorage",
+        "activeTab",
+        "storage",
+        "scripting",
+        "cookies"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*.fakespot.com/*",
+            "*://*.fakespot.local/*"
+          ],
+          "js": [
+            "fakespotContent.js"
+          ],
+          "css": [
+            "fakespotContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.amazon.com.au/*",
+            "*://*.amazon.co.uk/*",
+            "*://*.amazon.ca/*",
+            "*://*.amazon.us/*",
+            "*://*.amazon.com/*",
+            "*://*.amazon.in/*",
+            "*://*.amazon.de/*",
+            "*://*.amazon.fr/*",
+            "*://*.amazon.it/*",
+            "*://*.amazon.es/*",
+            "*://*.amazon.co.jp/*"
+          ],
+          "exclude_matches": [
+            "*://primenow.amazon.com.au/*",
+            "*://primenow.amazon.co.uk/*",
+            "*://primenow.amazon.ca/*",
+            "*://primenow.amazon.us/*",
+            "*://primenow.amazon.com/*",
+            "*://primenow.amazon.in/*",
+            "*://*.amazon.com.au/Prime-Video/*",
+            "*://*.amazon.co.uk/Prime-Video/*",
+            "*://*.amazon.ca/Prime-Video/*",
+            "*://*.amazon.us/Prime-Video/*",
+            "*://*.amazon.com/Prime-Video/*",
+            "*://*.amazon.in/Prime-Video/*",
+            "*://*.amazon.com.au/Amazon-Video/*",
+            "*://*.amazon.co.uk/Amazon-Video/*",
+            "*://*.amazon.ca/Amazon-Video/*",
+            "*://*.amazon.us/Amazon-Video/*",
+            "*://*.amazon.com/Amazon-Video/*",
+            "*://*.amazon.in/Amazon-Video/*",
+            "*://*.amazon.com.au/gp/video/*",
+            "*://*.amazon.co.uk/gp/video/*",
+            "*://*.amazon.ca/gp/video/*",
+            "*://*.amazon.us/gp/video/*",
+            "*://*.amazon.com/gp/video/*",
+            "*://*.amazon.in/gp/video/*"
+          ],
+          "js": [
+            "amazonContent.js"
+          ],
+          "css": [
+            "amazonContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.amazon.com.au/*",
+            "*://*.amazon.co.uk/*",
+            "*://*.amazon.ca/*",
+            "*://*.amazon.us/*",
+            "*://*.amazon.com/*",
+            "*://*.amazon.in/*",
+            "*://*.ebay.com/*",
+            "*://*.ebay.co.uk/*",
+            "*://*.ebay.com.au/*",
+            "*://*.ebay.us/*",
+            "*://*.ebay.ca/*"
+          ],
+          "js": [
+            "adBlockContent.js"
+          ],
+          "css": [
+            "adBlockContent.css"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "matches": [
+            "*://*.ebay.com/*",
+            "*://*.ebay.co.uk/*",
+            "*://*.ebay.com.au/*",
+            "*://*.ebay.us/*",
+            "*://*.ebay.ca/*"
+          ],
+          "js": [
+            "ebayContent.js"
+          ],
+          "css": [
+            "ebayContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.walmart.com/*"
+          ],
+          "js": [
+            "walmartContent.js"
+          ],
+          "css": [
+            "walmartContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.google.com/search*"
+          ],
+          "js": [
+            "googleContent.js"
+          ],
+          "css": [
+            "googleContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.bestbuy.com/*"
+          ],
+          "js": [
+            "bestbuyContent.js"
+          ],
+          "css": [
+            "bestbuyContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.sephora.com/*"
+          ],
+          "js": [
+            "sephoraContent.js"
+          ],
+          "css": [
+            "sephoraContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.flipkart.com/*",
+            "*://*.flipkart.in/*"
+          ],
+          "js": [
+            "flipkartContent.js"
+          ],
+          "css": [
+            "flipkartContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.twitter.com/*"
+          ],
+          "js": [
+            "twitterContent.js"
+          ],
+          "css": [
+            "twitterContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "matches": [
+            "*://*.homedepot.com/*"
+          ],
+          "js": [
+            "homeDepotContent.js"
+          ],
+          "css": [
+            "homeDepotContent.css"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "js": [
+            "shopifyContent.js"
+          ],
+          "css": [
+            "shopifyContent.css"
+          ],
+          "matches": [
+            "<all_urls>"
+          ],
+          "exclude_matches": [
+            "*://*.amazon.com.au/*",
+            "*://*.amazon.co.uk/*",
+            "*://*.amazon.ca/*",
+            "*://*.amazon.us/*",
+            "*://*.amazon.com/*",
+            "*://*.amazon.in/*",
+            "*://*.ebay.com/*",
+            "*://*.ebay.co.uk/*",
+            "*://*.ebay.com.au/*",
+            "*://*.ebay.us/*",
+            "*://*.ebay.ca/*",
+            "*://*.walmart.com/*",
+            "*://*.yelp.com/*",
+            "*://*.tripadvisor.com/*",
+            "*://*.sephora.com/*",
+            "*://*.bestbuy.com/*",
+            "*://*.fakespot.com/*",
+            "*://*.fakespot.local/*",
+            "*://*.google.com/search*",
+            "*://*.twitter.com/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gjfpmkejnolcfklaaddjnckanhhgegla",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 700000,
+      "name": "Guardio Protection for Chrome",
+      "manifest_version": 3,
+      "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "declarativeNetRequestWithHostAccess",
+        "cookies",
+        "management",
+        "notifications",
+        "tabs",
+        "storage",
+        "idle",
+        "contextMenus",
+        "scripting",
+        "alarms"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*.guard.io/*"
+          ],
+          "js": [
+            "content.bundle.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://*.mail.google.com/*"
+          ],
+          "js": [
+            "linksInjected.bundle.js"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_page": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://*.guard.io/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "nemmanchfojaehgkbgcfmdiidbopakpp",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 700000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "unlimitedStorage"
+      ],
+      "host_permissions": [
+        "http://*.virtru.com/*",
+        "https://*.virtru.com/*",
+        "http://*.google.com/*",
+        "https://*.google.com/*",
+        "http://*.googleusercontent.com/*",
+        "https://*.googleusercontent.com/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "js/gmail-all-vendors.js",
+            "js/gmail-content.js",
+            "js/gmail-page-inject.js"
+          ],
+          "matches": [
+            "http://mail.google.com/*",
+            "https://mail.google.com/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "css": [
+            "css/vault.css"
+          ],
+          "js": [
+            "js/vault-vendors.js",
+            "js/vault-content.js"
+          ],
+          "matches": [
+            "https://vault.google.com/*",
+            "https://ediscovery.google.com/*"
+          ]
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "aejoelaoggembcahagimdiliamlcdmfm",
+      "paths": [
+        "/productivity/developer"
+      ],
+      "downloads": 600000,
+      "name": "__MSG_extNameFree__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "unlimitedStorage",
+        "webRequest",
+        "declarativeNetRequest",
+        "clipboardWrite",
+        "identity",
+        "scripting"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "loginContentScript.js"
+          ],
+          "matches": [
+            "http://localhost:9008/static/extension/*/login.html*",
+            "https://api-apit-service.api.dev.datapwn.com/static/extension/*/login.html*",
+            "https://api-apit-service.int.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.at.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.us.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.eu.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.ap.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.au.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.az-staging.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.az-sandbox.cloud.talend.com/static/extension/*/login.html*",
+            "https://api-apit-service.us-west.cloud.talend.com/static/extension/*/login.html*"
+          ]
+        },
+        {
+          "js": [
+            "contentScript.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ],
+          "run_at": "document_end"
+        },
+        {
+          "all_frames": true,
+          "js": [
+            "sharingContentScript.js"
+          ],
+          "matches": [
+            "http://localhost:8786/*",
+            "https://api-sharing.api.dev.datapwn.com/*",
+            "https://api-sharing.int.cloud.talend.com/*",
+            "https://api-sharing.at.cloud.talend.com/*",
+            "https://api-sharing.eu.cloud.talend.com/*",
+            "https://api-sharing.us.cloud.talend.com/*",
+            "https://api-sharing.ap.cloud.talend.com/*",
+            "https://api-sharing.au.cloud.talend.com/*",
+            "https://api-sharing.az-sandbox.cloud.talend.com/*",
+            "https://api-sharing.az-staging.cloud.talend.com/*",
+            "https://api-sharing.us-west.cloud.talend.com/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' http://localhost:9876/; object-src 'self'; img-src 'self' data: https://*.githubusercontent.com/ https://*.talend.com https://www.google.com/ads/ga-audiences; frame-src 'self' data: https://api-sharing.int.cloud.talend.com https://api-sharing.at.cloud.talend.com https://api-sharing.us.cloud.talend.com https://api-sharing.eu.cloud.talend.com https://api-sharing.ap.cloud.talend.com https://api-sharing.au.cloud.talend.com https://api-sharing.az-sandbox.cloud.talend.com https://api-sharing.az-staging.cloud.talend.com https://api-sharing.us-west.cloud.talend.com http://api-sharing.api.dev.datapwn.com http://localhost:8786 http://localhost:9876;"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "kdfieneakcjfaiglcfcgkidlkmlijjnh",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 600000,
+      "name": "AI Grammar and Spell Checker by Ginger",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "background",
+        "cookies",
+        "storage"
+      ],
+      "host_permissions": [
+        "https://*/",
+        "http://*/"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "content/js/content.vendor.js",
+            "content/js/content.min.js"
+          ],
+          "css": [
+            "content/css/style.css"
+          ],
+          "all_frames": true,
+          "match_about_blank": true,
+          "run_at": "document_idle"
+        },
+        {
+          "js": [
+            "gdocs/gdoc_prebuild.js"
+          ],
+          "matches": [
+            "*://docs.google.com/document/*"
+          ],
+          "run_at": "document_start",
+          "world": "MAIN"
+        }
+      ],
+      "content_security_policy": {
+        "extension_page": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://ssl.google-analytics.com https://*.gingersoftware.com; object-src 'self'",
+        "sandbox": "sandbox allow-scripts; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval'",
+        "worker-src": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://ssl.google-analytics.com https://*.gingersoftware.com; object-src 'self'"
+      },
+      "externally_connectable": {
+        "matches": [
+          "*://gingersoftware.com/*",
+          "*://www.gingersoftware.com/*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "laankejkbhbdhmipfmgcngdelahlfoji",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 600000,
+      "name": "__MSG_extName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "tabs",
+        "alarms",
+        "webNavigation",
+        "notifications"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "all_frames": true,
+          "run_at": "document_start",
+          "js": [
+            "content-scripts/ad-finder.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://www.stayfocusd.com/blocked"
+          ],
+          "run_at": "document_end",
+          "css": [
+            "content-scripts/blocked-statistics.css"
+          ],
+          "js": [
+            "content-scripts/blocked-statistics.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://*.tiktok.com/*",
+            "*://*.youtube.com/*"
+          ],
+          "run_at": "document_end",
+          "css": [
+            "content-scripts/in-app-blocking.css"
+          ],
+          "js": [
+            "content-scripts/in-app-blocking.js"
+          ]
+        },
+        {
+          "matches": [
+            "https://www.stayfocusd.com/extension-get-started"
+          ],
+          "run_at": "document_start",
+          "js": [
+            "content-scripts/onboarding-redirect.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "js": [
+            "content-scripts/prompt-collector.js"
+          ]
+        },
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "run_at": "document_end",
+          "js": [
+            "content-scripts/smart-bomb.js"
+          ]
+        },
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "run_at": "document_end",
+          "js": [
+            "content-scripts/usage-monitoring.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gecgipfabdickgidpmbicneamekgbaej",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 600000,
+      "name": "Chrome Web Store Launcher (by Google)",
+      "manifest_version": 2,
+      "permissions": [
+        "management"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "gidejehfgombmkfflghejpncblgfkagj",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 600000,
+      "name": "Cuponomia - Cupom e Cashback",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "storage",
+        "cookies",
+        "webRequest",
+        "scripting",
+        "alarms"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "content-scripts/icon-events.js"
+          ],
+          "matches": [
+            "https://*/*",
+            "http://*/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "content-scripts/check-website.js",
+            "content-scripts/inject-store-scrapers.js"
+          ],
+          "matches": [
+            "https://*/*",
+            "http://*/*"
+          ],
+          "run_at": "document_idle"
+        },
+        {
+          "js": [
+            "content-scripts/cuponomia.js"
+          ],
+          "matches": [
+            "*://*.cuponomia.com.br/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "content-scripts/check-google-search.js"
+          ],
+          "matches": [
+            "http://www.google.com/*",
+            "https://www.google.com/*",
+            "https://www.google.com.br/*",
+            "http://www.google.com.br/*"
+          ],
+          "run_at": "document_start"
+        },
+        {
+          "js": [
+            "content-scripts/check-bing-search.js"
+          ],
+          "matches": [
+            "http://www.bing.com/*",
+            "https://www.bing.com/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "emnoomldgleagdjapdeckpmebokijail",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 600000,
+      "name": "wanteeed",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "webNavigation",
+        "cookies",
+        "alarms",
+        "storage"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "all_frames": false,
+          "run_at": "document_end",
+          "js": [
+            "src/scripts/content.js",
+            "src/scripts/comparator.js",
+            "node_modules/@wanteeed/vouchertester/dist/index.js"
+          ]
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "nfdfiepdkbnoanddpianalelglmfooik",
+      "paths": [
+        "/lifestyle/fun"
+      ],
+      "downloads": 600000,
+      "name": "Ears: Bass Boost, EQ Any Audio!",
+      "manifest_version": 2,
+      "permissions": [
+        "activeTab",
+        "tabCapture",
+        "tabs",
+        "storage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [],
+      "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "bcocdbombenodlegijagbhdjbifpiijp",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 600000,
+      "name": "__MSG_ext_name_production__",
+      "manifest_version": 3,
+      "permissions": [
+        "alarms",
+        "background",
+        "cookies",
+        "offscreen",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "*://*.instagram.com/*",
+        "*://*.inssist.com/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "https://*.instagram.com/*"
+          ],
+          "js": [
+            "/js/emoji-regex.min.js",
+            "/app/cs.js"
+          ],
+          "run_at": "document_start",
+          "all_frames": true
+        },
+        {
+          "matches": [
+            "https://*.instagram.com/*"
+          ],
+          "js": [
+            "/app/cse.js"
+          ],
+          "css": [
+            "/app/tw.css"
+          ],
+          "run_at": "document_start",
+          "all_frames": false
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+      },
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "cpcifbdmkopohnnofedkjghjiclmhdah",
+      "paths": [
+        "/productivity/tools"
+      ],
+      "downloads": 500000,
+      "name": "NeatDownloadManager Extension",
+      "manifest_version": 3,
+      "permissions": [
+        "webRequest",
+        "webNavigation",
+        "cookies",
+        "contextMenus",
+        "storage",
+        "downloads"
+      ],
+      "host_permissions": [
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "ct.js"
+          ],
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "all_frames": true,
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "mlkjjjmhjijlmafgjlpkiobpdocdbncj",
+      "paths": [
+        "/productivity/workflow"
+      ],
+      "downloads": 500000,
+      "name": "__MSG_appName__",
+      "manifest_version": 3,
+      "permissions": [
+        "storage",
+        "unlimitedStorage",
+        "contextMenus",
+        "webRequest",
+        "cookies",
+        "declarativeNetRequest"
+      ],
+      "host_permissions": [
+        "*://*/*"
+      ],
+      "content_scripts": [
+        {
+          "run_at": "document_start",
+          "matches": [
+            "*://*/*"
+          ],
+          "exclude_matches": [
+            "https://chatgpt.com/*"
+          ],
+          "js": [
+            "./js/content.js"
+          ],
+          "all_frames": false
+        },
+        {
+          "run_at": "document_idle",
+          "matches": [
+            "*://*/*"
+          ],
+          "exclude_matches": [
+            "https://chatgpt.com/*"
+          ],
+          "css": [
+            "./styles/content.scss",
+            "./styles/dark.scss",
+            "./styles/settings.scss"
+          ]
+        },
+        {
+          "run_at": "document_start",
+          "matches": [
+            "https://chatgpt.com/*"
+          ],
+          "js": [
+            "./js/contentG.js"
+          ],
+          "css": [
+            "./styles/gptc.css"
+          ],
+          "all_frames": true
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "pnedebpjhiaidlbbhmogocmffpdolnek",
+      "paths": [
+        "/lifestyle/shopping"
+      ],
+      "downloads": 500000,
+      "name": "CouponBirds - SmartCoupon Coupon Finder",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "storage",
+        "alarms",
+        "cookies",
+        "webRequest"
+      ],
+      "host_permissions": [
+        "*://*.couponbirds.com/*",
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "matches": [
+            "*://*/*"
+          ],
+          "js": [
+            "./dist/js/jquery.js",
+            "./dist/js/content-script.js"
+          ],
+          "css": [
+            "./dist/css/content-script.css"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "iabeihobmhlgpkcgjiloemdbofjbdcic",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 500000,
+      "name": "Bitly | Short links and QR Codes",
+      "manifest_version": 3,
+      "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "identity",
+        "storage",
+        "contextMenus"
+      ],
+      "host_permissions": [
+        "https://api-ssl.bitly.com/"
+      ],
+      "content_scripts": [],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "ceibjdigmfbbgcpkkdpmjokkokklodmc",
+      "paths": [
+        "/lifestyle/social"
+      ],
+      "downloads": 500000,
+      "name": "__MSG_name__",
+      "manifest_version": 2,
+      "permissions": [
+        "https://vk.com/*",
+        "https://m.vk.com/*",
+        "tabs",
+        "contextMenus",
+        "storage"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "js": [
+            "1.js"
+          ],
+          "matches": [
+            "https://vk.com/*",
+            "https://m.vk.com/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {},
+      "externally_connectable": {},
+      "storage": {}
+    },
+    {
+      "id": "llaficoajjainaijghjlofdfmbjpebpa",
+      "paths": [
+        "/make_chrome_yours/accessibility"
+      ],
+      "downloads": 500000,
+      "name": "Speed Dial [FVD] - New Tab Page, 3D, Sync...",
+      "manifest_version": 3,
+      "permissions": [
+        "tabs",
+        "history",
+        "management",
+        "unlimitedStorage",
+        "contextMenus",
+        "storage",
+        "idle",
+        "scripting",
+        "activeTab"
+      ],
+      "host_permissions": [
+        "*://*/*",
+        "<all_urls>"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+            "content-scripts/fvdspeeddial.js"
+          ],
+          "matches": [
+            "https://www.fvdspeeddial.com/*",
+            "https://fvdspeeddial.com/*",
+            "https://www.qa.fvdspeeddial.com/*",
+            "https://qa.fvdspeeddial.com/*"
+          ]
+        },
+        {
+          "all_frames": true,
+          "js": [
+            "content-scripts/everhelper.js"
+          ],
+          "matches": [
+            "*://everhelper.pro/*",
+            "*://*.everhelper.pro/*"
+          ],
+          "run_at": "document_start"
+        }
+      ],
+      "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+      },
+      "externally_connectable": {
+        "ids": [
+          "*"
+        ]
+      },
+      "storage": {}
+    },
+    {
+      "id": "noondiphcddnnabmjcihcjfbhfklnnep",
+      "paths": [
+        "/make_chrome_yours/privacy"
+      ],
+      "downloads": 500000,
+      "name": "__MSG_extension_name__",
+      "manifest_version": 2,
+      "permissions": [
+        "identity",
+        "identity.email",
+        "notifications",
+        "storage",
+        "tabs",
+        "<all_urls>"
+      ],
+      "host_permissions": [],
+      "content_scripts": [
+        {
+          "all_frames": true,
+          "match_about_blank": true,
+          "run_at": "document_start",
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": [
+            "content_script_compiled.js"
+          ]
+        }
+      ],
+      "content_security_policy": "default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://*",
+      "externally_connectable": {},
+      "storage": {
+        "managed_schema": "managed_policy_schema.json"
+      }
+    }
+  ]
+}
