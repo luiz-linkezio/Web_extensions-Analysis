@@ -9,7 +9,7 @@ def generate_permission_stats(permission_data):
     critical_unused = defaultdict(int)
     extensions_unused_counts = []
 
-    # Processa cada extensão
+    # Process each extension
     for ext_id, permissions in permission_data.items():
         unused_count = 0
         has_unused = False
@@ -35,7 +35,7 @@ def generate_permission_stats(permission_data):
         else:
             extensions_all_used += 1
 
-    # Calcula métricas adicionais
+    # Calculate additional metrics
     top_requested = sorted(
         permission_stats.items(),
         key=lambda x: x[1]['requested'],
@@ -54,7 +54,7 @@ def generate_permission_stats(permission_data):
         reverse=True
     )[:10]
 
-    # Formata o relatório
+    # Format the report
     report = {
         "permission_usage": {
             perm: {
@@ -93,15 +93,15 @@ def generate_permission_stats(permission_data):
     }
     return report
 
-# Carrega o JSON de entrada
+# Load the input JSON
 with open("data/permissions_usage_report.json", "r") as file:
     permission_data = json.load(file)
 
-# Gera o relatório
+# Generate the report
 report = generate_permission_stats(permission_data)
 
-# Salva o relatório
+# Save the report
 with open("data/permission_analysis_report.json", "w") as file:
     json.dump(report, file, indent=4)
 
-print("Análise concluída! Verifique 'permission_analysis_report.json'.")
+print("Analysis completed! Check 'permission_analysis_report.json'.")

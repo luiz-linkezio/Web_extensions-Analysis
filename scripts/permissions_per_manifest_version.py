@@ -3,39 +3,39 @@ from collections import defaultdict
 import statistics
 
 def analyze_permissions(json_file):
-    # Carregar o JSON
+    # Load the JSON
     with open(json_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    # Estruturas para análise
+    # Structures for analysis
     version_stats = defaultdict(list)
     permission_distribution = defaultdict(int)
     top_extensions = []
     
-    # Processar cada extensão
+    # Process each extension
     for ext in data['extensions']:
         try:
-            # Extrair dados básicos
+            # Extract basic data
             manifest_version = str(ext.get('manifest_version', 'unknown'))
             name = ext.get('name', 'unnamed_extension')
             permissions = ext.get('permissions', [])
             num_permissions = len(permissions)
             
-            # Atualizar estatísticas
+            # Update statistics
             version_stats[manifest_version].append(num_permissions)
             
-            # Contar distribuição de permissões
+            # Count permission distribution
             for perm in permissions:
                 permission_distribution[perm] += 1
                 
-            # Manter registro das extensões com mais permissões
+            # Keep track of extensions with more permissions
             top_extensions.append((name, num_permissions, manifest_version))
             
         except Exception as e:
-            print(f"Erro ao processar extensão: {e}")
+            print(f"Error processing extension: {e}")
             continue
     
-    # Calcular estatísticas
+    # Calculate statistics
     results = {}
     for version, counts in version_stats.items():
         results[version] = {
@@ -46,10 +46,10 @@ def analyze_permissions(json_file):
             'count': len(counts)
         }
     
-    # Top 5 extensões com mais permissões
+    # Top 5 extensions with most permissions
     top_extensions.sort(key=lambda x: x[1], reverse=True)
     
-    # Permissões mais comuns
+    # Most common permissions
     common_permissions = sorted(permission_distribution.items(), 
                                key=lambda x: x[1], reverse=True)[:20]
     
@@ -60,24 +60,24 @@ def analyze_permissions(json_file):
     }
 
 def print_results(stats):
-    print("\n=== Estatísticas por Versão do Manifesto ===")
+    print("\n=== Statistics by Manifest Version ===")
     for version, data in stats['version_stats'].items():
         print(f"\nManifest V{version}:")
-        print(f"  Extensões analisadas: {data['count']}")
-        print(f"  Média de permissões: {data['average']:.1f}")
-        print(f"  Mediana: {data['median']}")
-        print(f"  Mínimo: {data['min']}")
-        print(f"  Máximo: {data['max']}")
+        print(f"  Extensions analyzed: {data['count']}")
+        print(f"  Average permissions: {data['average']:.1f}")
+        print(f"  Median: {data['median']}")
+        print(f"  Minimum: {data['min']}")
+        print(f"  Maximum: {data['max']}")
     
-    print("\n=== Top 5 Extensões com Mais Permissões ===")
+    print("\n=== Top 5 Extensions with Most Permissions ===")
     for i, (name, count, version) in enumerate(stats['top_extensions'], 1):
-        print(f"{i}. {name} (V{version}): {count} permissões")
+        print(f"{i}. {name} (V{version}): {count} permissions")
     
-    print("\n=== Permissões Mais Comuns ===")
+    print("\n=== Most Common Permissions ===")
     for perm, count in stats['common_permissions']:
-        print(f"- {perm}: {count} extensões")
+        print(f"- {perm}: {count} extensions")
 
-# Uso
+# Usage
 if __name__ == "__main__":
     stats = analyze_permissions('data/filtered_extensions.json')
     print_results(stats)

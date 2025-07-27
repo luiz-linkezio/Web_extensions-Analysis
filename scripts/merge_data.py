@@ -58,9 +58,9 @@ def merge_json_files():
     start_time = time.time()
     extensions_dict = {}
     extension_paths = defaultdict(set)
-    duplicate_count = 0  # Contador para extensões duplicadas
+    duplicate_count = 0  # Counter for duplicate extensions
     
-    logger.info(f"Iniciando a merge dos arquivos JSON... Total de categorias: {len(PATHS)}")
+    logger.info(f"Starting JSON files merge... Total categories: {len(PATHS)}")
 
     for path in PATHS:
         if path == "":
@@ -70,7 +70,7 @@ def merge_json_files():
         file_path = os.path.join(DUMP_DIR, f"extensions{formatted_path}.json")
 
         if not os.path.exists(file_path):
-            logger.warning(f"Arquivo não encontrado: {file_path}")
+            logger.warning(f"File not found: {file_path}")
             continue
         
         try:
@@ -78,21 +78,21 @@ def merge_json_files():
                 data = json.load(file)
                 extensions_list = data.get("extensions", [])
 
-                logger.info("-" * 100)  # Linha de divisão
+                logger.info("-" * 100)  # Division line
                 
-                logger.info(f"Carregando {len(extensions_list)} extensões de {file_path}")
+                logger.info(f"Loading {len(extensions_list)} extensions from {file_path}")
 
                 for ext in extensions_list:
                     ext_id = ext["id"]
                     
                     if ext.get("downloads"):
-                        ext["downloads"] = int(ext["downloads"])  # Converte para inteiro
+                        ext["downloads"] = int(ext["downloads"])  # Convert to integer
                     else:
-                        ext["downloads"] = -1  # Se não houver valor, define como -1
+                        ext["downloads"] = -1  # If there's no value, set as -1
 
                     
                     if ext_id in extensions_dict:
-                        logger.info(f"Extensão duplicada encontrada: {ext_id} (adicionando novo caminho)")
+                        logger.info(f"Duplicate extension found: {ext_id} (adding new path)")
                         extension_paths[ext_id].add(path)
                         duplicate_count += 1
                     else:
@@ -100,44 +100,44 @@ def merge_json_files():
                         extension_paths[ext_id] = {path}
 
         except Exception as e:
-            logger.error(f"Erro ao processar {file_path}: {str(e)}")
+            logger.error(f"Error processing {file_path}: {str(e)}")
 
-    logger.info("-" * 100)  # Linha de divisão
-    logger.info("Finalizando o merge dos dados e adicionando caminhos às extensões...")
+    logger.info("-" * 100)  # Division line
+    logger.info("Finalizing data merge and adding paths to extensions...")
 
-    # Atualizar a lista de paths nas extensões
+    # Update the paths list in extensions
     for ext_id, paths in extension_paths.items():
         ext = extensions_dict[ext_id]
         ext["paths"] = list(paths)
         extensions_dict[ext_id] = {"id": ext["id"], "paths": ext["paths"], **{k: v for k, v in ext.items() if k not in ["id", "paths"]}}
     
-    logger.info("Ordenando extensões por número de downloads...")
+    logger.info("Sorting extensions by number of downloads...")
     
-    # Ordenar por número de downloads (decrescente)
+    # Sort by number of downloads (descending)
     sorted_extensions = sorted(extensions_dict.values(), key=lambda x: x["downloads"], reverse=True)
     
-    # Criar estrutura final
+    # Create final structure
     merged_data = {
         "extensions_count": len(sorted_extensions),
         "extraction_date": datetime.now().isoformat(),
         "extensions": sorted_extensions
     }
     
-    # Salvar no arquivo final
+    # Save to final file
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as output_file:
             json.dump(merged_data, output_file, indent=4, ensure_ascii=False)
-        logger.info(f"Arquivo de saída gerado com sucesso: {OUTPUT_FILE}")
+        logger.info(f"Output file generated successfully: {OUTPUT_FILE}")
     except Exception as e:
-        logger.error(f"Erro ao salvar {OUTPUT_FILE}: {str(e)}")
+        logger.error(f"Error saving {OUTPUT_FILE}: {str(e)}")
     
-    # Tempo de execução
+    # Execution time
     elapsed_time = time.time() - start_time
-    logger.info(f"Tempo de execução: {elapsed_time:.2f} segundos")
+    logger.info(f"Execution time: {elapsed_time:.2f} seconds")
 
-    # Adicionando contagem de extensões duplicadas e únicas
-    logger.info(f"Extensões únicas: {len(sorted_extensions)}")
-    logger.info(f"Extensões duplicadas: {duplicate_count}")
+    # Adding count of duplicate and unique extensions
+    logger.info(f"Unique extensions: {len(sorted_extensions)}")
+    logger.info(f"Duplicate extensions: {duplicate_count}")
 
 if __name__ == "__main__":
     merge_json_files()

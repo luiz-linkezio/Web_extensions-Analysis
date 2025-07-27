@@ -48,62 +48,74 @@ PATHS = [
     "/make_chrome_yours/privacy",
 ]
 
-# Função para configurar o logger
+# Function to configure the logger
 def setup_logger():
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    log_filename = os.path.join(LOGS_DIR, f"{timestamp}.log")
+    """Configure and return a logger instance."""
+    logger = logging.getLogger('extension_dumper')
+    logger.setLevel(logging.INFO)
+    
+    # Create handlers
+    c_handler = logging.StreamHandler()
+    f_handler = logging.FileHandler(os.path.join(LOGS_DIR, f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"))
+    c_handler.setLevel(logging.INFO)
+    f_handler.setLevel(logging.INFO)
+    
+    # Create formatters and add it to handlers
+    log_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    c_handler.setFormatter(log_format)
+    f_handler.setFormatter(log_format)
+    
+    # Add handlers to the logger
+    logger.addHandler(c_handler)
+    logger.addHandler(f_handler)
+    
+    return logger
 
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s - %(message)s",
-        handlers=[
-            logging.FileHandler(log_filename),  # Log em arquivo
-            logging.StreamHandler()  # Log no console
-        ]
-    )
-    return logging.getLogger()
-
-# Função para configurar o driver do Selenium
+# Function to configure the Selenium driver
 def setup_driver():
-    """Configura o driver do Selenium."""
+    """Configure and return a Chrome WebDriver instance."""
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # Execute em modo headless, sem abrir a janela do navegador
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--headless")  # Run in headless mode, without opening browser window
     driver = webdriver.Chrome(options=options)
     return driver
 
-# Função para carregar todas as extensões
+# Function to load all extensions
 def load_all_extensions(driver, path, logger):
-    """Carrega todas as extensões até que o botão 'Carregar mais' não esteja mais disponível."""
-    logger.info(f"[NAVEGAÇÃO] Acessando: {path}")
-    driver.get(path)  # Acesse a URL específica do caminho
-    time.sleep(2)  # Aguarda um pouco para que a página carregue
+    """Loads all extensions until the 'Load more' button is no longer available."""
+    logger.info(f"[NAVIGATION] Accessing: {path}")
+    driver.get(path)  # Access the specific URL path
+    time.sleep(2)  # Wait a bit for the page to load
 
     while True:
         try:
-            # Aguarda até que o botão "Carregar mais" esteja visível usando o novo XPath
+            # Wait until the "Load more" button is visible using the new XPath
             load_more_button = WebDriverWait(driver, 10).until(
                 EC.visibility_of_element_located((By.XPATH, "//button[@jsname='t6Kl7b']//span[contains(text(), 'Carregar mais')]"))
             )
             driver.execute_script("arguments[0].click();", load_more_button)
-            logger.info(f"[NAVEGAÇÃO] Clicou em 'Carregar mais' em: {path}")
-            time.sleep(2)  # Aguarda um pouco para que novas extensões sejam carregadas
+            logger.info(f"[NAVIGATION] Clicked 'Load more' in: {path}")
+            time.sleep(2)  # Wait a bit for new extensions to load
             
-            # Conta as tags 'a' que possuem './detail/' no href
+            # Count the 'a' tags that have './detail/' in the href
             soup = BeautifulSoup(driver.page_source, 'html.parser')
             a_tags = soup.find_all('a', href=True)
             detail_links = [link for link in a_tags if './detail/' in link['href']]
-            logger.info(f"[INFO] Quantidade de extensões carregadas em tela: {len(detail_links)}")
+            logger.info(f"[INFO] Number of extensions loaded on screen: {len(detail_links)}")
 
             if len(detail_links) >= 1568:
                 break
 
         except Exception as e:
-            logger.warning(f"[NAVEGAÇÃO] Não há mais extensões para carregar ou erro ao clicar em 'Carregar mais' em {path}")
+            logger.warning(f"[NAVIGATION] No more extensions to load or error clicking 'Load more' in {path}")
             break
 
-# Função para extrair os IDs das extensões
+# Function to extract extension IDs
 def get_extension_ids(driver, logger):
-    """Extrai os IDs das extensões da página atual."""
+    """Extracts extension IDs from the current page."""
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     extension_ids = []
     for link in soup.find_all('a', href=True):
@@ -113,11 +125,11 @@ def get_extension_ids(driver, logger):
     
     return list(set(extension_ids))
 
-# Função para baixar a extensão
+# Function to download extension
 def download_extension(extension_id, logger):
-    """Baixa a extensão no formato CRX."""
-    logger.info("-" * 100)  # Linha de divisão
-    logger.info(f"[DOWNLOAD] Baixando extensão: {extension_id}")
+    """Downloads the extension in CRX format."""
+    logger.info("-" * 100)  # Division line
+    logger.info(f"[DOWNLOAD] Downloading extension: {extension_id}")
     url = f"https://clients2.google.com/service/update2/crx?response=redirect&prodversion=91.0&acceptformat=crx2,crx3&x=id%3D{extension_id}%26uc"
     try:
         response = requests.get(url, stream=True)
@@ -125,19 +137,19 @@ def download_extension(extension_id, logger):
             crx_path = os.path.join(DOWNLOAD_DIR, f"{extension_id}.crx")
             with open(crx_path, 'wb') as file:
                 file.write(response.content)
-            logger.info(f"[DOWNLOAD] Extensão {extension_id} baixada com sucesso.")
+            logger.info(f"[DOWNLOAD] Extension {extension_id} downloaded successfully.")
             return crx_path
         else:
-            logger.error(f"[DOWNLOAD] Erro ao baixar a extensão {extension_id}: Status {response.status_code}")
+            logger.error(f"[DOWNLOAD] Error downloading extension {extension_id}: Status {response.status_code}")
             return None
     except requests.exceptions.RequestException as e:
-        logger.error(f"[DOWNLOAD] Erro de requisição ao baixar a extensão {extension_id}: {e}")
+        logger.error(f"[DOWNLOAD] Request error downloading extension {extension_id}: {e}")
         return None
 
-# Função para extrair o manifest
+# Function to extract manifest
 def extract_manifest(crx_path, logger):
-    """Extrai o manifest.json de um arquivo CRX."""
-    logger.info(f"[EXTRAÇÃO] Extraindo manifest de: {crx_path}")
+    """Extracts manifest.json from a CRX file."""
+    logger.info(f"[EXTRACTION] Extracting manifest from: {crx_path}")
     
     try:
         with zipfile.ZipFile(crx_path, 'r') as zip_ref:
@@ -147,18 +159,18 @@ def extract_manifest(crx_path, logger):
                         return json.load(manifest_file)
                     
     except json.JSONDecodeError as e:
-        logger.error(f"[EXTRAÇÃO] Erro ao decodificar o JSON do manifest")
+        logger.error(f"[EXTRACTION] Error decoding manifest JSON")
     except Exception as e:
-        logger.error(f"[EXTRAÇÃO] Erro ao extrair o manifest de {crx_path}")
+        logger.error(f"[EXTRACTION] Error extracting manifest from {crx_path}")
 
     return None
 
-# Função para salvar todas as informações das extensões em um único arquivo JSON
+# Function to save all extension information in a single JSON file
 def save_all_manifests(manifests, logger):
-    """Salva todas as informações das extensões em um único arquivo JSON."""
+    """Saves all extension information in a single JSON file."""
     json_path = os.path.join(DOWNLOAD_DIR, "extensions_info.json")
     
-    # Criar o dicionário com as informações
+    # Create the dictionary with the information
     data_to_save = {
         "extensions_count": len(manifests),
         "extraction_date": datetime.now().isoformat(),
@@ -168,109 +180,115 @@ def save_all_manifests(manifests, logger):
     with open(json_path, 'w', encoding='utf-8') as file:
         json.dump(data_to_save, file, indent=4, ensure_ascii=False)
     
-    logger.info(f"[SALVAR] Dados salvos em: {json_path}")
+    logger.info(f"[SAVING] Data saved to: {json_path}")
 
-# Função para extrair o número de downloads da página de detalhes
+# Function to extract download count from details page
 def get_downloads_count(driver, extension_id, logger):
-    """Extrai o número de downloads da página de detalhes da extensão."""
+    """Extracts the number of downloads from the extension details page."""
     try:
-        logger.info(f"[EXTRAÇÃO] Extraindo o número de downloads/usuários da extensão: {extension_id}")
+        logger.info(f"[EXTRACTION] Extracting the number of downloads/users for the extension: {extension_id}")
 
         detail_url = f"https://chrome.google.com/webstore/detail/{extension_id}"
-        driver.execute_script(f"window.open('{detail_url}', '_blank');")  # Abre a página da extensão em uma nova aba
-        driver.switch_to.window(driver.window_handles[1])  # Muda para a nova aba
+        driver.execute_script("window.open('');")
+        driver.switch_to.window(driver.window_handles[-1])
+        driver.get(detail_url)
         
-        # Aguarda a página carregar completamente
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, 'F9iKBc'))
-        )
+        # Wait for the page to load completely
+        time.sleep(3)
         
-        # Extrai o número de downloads
-        soup = BeautifulSoup(driver.page_source, 'html.parser')
-        downloads_div = soup.find('div', class_='F9iKBc')
-        downloads_text = downloads_div.get_text(strip=True) if downloads_div else None
-        downloads_count = None
-        if downloads_text:
-            # Extraímos apenas a parte numérica
-            downloads_count = ''.join(filter(str.isdigit, downloads_text))
-        
-        driver.close()  # Fecha a aba da extensão
-        driver.switch_to.window(driver.window_handles[0])  # Volta para a aba original
-
-        return downloads_count
+        # Extract the number of downloads
+        try:
+            downloads_element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//span[contains(text(), 'users') or contains(text(), 'usuários')]"))
+            )
+            downloads_text = downloads_element.text
+            # Extract only the numeric part
+            downloads = ''.join(filter(str.isdigit, downloads_text))
+            return int(downloads) if downloads else 0
+        except:
+            return 0
 
     except Exception as e:
-        logger.error(f"[EXTRAÇÃO] Erro ao extrair número de downloads da extensão: {extension_id}:")
+        logger.error(f"[EXTRACTION] Error extracting number of downloads for extension: {extension_id}:")
         driver.close()
-        driver.switch_to.window(driver.window_handles[0])  # Volta para a aba original
-        return None
+        driver.switch_to.window(driver.window_handles[0])  # Return to original tab
+        return 0
+    finally:
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])  # Return to original tab
 
-
-# Função para salvar os manifestos em JSON por categoria
+# Function to save manifests in JSON by category
 def save_manifests_by_path(path, manifests, logger):
-    """Salva as informações das extensões em um JSON separado por path."""
-    category = path.strip("/").replace("/", "_") or "root"
-    json_filename = f"extensions_{category}.json"
-    json_path = os.path.join(EXTENSIONS_JSON_DIR, json_filename)
-
+    """Saves extension information in a separate JSON by path."""
+    formatted_path = path.replace('/', '_')
+    json_path = os.path.join(DOWNLOAD_DIR, f"extensions{formatted_path}.json")
+    
     data_to_save = {
-        "path": path,
         "extensions_count": len(manifests),
         "extraction_date": datetime.now().isoformat(),
         "extensions": manifests
     }
-
+    
     with open(json_path, 'w', encoding='utf-8') as file:
         json.dump(data_to_save, file, indent=4, ensure_ascii=False)
     
-    logger.info(f"[SALVAR] Dados salvos em: {json_path}")
+    logger.info(f"[SAVING] Data saved to: {json_path}")
 
 def process_extensions(driver, extension_ids, logger):
-    """Processa as extensões, coleta os manifests e os números de downloads."""
+    """Processes extensions, collects manifests and download counts."""
     manifests = []
     for ext_id in extension_ids:
-        crx_path = download_extension(ext_id, logger)
-        
-        if crx_path:
+        try:
+            # Download the extension
+            crx_path = download_extension(ext_id, logger)
+            if not crx_path:
+                continue
+            
+            # Extract manifest
             manifest = extract_manifest(crx_path, logger)
-            if manifest:
-                downloads_count = get_downloads_count(driver, ext_id, logger)  # Obtém o número de downloads
-                manifests.append({
-                    "id": ext_id,
-                    "downloads": downloads_count,
-                    "name": manifest.get("name", "unknown_extension"),
-                    "manifest_version": manifest.get("manifest_version", "unknown"),
-                    "permissions": manifest.get("permissions", []),
-                    "host_permissions": manifest.get("host_permissions", []),
-                    "content_scripts": manifest.get("content_scripts", []),
-                    "content_security_policy": manifest.get("content_security_policy", {}),
-                    "externally_connectable": manifest.get("externally_connectable", {}),
-                    "storage": manifest.get("storage", {}),
-                })
-            os.remove(crx_path)  # Remove o arquivo CRX após o processamento
-
+            if not manifest:
+                continue
+            
+            # Get download count
+            downloads = get_downloads_count(driver, ext_id, logger)
+            
+            # Add metadata
+            manifest['id'] = ext_id
+            manifest['downloads'] = downloads
+            
+            manifests.append(manifest)
+            
+            # Clean up
+            os.remove(crx_path)  # Remove the CRX file after processing
+            
+        except Exception as e:
+            logger.error(f"Error processing extension {ext_id}: {e}")
+            continue
+    
     return manifests
+
+def main():
+    start_time = datetime.now()  # Mark the start of execution
+    
+    logger = setup_logger()
+    driver = setup_driver()
+    
+    # Process extensions and save manifests with download counts
+    for path in PATHS:
+        try:
+            load_all_extensions(driver, path, logger)
+            extension_ids = get_extension_ids(driver, logger)
+            manifests = process_extensions(driver, extension_ids, logger)
+            save_manifests_by_path(path, manifests, logger)
+        except Exception as e:
+            logger.error(f"Error processing path {path}: {e}")
+    
+    driver.quit()
+    
+    end_time = datetime.now()  # Mark the end of execution
+    total_duration = end_time - start_time
+    logger.info(f"Total execution time: {str(total_duration).split('.')[0]}")
 
 # Execução principal do script
 if __name__ == "__main__":
-    logger = setup_logger()  # Configura o logger
-    start_time = datetime.now()  # Marca o início da execução
-    driver = setup_driver()
-
-    for path in PATHS:
-        full_path = BASE_URL + path
-        load_all_extensions(driver, full_path, logger)
-        extension_ids = get_extension_ids(driver, logger)
-        
-        # Processa as extensões e salva os manifests com o número de downloads
-        manifests = process_extensions(driver, extension_ids, logger)
-
-        save_manifests_by_path(path, manifests, logger)
-
-        logger.info("-" * 100)  # Linha de divisão
-
-    driver.quit()  # Fecha o navegador após a execução
-    
-    end_time = datetime.now()  # Marca o fim da execução
-    total_duration = end_time - start_time
-    logger.info(f"Tempo total de execução: {str(total_duration).split('.')[0]}")
+    main()
